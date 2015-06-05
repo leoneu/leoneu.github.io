@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://leoneu.github.io/sitemap.xml 

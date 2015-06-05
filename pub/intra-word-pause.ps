@@ -1,0 +1,4510 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 11 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Roman FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Abstract) 147.75 647.05 T
+1 10 Q
+3.64 (In developing computer-based systems for language) 56.69 626.38 P
+5.74 (learning, it is important to model some of the) 56.69 614.38 P
+6.14 (characteristics of the disfluent speech typical in) 56.69 602.38 P
+6.58 (nonnative speakers. We observed that beginning) 56.69 590.38 P
+4.75 (language learners often pause within words while) 56.69 578.38 P
+0.02 (reading. We also observed that our automatic algorithms) 56.69 566.38 P
+3.17 (for scoring segmental quality of pronunciation were) 56.69 554.38 P
+0.05 (affected by these intra-word pauses \050IWPs\051. In this work) 56.69 542.38 P
+0.04 (we propose a method for modeling IWPs. As a result we) 56.69 530.38 P
+1.1 (are able to produce more robust segmental scores. Our) 56.69 518.38 P
+-0.33 (experimental study also suggests that the insertion rate of) 56.69 506.39 P
+(IWPs could be a good predictor of fluency.) 56.69 494.39 T
+0 12 Q
+(1. Introduction) 131.41 452.05 T
+1 10 Q
+2.29 (In a computer-based language instruction system, the) 56.69 431.39 P
+-0.26 (possibility of accepting speech from a student interacting) 56.69 419.39 P
+2.65 (with the system may allow the computer to provide) 56.69 407.39 P
+4.43 (feedback of the kind a language instructor would) 56.69 395.39 P
+4.36 (produce, such as an assessment of the quality of) 56.69 383.39 P
+6.97 (pronunciation or pointing to specific production) 56.69 371.39 P
+5.07 (problems or errors. This capability could provide) 56.69 359.39 P
+7.31 (valuable feedback for practicing and improving) 56.69 347.39 P
+(pronunciation.) 56.69 335.39 T
+0.46 (Over recent years a pronunciation scoring paradigm has) 56.69 315.39 P
+-0.11 (been developed at SRI International [1][2][3][4][5][6]. It) 56.69 303.39 P
+0.85 (is based on the use of hidden Markov models \050HMMs\051) 56.69 291.39 P
+1.09 ([7] to generate phonetic segmentations of the student\325s) 56.69 279.39 P
+1.69 (speech. From these segmentations, spectral match and) 56.69 267.39 P
+4.82 (duration scores can be derived by evaluating the) 56.69 255.39 P
+1.16 (closeness of a student\325s speech to the speech of native) 56.69 243.39 P
+(speakers.) 56.69 231.39 T
+0.39 (Initial approaches to automatic scoring of pronunciation) 56.69 211.39 P
+1.51 (were based on models built for specific sentences [3].) 56.69 199.39 P
+1.61 (Later, algorithms were designed to produce scores for) 56.69 187.39 P
+0.78 (arbitrary sentences, that is, sentences for which there is) 56.69 175.39 P
+0.98 (no acoustic training data [4][5]. This approach allowed) 56.69 163.39 P
+2.28 (more flexibility in the design of language instruction) 56.69 151.39 P
+1.32 (systems because new pronunciation exercises could be) 56.69 139.39 P
+-0.47 (added without retraining the statistical models used in the) 56.69 127.39 P
+(scoring system.) 56.69 115.39 T
+2.04 (In this paper we address some of the issues that, we) 56.69 95.39 P
+1.05 (believe, could arise when such a pronunciation scoring) 56.69 83.39 P
+-0.37 (system is used in real-world situations. Often a nonnative) 311.81 648.38 P
+1.37 (speaker will exhibit speech disfluencies, in addition to) 311.81 636.38 P
+0.33 (the expected variability in pronunciation quality.  In our) 311.81 624.38 P
+-0.02 (present nonnative data collection effort we observed that) 311.81 612.38 P
+1.13 (one common type of disfluency was hesitation, that is,) 311.81 600.38 P
+-0.33 (the introduction of pauses of diverse length both between) 311.81 588.38 P
+1.37 (and within words. While the inter-word pauses can be) 311.81 576.38 P
+4.56 (handled by the standard hidden Markov modeling) 311.81 564.38 P
+6.19 (procedure consisting of inserting optional pauses) 311.81 552.38 P
+3.4 (between word models, the production of intra-word) 311.81 540.38 P
+0.38 (pauses \050IWPs\051 produced a strong mismatch between the) 311.81 528.39 P
+3.75 (spoken words and the standard word models. This) 311.81 516.39 P
+0.19 (mismatch is reflected as a very low pronunciation score,) 311.81 504.39 P
+-0.3 (while in reality, the segmental pronunciation quality may) 311.81 492.39 P
+(have been satisfactory.) 311.81 480.39 T
+4.36 (In a first step toward modeling these effects, we) 311.81 460.39 P
+-0.14 (introduced additional pronunciation variations that allow) 311.81 448.39 P
+-0.48 (pauses between each pair of phones within a word model.) 311.81 436.39 P
+-0.2 (Experimental results showed  that  the modeling of IWPs) 311.81 424.39 P
+1.34 (produced word models that have a better match to the) 311.81 412.39 P
+1.49 (nonnative speech as well as pronunciation scores with) 311.81 400.39 P
+1.29 (better correlation with the human ratings, compared to) 311.81 388.39 P
+3.43 (the standard models with no IWP modeling. These) 311.81 376.39 P
+1.01 (experiments were conducted within the task of grading) 311.81 364.39 P
+-0.18 (the pronunciation quality of native speakers of American) 311.81 352.39 P
+(English speaking Spanish as a second language.) 311.81 340.39 T
+0 12 Q
+(2. Automatic Pronunciation Scoring) 332.86 318.05 T
+1 10 Q
+4.97 (The pronunciation scoring paradigm for automatic) 311.81 297.39 P
+-0.34 (evaluation of pronunciation consists of first eliciting read) 311.81 285.39 P
+0.81 (or spontaneous speech from a student, then segmenting) 311.81 273.39 P
+5.73 (the speech into its constituent phone units, and) 311.81 261.39 P
+-0.26 (comparing the student\325s pronunciation of the phone units) 311.81 249.39 P
+1.72 (with that of native speakers. A pronunciation score is) 311.81 237.39 P
+-0.38 (computed by averaging the degree of match across all the) 311.81 225.39 P
+-0.11 (phones uttered, and this information is mapped to a scale) 311.81 213.39 P
+(similar to that used by human graders.) 311.81 201.39 T
+0.86 (To reliably generate the phonetic segmentations for the) 311.81 181.39 P
+2.33 (student\325s speech we must know the text read by the) 311.81 169.39 P
+1.99 (student. We can achieve this by eliciting speech in a) 311.81 157.39 P
+1.04 (constrained way within the language learning activities) 311.81 145.39 P
+0.33 (of an automated instruction system, or simply by asking) 311.81 133.39 P
+2.45 (the student to read aloud prompted sentences on the) 311.81 121.39 P
+0.82 (computer screen. We take advantage of the constrained) 311.81 109.39 P
+3.08 (production by allowing only the possible alternative) 311.81 97.39 P
+62.4 677.35 531.41 768.77 R
+7 X
+V
+0 14 Q
+0 X
+( Modeling Intra-W) 131.56 759.43 T
+(ord P) 244.06 759.43 T
+(auses in Pr) 276.98 759.43 T
+(onunciation Scoring) 342.06 759.43 T
+2 12 Q
+(Hor) 165.25 735.43 T
+(acio F) 184.4 735.43 T
+(r) 214.74 735.43 T
+(anco, Leonar) 219.23 735.43 T
+(do Neume) 282.78 735.43 T
+(yer) 330.74 735.43 T
+(, and Harry Br) 344.74 735.43 T
+(att) 415.89 735.43 T
+1 10 Q
+(Speech Technology and Research Laboratory) 205.82 706.1 T
+(SRI International, Menlo Park, USA) 223.85 696.1 T
+({hef,leo,harry}@speech.sri.com) 232.24 686.1 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+1.34 (word sequences in the HMMs used by the recognition) 56.69 764.36 P
+(system.) 56.69 752.36 T
+1.13 (In our speech recognition engine [7], as in many other) 56.69 732.36 P
+1.18 (large-vocabulary systems, the word models are formed) 56.69 720.36 P
+2.52 (by a network of phone models. Therefore, the time-) 56.69 708.36 P
+3.16 (aligned phone sequence can be recovered using the) 56.69 696.36 P
+(Viterbi algorithm.) 56.69 684.36 T
+1.27 (From these phonetic alignments, and statistical models) 56.69 664.36 P
+1.18 (obtained from the native speech, different probabilistic) 56.69 652.36 P
+1.93 (scores are derived for the student\325s speech. Since the) 56.69 640.36 P
+2.24 (statistical models used to perform the scoring are all) 56.69 628.36 P
+-0.6 (based on phone units, no statistics of specific sentences or) 56.69 616.36 P
+2.01 (words are used; consequently, the algorithms are text) 56.69 604.36 P
+5.03 (independent. We have investigated several several) 56.69 592.36 P
+3.87 (scoring algorithms. Here, we review the two best-) 56.69 580.36 P
+0.36 (performing scoring algorithms, previously introduced in) 56.69 568.36 P
+([4] and [5].) 56.69 556.36 T
+0 12 Q
+(2.1.) 56.69 534.02 T
+(Log-posterior probability scores) 85.04 534.02 T
+1 10 Q
+0.64 (We use a set of context-independent models along with) 56.69 513.36 P
+3.55 (the HMM phone alignment to compute an average) 56.69 501.36 P
+-0.47 (posterior probability for each phone. First, for each frame) 56.69 489.36 P
+0.81 (belonging to a segment corresponding to the phone) 56.69 477.36 P
+0.81 (,) 280.96 477.36 P
+5.42 (we compute the frame-based posterior probability) 56.69 465.36 P
+( of the phone) 90.04 453.36 T
+( given the observation vector) 150.81 453.36 T
+(.) 279.82 453.36 T
+0.79 (The average of the logarithm of the frame-based phone) 56.69 433.36 P
+-0.32 (posterior probability over all the frames of the segment is) 56.69 421.36 P
+-0.11 (defined as the posterior score for the) 56.69 409.36 P
+2 F
+-0.11 (i) 204.52 409.36 P
+1 F
+-0.11 (-th phone segment.) 207.3 409.36 P
+-0.4 (The posterior-based score for a whole sentence is defined) 56.69 397.36 P
+0.11 (as the average of the individual posterior scores over the) 56.69 385.36 P
+-0.25 ( phone segments in a sentence. The log-posterior score) 66.36 373.36 P
+0.05 (is fairly robust against changes in the spectral match due) 56.69 361.36 P
+0.95 (to particular speaker characteristics or acoustic channel) 56.69 349.36 P
+(variations [5].) 56.69 337.36 T
+0 12 Q
+(2.2.) 56.69 315.02 T
+(Segment duration scores) 85.04 315.02 T
+1 10 Q
+0.33 (To compute phone duration scores, we first measure the) 56.69 294.36 P
+0.54 (duration in frames for the) 56.69 282.36 P
+2 F
+0.54 (i-) 164.09 282.36 P
+1 F
+0.54 (th segment from the Viterbi) 170.2 282.36 P
+1.21 (alignment. Then its value is normalized to compensate) 56.69 270.36 P
+1.51 (for rate of speech. To obtain the corresponding phone) 56.69 258.36 P
+4.79 (segment duration score, the log-probability of the) 56.69 246.36 P
+5.02 (normalized duration is computed using a discrete) 56.69 234.36 P
+2.01 (distribution of durations for the corresponding phone.) 56.69 222.36 P
+0.3 (The discrete duration distributions have been previously) 56.69 210.36 P
+-0.02 (trained from alignments generated for the native training) 56.69 198.36 P
+4.05 (data. The corresponding sentence duration score is) 56.69 186.36 P
+0.17 (defined as the average of the phone segment scores over) 56.69 174.36 P
+(the sentence) 56.69 162.36 T
+0 12 Q
+(3. Modeling Intra-Word Pauses) 89.08 140.03 T
+1 10 Q
+4.14 (Typically, in a large-vocabulary speech recognition) 56.69 119.36 P
+1.44 (system, any word to be recognized is represented in a) 56.69 107.36 P
+2.17 (dictionary that translates each word to a sequence of) 56.69 95.36 P
+7.61 (phones; each word may have multiple entries) 56.69 83.36 P
+1.64 (corresponding to its multiple pronunciations. For each) 311.81 764.36 P
+-0.38 (word, these different pronunciations are compiled into an) 311.81 752.36 P
+1.09 (HMM, that represents the alternative pronunciations as) 311.81 740.36 P
+(alternative branches in the model.) 311.81 728.36 T
+2.76 (Our approach to modeling intra-word pauses was to) 311.81 708.36 P
+0.22 (introduce additional pronunciations for each word in the) 311.81 696.36 P
+3.54 (vocabulary by introducing an optional pause model) 311.81 684.36 P
+1.62 (between every possible pair of adjacent phones in the) 311.81 672.36 P
+(original pronunciations for a word.) 311.81 660.36 T
+4.01 (The pause model, like other phone models in the) 311.81 640.36 P
+2.14 (recognition engine, is formed by a sequence of three) 311.81 628.36 P
+0.48 (states with no jumps across states. Hence, such a model) 311.81 616.36 P
+0.54 (enforces a minimum duration constraint of three frames) 311.81 604.36 P
+-0.24 (for the pauses, i.e. 30 ms given the standard frame rate of) 311.81 592.36 P
+(10 ms.) 311.81 580.36 T
+7.64 (In preliminary experimentation we noticed that) 311.81 560.36 P
+2.87 (sometimes short pauses, of a few frames, would be) 311.81 548.36 P
+-0.47 (inserted in places where actually there was no perceptible) 311.81 536.36 P
+2 (pause in the production of the sentence. The inserted) 311.81 524.36 P
+1.84 (pause simply was a better match than a native phone) 311.81 512.36 P
+(model for that segment of the nonnative speech.) 311.81 500.36 T
+1.41 (We attempted to reduce or eliminate these false pause) 311.81 480.36 P
+1.17 (insertions by enforcing a longer minimum duration for) 311.81 468.36 P
+0.1 (the pauses. We systematically modified the pause model) 311.81 456.36 P
+0.98 (to include more states to explore the effect of different) 311.81 444.36 P
+3.79 (constraints for the minimum duration of the pause) 311.81 432.36 P
+6.36 (models. This was implemented by concatenating) 311.81 420.36 P
+-0.32 (multiple copies of the original pause model when a pause) 311.81 408.36 P
+1.3 (had to be inserted between two phones. The expanded) 311.81 396.36 P
+0.86 (multiple pronunciation word models were concatenated) 311.81 384.36 P
+-0.23 (to build the necessary sentence models, also allowing the) 311.81 372.36 P
+(standard, optional, looped pause model between words.) 311.81 360.36 T
+0 12 Q
+(4. Experimental Results) 364.03 338.02 T
+1 10 Q
+1.59 (We give an overview of the speech databases used to) 311.81 317.36 P
+3.04 (train and evaluate the scoring models, and then we) 311.81 305.36 P
+(present the experiments assessing IWP modeling.) 311.81 293.36 T
+0 12 Q
+(4.1.) 311.81 271.02 T
+(Training and calibration data) 340.16 271.02 T
+1 10 Q
+3.63 (The acoustic models used to generate the phonetic) 311.81 250.36 P
+-0.09 (alignments and produce the posterior scores were gender) 311.81 238.36 P
+8.71 (independent, Genonic Gaussian mixture models) 311.81 226.36 P
+2 (introduced in [7]. These models were trained using a) 311.81 214.36 P
+0.49 (gender-balanced database of 142 native Latin American) 311.81 202.36 P
+(Spanish speakers, totaling about 32,000 sentences.) 311.81 190.36 T
+2.12 (For the pronunciation scoring experiments we used a) 311.81 170.36 P
+0.67 (database which included 206 nonnative speakers whose) 311.81 158.36 P
+3.4 (native language was American English. The speech) 311.81 146.36 P
+0.86 (material consisted of 14,000 read newspaper sentences.) 311.81 134.36 P
+2.17 (All the speech was recorded in standard offices with) 311.81 122.36 P
+4.02 (computers running, using a high-quality Sennheiser) 311.81 110.36 P
+(microphone.) 311.81 98.36 T
+56.69 70.87 283.46 771.02 C
+0 0 0 1 0 0 0 K
+270.36 469.96 280.96 485.86 C
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 271.36 477.36 T
+2 8 Q
+(i) 276.74 473.96 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+56.69 445.81 90.04 461.11 C
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 55.94 453.36 T
+(q) 66.68 453.36 T
+2 8 Q
+(i) 72.06 449.96 T
+2 10 Q
+(y) 78.56 453.36 T
+2 8 Q
+(t) 83.38 449.96 T
+3 10 Q
+(\050) 62.64 453.36 T
+(\051) 86.46 453.36 T
+76.28 447.96 76.28 459.86 2 L
+0.45 H
+2 Z
+N
+0 0 0 1 0 0 0 K
+0 0 595.28 841.89 C
+56.69 70.87 283.46 771.02 C
+145.03 448.86 150.81 461.86 C
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(i) 146.03 453.36 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+56.69 70.87 283.46 771.02 C
+269.4 445.96 279.83 461.86 C
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(y) 270.64 453.36 T
+2 8 Q
+(t) 275.46 449.96 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+56.69 70.87 283.46 771.02 C
+56.69 368.86 66.36 381.86 C
+0 0 0 1 0 0 0 K
+2 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(N) 57.69 373.36 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+0.17 (A panel of five raters, native Spanish speakers, rated the) 56.69 628.38 P
+1.57 (overall pronunciation of each nonnative sentence on a) 56.69 616.38 P
+1.87 (scale of 1 to 5, ranging from \322strongly nonnative\323 to) 56.69 604.38 P
+1.64 (\322almost native\323. The resulting distribution of sentence) 56.69 592.38 P
+(grades is shown in Figure 1.) 56.69 580.38 T
+2.59 (These human grades were used both to evaluate the) 56.69 560.38 P
+6.23 (effectiveness of the different machine scores as) 56.69 548.38 P
+0.89 (predictors of the pronunciation quality, and to calibrate) 56.69 536.38 P
+0.99 (the mappings from the machine scores to the predicted) 56.69 524.38 P
+0.26 (pronunciation grades. To assess the consistency of these) 56.69 512.38 P
+0.22 (human scores, two types of correlations were computed.) 56.69 500.38 P
+0.61 (At the) 56.69 488.38 P
+2 F
+0.61 (sentence level,) 85.13 488.38 P
+1 F
+0.61 ( pairs of corresponding ratings for) 144.05 488.38 P
+3.43 (all the individual sentences were correlated. At the) 56.69 476.38 P
+2 F
+0.48 (speaker level) 56.69 464.38 P
+1 F
+0.48 (, first, the scores for all the sentences from) 109.65 464.38 P
+1.38 (each speaker were averaged, and then the sequence of) 56.69 452.38 P
+1.9 (pairs of corresponding average scores for each of the) 56.69 440.38 P
+0.82 (speakers was correlated. The correlation between raters) 56.69 428.38 P
+1.22 (was computed in a subset of 2800 sentences that were) 56.69 416.38 P
+2.09 (rated by all five raters. The average sentence/speaker) 56.69 404.38 P
+(level inter-rater correlation was r=0.68/0.91.) 56.69 392.38 T
+0 12 Q
+(4.2.) 56.69 370.05 T
+(Scoring with IWP models) 85.04 370.05 T
+1 10 Q
+1.49 (To assess the effectiveness of the IWP-based machine) 56.69 349.38 P
+0.1 (scores to predict the pronunciation quality, we evaluated) 56.69 337.38 P
+3.56 (the level of correlation between human grades and) 56.69 325.38 P
+1.05 (machine scores. We used posterior and duration scores) 56.69 313.38 P
+1.75 (computed using word models with a range of various) 56.69 301.38 P
+5.38 (IWP minimum duration constraints. Sentence-level) 56.69 289.38 P
+1.97 (human-machine correlations were computed using the) 56.69 277.38 P
+(14,000 sentences from the nonnative database.) 56.69 265.38 T
+0.46 (In Figure 2 we show the sentence-level human-machine) 56.69 245.38 P
+1.45 (correlations for both posterior and duration scores, for) 56.69 233.38 P
+-0.02 (different values of the minimum duration pause imposed) 56.69 221.38 P
+1.45 (by the IWP models. The minimum duration constraint) 56.69 209.38 P
+-0.1 (ranged from 30 to 600 ms The dotted lines correspond to) 56.69 197.38 P
+(the baseline system with no IWP models.) 56.69 185.38 T
+0.08 (For posterior scores, we observe that there is an increase) 56.69 165.38 P
+1.49 (in the level of human-machine correlation when using) 56.69 153.38 P
+-0.09 (IWP models with respect to the baseline. The correlation) 56.69 141.38 P
+0.09 (reaches r=0.59 when the minimum duration constraint is) 56.69 129.38 P
+3.07 (between 240 and 270 ms This represents a relative) 56.69 117.38 P
+0.69 (increase of 8.6% with respect to the baseline of r=0.54.) 56.69 105.38 P
+(This difference is significative at the 0.95 level.) 56.69 93.38 T
+1.86 (For duration scores, the correlation reaches a peak of) 311.81 505.38 P
+-0.39 (r=0.42 when the minimum duration constraint is between) 311.81 493.38 P
+3.01 (300 and 360 ms; the increment with respect to the) 311.81 481.38 P
+(baseline of 0.41 is not significant.) 311.81 469.38 T
+-0.62 (In Figure 3 we show the percent of inserted IWPs for each) 311.81 449.38 P
+-0.3 (minimum duration constraint. It is interesting to note that) 311.81 437.38 P
+-0.14 (for the best case, only 1.4% of the words have IWPs. We) 311.81 425.38 P
+-0.2 (have not yet assessed the accuracy in detecting the actual) 311.81 413.38 P
+0.73 (pauses by using IWP models; nevertheless, an informal) 311.81 401.38 P
+-0.14 (check of about 50 sentences with IWP showed that when) 311.81 389.38 P
+0.82 (the durational constraints were only a few frames long,) 311.81 377.38 P
+0.57 (many short IWPs were falsely inserted. They acted as a) 311.81 365.38 P
+4.6 (filler model for the segments where there was a) 311.81 353.38 P
+3.08 (significant acoustic mismatch between the nonnative) 311.81 341.38 P
+0.88 (speech and the native models. This false IWP insertion) 311.81 329.38 P
+2.6 (also explains the decrease in correlation observed in) 311.81 317.38 P
+3.19 (Figure 2 for duration scores at low values of IWP) 311.81 305.38 P
+3.59 (minimum duration. The false IWP insertion rate is) 311.81 293.38 P
+-0.14 (reduced greatly by enforcing a larger minimum duration.) 311.81 281.38 P
+3.21 (It is worth noting that the level of human-machine) 311.81 269.38 P
+0.02 (correlation peaks when the minimum duration constraint) 311.81 257.38 P
+(is close to the average length of a phone.) 311.81 245.38 T
+0.08 (For the best case of IWP modeling, corresponding to the) 311.81 225.38 P
+0.15 (minimum duration of 240 ms, we plotted in Figure 4 the) 311.81 213.38 P
+0.27 (percent of IWPs for each human grade. We observe that) 311.81 201.38 P
+56.69 70.87 283.46 771.02 C
+0 0 0 1 0 0 0 K
+58.69 635.05 281.47 771.02 C
+0 54 404 543 600 216.78 99.33 61.13 671.43 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: histogram_of_ratings.eps
+%%CreationDate: 03/30/98  02:29:59
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    54   404   543   600
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 150 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    54   404   543   600
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  433   133  5874  2355 rc
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6916 5185 rf
+6 w
+0 1783 5358 0 0 -1783 899 2171 4 MP
+PP
+-5358 0 0 1783 5358 0 0 -1783 899 2171 5 MP stroke
+DO
+4 w
+SO
+6 w
+0 sg
+ 899 2171 mt 6257 2171 L
+ 899  388 mt 6257  388 L
+6257 2171 mt 6257  388 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+1435 2171 mt 1435 2117 L
+1435  388 mt 1435  442 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1402 2317 mt 
+(1) s
+2506 2171 mt 2506 2117 L
+2506  388 mt 2506  442 L
+2473 2317 mt 
+(2) s
+3578 2171 mt 3578 2117 L
+3578  388 mt 3578  442 L
+3545 2317 mt 
+(3) s
+4650 2171 mt 4650 2117 L
+4650  388 mt 4650  442 L
+4617 2317 mt 
+(4) s
+5721 2171 mt 5721 2117 L
+5721  388 mt 5721  442 L
+5688 2317 mt 
+(5) s
+ 899 2171 mt  953 2171 L
+6257 2171 mt 6203 2171 L
+ 798 2215 mt 
+(0) s
+ 899 1814 mt  953 1814 L
+6257 1814 mt 6203 1814 L
+ 598 1858 mt 
+(1000) s
+ 899 1458 mt  953 1458 L
+6257 1458 mt 6203 1458 L
+ 598 1502 mt 
+(2000) s
+ 899 1101 mt  953 1101 L
+6257 1101 mt 6203 1101 L
+ 598 1145 mt 
+(3000) s
+ 899  745 mt  953  745 L
+6257  745 mt 6203  745 L
+ 598  789 mt 
+(4000) s
+ 899  388 mt  953  388 L
+6257  388 mt 6203  388 L
+ 598  432 mt 
+(5000) s
+ 899  388 mt 6257  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+6257 2171 mt 6257  388 L
+gs 899 388 5359 1784 rc
+/c8 { 0.000000 0.000000 0.562500 sr} bdef
+c8
+0 360 857 0 0 -360 1006 2171 4 MP
+PP
+0 sg
+-857 0 0 360 857 0 0 -360 1006 2171 5 MP stroke
+c8
+0 1122 857 0 0 -1122 2078 2171 4 MP
+PP
+0 sg
+-857 0 0 1122 857 0 0 -1122 2078 2171 5 MP stroke
+c8
+0 1724 858 0 0 -1724 3149 2171 4 MP
+PP
+0 sg
+-858 0 0 1724 858 0 0 -1724 3149 2171 5 MP stroke
+c8
+0 1074 857 0 0 -1074 4221 2171 4 MP
+PP
+0 sg
+-857 0 0 1074 857 0 0 -1074 4221 2171 5 MP stroke
+c8
+0 721 857 0 0 -721 5293 2171 4 MP
+PP
+0 sg
+-857 0 0 721 857 0 0 -721 5293 2171 5 MP stroke
+
+gr 
+3198 2459 mt 
+(human grades) s
+ 544 1835 mt  -90 rotate
+(number of sentences) s
+90 rotate
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(F) 69.99 657.11 T
+(igur) 75.08 657.11 T
+(e 1: Histo) 89.75 657.11 T
+(gr) 125.16 657.11 T
+(am of human gr) 133.02 657.11 T
+(ades for the nonnative) 190.14 657.11 T
+(sentences.) 151.82 646.11 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+311.81 70.87 538.58 771.02 C
+313.81 520.05 536.58 771.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 51 201 551 610 219.44 191.22 315.98 577.23 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: double_graph_post_dur_correlat_IWP.eps
+%%CreationDate: 03/30/98  02:01:22
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    51   201   551   610
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 150 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    51   201   551   610
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  399    18  6007  4911 rc
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6916 5185 rf
+6 w
+0 1783 5358 0 0 -1783 899 2171 4 MP
+PP
+-5358 0 0 1783 5358 0 0 -1783 899 2171 5 MP stroke
+DO
+4 w
+SO
+6 w
+0 sg
+ 899 2171 mt 6257 2171 L
+ 899  388 mt 6257  388 L
+6257 2171 mt 6257  388 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt  899 2117 L
+ 899  388 mt  899  442 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 866 2317 mt 
+(0) s
+1792 2171 mt 1792 2117 L
+1792  388 mt 1792  442 L
+1692 2317 mt 
+(100) s
+2685 2171 mt 2685 2117 L
+2685  388 mt 2685  442 L
+2585 2317 mt 
+(200) s
+3578 2171 mt 3578 2117 L
+3578  388 mt 3578  442 L
+3478 2317 mt 
+(300) s
+4471 2171 mt 4471 2117 L
+4471  388 mt 4471  442 L
+4371 2317 mt 
+(400) s
+5364 2171 mt 5364 2117 L
+5364  388 mt 5364  442 L
+5264 2317 mt 
+(500) s
+6257 2171 mt 6257 2117 L
+6257  388 mt 6257  442 L
+6157 2317 mt 
+(600) s
+ 899 2171 mt  953 2171 L
+6257 2171 mt 6203 2171 L
+ 631 2215 mt 
+(0.54) s
+ 899 1662 mt  953 1662 L
+6257 1662 mt 6203 1662 L
+ 631 1706 mt 
+(0.56) s
+ 899 1152 mt  953 1152 L
+6257 1152 mt 6203 1152 L
+ 631 1196 mt 
+(0.58) s
+ 899  643 mt  953  643 L
+6257  643 mt 6203  643 L
+ 698  687 mt 
+(0.6) s
+ 899  388 mt 6257  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+6257 2171 mt 6257  388 L
+gs 899 388 5359 1784 rc
+536 178 536 128 535 178 536 127 536 128 268 127 268 0 268 -25 
+268 0 267 -26 268 -76 268 -102 268 -26 268 -25 1167 1152 15 MP stroke
+DO
+5358 0 899 2069 2 MP stroke
+
+gr 
+DO
+ 577 1996 mt  -90 rotate
+(human machine correlation) s
+90 rotate
+2188  292 mt 
+(Correlations with  Posterior Scores for different IWPs) s
+SO
+1 sg
+0 1782 5358 0 0 -1782 899 4613 4 MP
+PP
+-5358 0 0 1782 5358 0 0 -1782 899 4613 5 MP stroke
+DO
+4 w
+SO
+6 w
+0 sg
+ 899 4613 mt 6257 4613 L
+ 899 2831 mt 6257 2831 L
+6257 4613 mt 6257 2831 L
+ 899 4613 mt  899 2831 L
+ 899 4613 mt 6257 4613 L
+ 899 4613 mt  899 2831 L
+ 899 4613 mt  899 4559 L
+ 899 2831 mt  899 2885 L
+ 866 4759 mt 
+(0) s
+1792 4613 mt 1792 4559 L
+1792 2831 mt 1792 2885 L
+1692 4759 mt 
+(100) s
+2685 4613 mt 2685 4559 L
+2685 2831 mt 2685 2885 L
+2585 4759 mt 
+(200) s
+3578 4613 mt 3578 4559 L
+3578 2831 mt 3578 2885 L
+3478 4759 mt 
+(300) s
+4471 4613 mt 4471 4559 L
+4471 2831 mt 4471 2885 L
+4371 4759 mt 
+(400) s
+5364 4613 mt 5364 4559 L
+5364 2831 mt 5364 2885 L
+5264 4759 mt 
+(500) s
+6257 4613 mt 6257 4559 L
+6257 2831 mt 6257 2885 L
+6157 4759 mt 
+(600) s
+ 899 4613 mt  953 4613 L
+6257 4613 mt 6203 4613 L
+ 631 4657 mt 
+(0.39) s
+ 899 4316 mt  953 4316 L
+6257 4316 mt 6203 4316 L
+ 564 4360 mt 
+(0.395) s
+ 899 4019 mt  953 4019 L
+6257 4019 mt 6203 4019 L
+ 698 4063 mt 
+(0.4) s
+ 899 3722 mt  953 3722 L
+6257 3722 mt 6203 3722 L
+ 564 3766 mt 
+(0.405) s
+ 899 3425 mt  953 3425 L
+6257 3425 mt 6203 3425 L
+ 631 3469 mt 
+(0.41) s
+ 899 3128 mt  953 3128 L
+6257 3128 mt 6203 3128 L
+ 564 3172 mt 
+(0.415) s
+ 899 2831 mt  953 2831 L
+6257 2831 mt 6203 2831 L
+ 631 2875 mt 
+(0.42) s
+ 899 2831 mt 6257 2831 L
+ 899 4613 mt 6257 4613 L
+ 899 4613 mt  899 2831 L
+6257 4613 mt 6257 2831 L
+gs 899 2831 5359 1783 rc
+536 119 536 0 535 60 536 59 536 0 268 -59 268 -60 268 0 
+268 -119 267 0 268 -118 268 -238 268 -416 268 -356 1167 4494 15 MP stroke
+DO
+5358 0 899 3366 2 MP stroke
+
+gr 
+DO
+ 510 4437 mt  -90 rotate
+(human machine correlation) s
+90 rotate
+2802 4900 mt 
+(IWP minimum duration msec.) s
+2202 2735 mt 
+(Correlations with  Duration Scores for different IWPs) s
+SO
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(F) 321.78 564.33 T
+(igur) 326.87 564.33 T
+(e 2: Human-mac) 341.54 564.33 T
+(hine corr) 401.89 564.33 T
+(elation as a function of the) 434.8 564.33 T
+(minimum dur) 331.42 553.33 T
+(ation constr) 379.54 553.33 T
+(aint for the IWP models for) 422.66 553.33 T
+(posterior and dur) 325.9 542.33 T
+(ation scor) 389.27 542.33 T
+(es; the dotted lines show the) 425.19 542.33 T
+(corr) 362.21 531.33 T
+(elation for the baseline models.) 377.37 531.33 T
+1 8 Q
+(IWP) 445 729.89 T
+(NO IWP) 367.23 693.22 T
+(IWP) 361.67 613.78 T
+(NO IWP) 340.56 641.55 T
+321.25 705.58 321.25 706.83 2 L
+0.5 H
+2 Z
+N
+319.25 610.58 319.25 611.83 2 L
+N
+0 0 0 1 0 0 0 K
+311.81 70.87 538.58 771.02 C
+0 0 595.28 841.89 C
+311.81 70.87 538.58 771.02 C
+313.81 70.87 536.58 194.06 C
+0 65 404 551 600 214.33 89.33 316.64 102.24 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: percent_words_w_IWP_distribution.eps
+%%CreationDate: 03/30/98  02:20:24
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    65   404   551   600
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 150 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    65   404   551   600
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  566   133  5840  2355 rc
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6916 5185 rf
+6 w
+0 1783 5358 0 0 -1783 899 2171 4 MP
+PP
+-5358 0 0 1783 5358 0 0 -1783 899 2171 5 MP stroke
+DO
+4 w
+SO
+6 w
+0 sg
+ 899 2171 mt 6257 2171 L
+ 899  388 mt 6257  388 L
+6257 2171 mt 6257  388 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt  899 2117 L
+ 899  388 mt  899  442 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 866 2317 mt 
+(0) s
+1792 2171 mt 1792 2117 L
+1792  388 mt 1792  442 L
+1692 2317 mt 
+(100) s
+2685 2171 mt 2685 2117 L
+2685  388 mt 2685  442 L
+2585 2317 mt 
+(200) s
+3578 2171 mt 3578 2117 L
+3578  388 mt 3578  442 L
+3478 2317 mt 
+(300) s
+4471 2171 mt 4471 2117 L
+4471  388 mt 4471  442 L
+4371 2317 mt 
+(400) s
+5364 2171 mt 5364 2117 L
+5364  388 mt 5364  442 L
+5264 2317 mt 
+(500) s
+6257 2171 mt 6257 2117 L
+6257  388 mt 6257  442 L
+6157 2317 mt 
+(600) s
+ 899 2171 mt  953 2171 L
+6257 2171 mt 6203 2171 L
+ 798 2215 mt 
+(0) s
+ 899 1814 mt  953 1814 L
+6257 1814 mt 6203 1814 L
+ 798 1858 mt 
+(2) s
+ 899 1458 mt  953 1458 L
+6257 1458 mt 6203 1458 L
+ 798 1502 mt 
+(4) s
+ 899 1101 mt  953 1101 L
+6257 1101 mt 6203 1101 L
+ 798 1145 mt 
+(6) s
+ 899  745 mt  953  745 L
+6257  745 mt 6203  745 L
+ 798  789 mt 
+(8) s
+ 899  388 mt  953  388 L
+6257  388 mt 6203  388 L
+ 731  432 mt 
+(10) s
+ 899  388 mt 6257  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+6257 2171 mt 6257  388 L
+gs 899 388 5359 1784 rc
+536 18 536 18 535 18 536 17 536 36 268 36 268 18 268 35 
+268 54 267 89 268 125 268 196 268 410 268 321 1167 691 15 MP stroke
+
+gr 
+2802 2459 mt 
+(IWP minimum duration msec.) s
+ 677 1978 mt  -90 rotate
+(Percent of words with IWP) s
+90 rotate
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(F) 321.99 90.7 T
+(igur) 327.09 90.7 T
+(e 3: P) 341.76 90.7 T
+(er) 362.53 90.7 T
+(cent of wor) 369.69 90.7 T
+(ds with IWPs as a function of the) 409.86 90.7 T
+(minimum dur) 371.56 79.7 T
+(ation constr) 419.67 79.7 T
+(aint.) 462.79 79.7 T
+0 0 0 1 0 0 0 K
+311.81 70.87 538.58 771.02 C
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+0 X
+0 0 0 1 0 0 0 K
+-0.26 (most of the inserted IWPs occur in the sentences with the) 56.69 648.39 P
+(lower pronunciation grades.) 56.69 636.39 T
+-0.57 (As we expected, one effect of IWP modeling was to make) 56.69 616.39 P
+-0.5 (the machine scores more consistent. This was reflected as) 56.69 604.39 P
+0.85 (a significant reduction in the standard deviations of the) 56.69 592.39 P
+1.6 (conditional distributions of machine scores per human) 56.69 580.39 P
+0.33 (grade. The reductions were 27%, 29%, 19%, 10.3% and) 56.69 568.39 P
+(5% for the corresponding grades 1 to 5, respectively.) 56.69 556.39 T
+1.55 (A general nonlinear transformation, implemented by a) 56.69 536.39 P
+-0.02 (neural network, can optimally map one or more machine) 56.69 524.39 P
+3.43 (scores to the corresponding human grades [5]. The) 56.69 512.39 P
+2.38 (evaluation data was divided into two halves with no) 56.69 500.39 P
+-0.47 (common speakers, and a network was trained in each half) 56.69 488.39 P
+0.04 (to map the machine scores of the other half. The human-) 56.69 476.39 P
+1.49 (machine correlation results obtained in each half were) 56.69 464.39 P
+-0.04 (averaged and are shown in Table 1 for both standard and) 56.69 452.39 P
+0.61 (the best IWP models. The correlations with the original) 56.69 440.39 P
+(raw scores \050with no mapping\051 are also shown.) 56.69 428.39 T
+0.92 (We observe that, for the posterior scores, the nonlinear) 56.69 408.39 P
+4.19 (map produced a much larger improvement on the) 56.69 396.39 P
+0.42 (baseline no-IWP models than in the IWP-based models.) 56.69 384.39 P
+7.98 (Analyzing the mappings we found that those) 56.69 372.39 P
+4.84 (corresponding to the no-IWP models were highly) 56.69 360.39 P
+1.5 (nonlinear while those corresponding to the IWP-based) 56.69 348.39 P
+0.58 (models were quasi-linear. The effect of the nonlinearity) 56.69 336.39 P
+0.68 (on the no-IWP scores was to compress the range of the) 56.69 324.39 P
+-0.04 (mapped scores in the region of very low machine scores,) 56.69 312.39 P
+(which are mostly associated to the mismatched IWPs.) 56.69 300.39 T
+0.3 (The duration scores did not show significant differences) 56.69 87.39 P
+5.72 (between the mapped and unmapped cases. They) 56.69 75.39 P
+2.52 (produced a small but significant improvement in the) 311.81 764.36 P
+2.34 (overall correlation when combined with the posterior) 311.81 752.36 P
+(scores.) 311.81 740.36 T
+0 12 Q
+(5. Discussion and Summary) 354.19 718.02 T
+1 10 Q
+4.88 (We described the effect of modeling IWPs in a) 311.81 697.36 P
+-0.23 (pronunciation scoring system. We showed that it leads to) 311.81 685.36 P
+1.31 (more consistent machine scores. Nevertheless, because) 311.81 673.36 P
+0.05 (IWPs appear mainly in sentences with the lowest scores,) 311.81 661.36 P
+1.89 (the nonlinear mapping of machine scores allowed the) 311.81 649.36 P
+4.38 (non-IWP-based models to reach values of human-) 311.81 637.36 P
+1.49 (machine correlation similar to those of the IWP-based) 311.81 625.36 P
+0.42 (models. We argue that IWP modeling allows evaluation) 311.81 613.36 P
+2.64 (of the segmental pronunciation quality independently) 311.81 601.36 P
+2.76 (from the level of fluency. Furthermore, the detected) 311.81 589.36 P
+1.2 (IWPs could be used to derive an independent machine) 311.81 577.36 P
+2.64 (score to evaluate the level of this particular type of) 311.81 565.36 P
+(disfluency.) 311.81 553.36 T
+0 11 Q
+(Ackno) 382.17 530.69 T
+(wledgments) 412.62 530.69 T
+1 10 Q
+2.17 (Special thanks to Mar\222a Ramos Martorell for help in) 311.81 510.36 P
+5.81 (running some of the experiments. We gratefully) 311.81 498.36 P
+1.13 (acknowledge support from the U.S. Government under) 311.81 486.36 P
+(the Technology Reinvestment Program.) 311.81 474.36 T
+0 11 Q
+(Refer) 399.64 451.69 T
+(ences) 425.7 451.69 T
+1 10 Q
+(1.) 311.81 431.36 T
+-0.06 (J. Bernstein, M. Cohen, H. Murveit, D. Rtischev, and) 325.78 431.36 P
+1.07 (M. Weintraub, \322Automatic Evaluation and Training) 325.78 419.36 P
+-0.55 (in English Pronunciation\323,) 325.78 407.36 P
+2 F
+-0.55 (ICSLP 1990, Kobe, Japan.) 433.02 407.36 P
+1 F
+(2.) 311.81 387.36 T
+0.38 (J. Bernstein, \322Automatic Grading of English Spoken) 325.78 387.36 P
+2.79 (by Japanese Students\323,) 325.78 375.36 P
+2 F
+2.79 (SRI International Internal) 428.57 375.36 P
+(Reports Project 2417, 1992.) 325.78 363.36 T
+1 F
+(3.) 311.81 343.36 T
+6.22 (V) 325.78 343.36 P
+6.22 (. Dig) 331.71 343.36 P
+6.22 (alakis) 357.88 343.36 P
+6.22 (, \322Algorithm Development in the) 381.21 343.36 P
+5.64 (Autograder Project\323,) 325.78 331.36 P
+2 F
+5.64 (SRI International Internal) 422.87 331.36 P
+(Communication, 1992) 325.78 319.36 T
+1 F
+(.) 414.67 319.36 T
+(4.) 311.81 299.36 T
+-0.2 (L. Neumeyer, H. Franco, M. Weintraub, and P. Price,) 325.78 299.36 P
+0.11 (\322Automatic Text-Independent Pronunciation Scoring) 325.78 287.36 P
+3.81 (of Foreign Language Student Speech\323,) 325.78 275.36 P
+2 F
+3.81 (Proc. of) 502.56 275.36 P
+13.2 (ICSLP 96) 325.78 263.36 P
+1 F
+13.2 (, pp. 1457-1460, Philadelphia,) 378.15 263.36 P
+(Pennsylvania, 1996.) 325.78 251.36 T
+(5.) 311.81 231.36 T
+2.16 (H. Franco, L. Neumeyer, Y. Kim, and O. Ronen,) 325.78 231.36 P
+4.46 (\322Automatic Pronunciation Scoring for Language) 325.78 219.36 P
+-0.11 (Instruction\323,) 325.78 207.36 P
+2 F
+-0.11 (Proc. Intl. Conf. on Acoust., Speech and) 378.44 207.36 P
+(Signal Processing 97,) 325.78 195.36 T
+1 F
+( pp. 1471-1474, Munich, 1997.) 413.28 195.36 T
+(6.) 311.81 175.36 T
+1.59 (M. Rypa, \322ECHOS: A Voice Interactive Language) 325.78 175.36 P
+1.4 (Training System\323,) 325.78 163.36 P
+2 F
+1.4 (Proc. of) 404.4 163.36 P
+1.4 (CALICO) 441.92 163.36 P
+1 F
+1.4 (, Albuquerque,) 477.48 163.36 P
+(New Mexico, 1996.) 325.78 151.36 T
+(7.) 311.81 131.36 T
+7.9 (V. Digalakis and H. Murveit, \322GENONES:) 325.78 131.36 P
+0.77 (Optimizing the Degree of Mixture Tying in a Large) 325.78 119.36 P
+2.62 (Vocabulary Hidden Markov Model Based Speech) 325.78 107.36 P
+3.68 (Recognizer\323,) 325.78 95.36 P
+2 F
+3.68 (Proc. of) 384.44 95.36 P
+3.68 (ICASSP94,) 426.52 95.36 P
+1 F
+3.68 (pp. I537-I540) 477.41 95.36 P
+2 F
+3.68 (,) 536.08 95.36 P
+1 F
+(1994.) 325.78 83.36 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+0.12 (T) 58.64 278.39 P
+0.12 (able 1: Human-mac) 63.28 278.39 P
+0.12 (hine corr) 143.35 278.39 P
+0.12 (elations with mapped and) 180.04 278.39 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(combined mac) 58.64 266.39 T
+(hine scor) 116.53 266.39 T
+(es) 153.1 266.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Machine scor) 88.06 225.89 T
+(es) 145.37 225.89 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Human-machine) 196.48 243.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(corr) 206.86 231.39 T
+(elations) 225 231.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(baseline) 192.4 208.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(IWP) 248.83 208.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Ra) 80.97 187.39 T
+(w posterior score) 91.93 187.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.542) 198.38 187.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.587) 247.58 187.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Mapped posterior score) 73.67 168.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.586) 198.38 168.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.593) 247.58 168.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Ra) 82.08 149.39 T
+(w duration score) 93.04 149.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.408) 198.38 149.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.412) 247.58 149.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Mapped duration score) 74.78 130.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.416) 198.38 130.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.417) 247.58 130.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Mapped posterior + duration) 63.49 111.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.607) 198.38 111.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(0.609) 247.58 111.39 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+58.64 256.81 58.64 104.31 2 L
+V
+0.5 H
+0 Z
+N
+183.12 257.31 183.12 103.81 2 L
+V
+N
+236.14 222.31 236.14 103.81 2 L
+V
+N
+281.51 256.81 281.51 104.31 2 L
+V
+N
+58.39 257.06 281.76 257.06 2 L
+V
+N
+182.87 222.06 281.76 222.06 2 L
+V
+N
+58.89 200.31 281.26 200.31 2 L
+V
+N
+58.89 197.81 281.26 197.81 2 L
+V
+N
+58.39 180.06 281.76 180.06 2 L
+V
+N
+58.89 162.31 281.26 162.31 2 L
+V
+N
+58.89 159.81 281.26 159.81 2 L
+V
+N
+58.39 142.06 281.76 142.06 2 L
+V
+N
+58.89 124.31 281.26 124.31 2 L
+V
+N
+58.89 121.81 281.26 121.81 2 L
+V
+N
+58.39 104.06 281.76 104.06 2 L
+V
+N
+56.69 70.87 283.46 771.02 C
+0 0 0 1 0 0 0 K
+58.69 655.06 281.47 771.02 C
+0 79 413 543 590 217.89 90.33 61.97 677.59 FMBEGINEPSF
+%%BeginDocument: <inline>
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: distribution_of_IWP_per_grade.eps
+%%CreationDate: 03/30/98  02:12:44
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    79   413   543   590
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 150 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% orientation switch
+/portraitMode 	0 def
+/landscapeMode 	1 def
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize 0 0 FontSize neg 0 0]
+	makefont
+	setfont
+	}bdef
+
+/reencode {
+exch dup where
+{pop load} {pop StandardEncoding} ifelse
+exch
+dup 3 1 roll
+findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def
+  currentdict
+end
+definefont pop
+} bdef
+
+/isroman {
+findfont /CharStrings get
+/Agrave known
+} bdef
+
+/FMSR {
+3 1 roll 1 index
+dup isroman
+{reencode} {pop pop} ifelse
+exch FMS
+} bdef
+
+/csm {
+	1 dpi2point div -1 dpi2point div scale
+	neg translate
+	landscapeMode eq {90 rotate} if
+	} bdef
+
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {
+	lineto
+	stroke
+	} bdef
+/MP {
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {
+	{rlineto} repeat
+	} bdef
+/PP {
+	closepath eofill
+	} bdef
+/DP {
+	closepath stroke
+	} bdef
+/MR {
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {
+	MR stroke
+	} bdef
+/PR {
+	MR fill
+	} bdef
+/L1i {
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/tMatrix matrix def
+/MakeOval {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 0 360 arc
+	tMatrix setmatrix
+	} bdef
+/FO {
+	MakeOval
+	stroke
+	} bdef
+/PO {
+	MakeOval
+	fill
+	} bdef
+
+/PD {
+	currentlinecap 1 setlinecap 3 1 roll 2 copy moveto lineto stroke setlinecap
+	} bdef
+
+/FA {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arc
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PA {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arc
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+/FAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate scale
+	0 0 1 5 -2 roll arcn
+	tMatrix setmatrix
+	stroke
+	} bdef
+/PAn {
+	newpath
+	tMatrix currentmatrix pop
+	translate 0 0 moveto scale
+	0 0 1 5 -2 roll arcn
+	closepath
+	tMatrix setmatrix
+	fill
+	} bdef
+
+
+
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    79   413   543   590
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  733   259  5574  2124 rc
+88 dict begin %Colortable dictionary
+/c0 { 0 0 0 sr} bdef
+/c1 { 1 1 1 sr} bdef
+/c2 { 1 0 0 sr} bdef
+/c3 { 0 1 0 sr} bdef
+/c4 { 0 0 1 sr} bdef
+/c5 { 1 1 0 sr} bdef
+/c6 { 1 0 1 sr} bdef
+/c7 { 0 1 1 sr} bdef
+1 j
+1 sg
+   0    0 6916 5185 rf
+6 w
+0 1783 5358 0 0 -1783 899 2171 4 MP
+PP
+-5358 0 0 1783 5358 0 0 -1783 899 2171 5 MP stroke
+DO
+4 w
+SO
+6 w
+0 sg
+ 899 2171 mt 6257 2171 L
+ 899  388 mt 6257  388 L
+6257 2171 mt 6257  388 L
+ 899 2171 mt  899  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+1435 2171 mt 1435 2117 L
+1435  388 mt 1435  442 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1402 2317 mt 
+(1) s
+2506 2171 mt 2506 2117 L
+2506  388 mt 2506  442 L
+2473 2317 mt 
+(2) s
+3578 2171 mt 3578 2117 L
+3578  388 mt 3578  442 L
+3545 2317 mt 
+(3) s
+4650 2171 mt 4650 2117 L
+4650  388 mt 4650  442 L
+4617 2317 mt 
+(4) s
+5721 2171 mt 5721 2117 L
+5721  388 mt 5721  442 L
+5688 2317 mt 
+(5) s
+ 899 2171 mt  953 2171 L
+6257 2171 mt 6203 2171 L
+ 798 2215 mt 
+(0) s
+ 899 1814 mt  953 1814 L
+6257 1814 mt 6203 1814 L
+ 798 1858 mt 
+(1) s
+ 899 1458 mt  953 1458 L
+6257 1458 mt 6203 1458 L
+ 798 1502 mt 
+(2) s
+ 899 1101 mt  953 1101 L
+6257 1101 mt 6203 1101 L
+ 798 1145 mt 
+(3) s
+ 899  745 mt  953  745 L
+6257  745 mt 6203  745 L
+ 798  789 mt 
+(4) s
+ 899  388 mt  953  388 L
+6257  388 mt 6203  388 L
+ 798  432 mt 
+(5) s
+ 899  388 mt 6257  388 L
+ 899 2171 mt 6257 2171 L
+ 899 2171 mt  899  388 L
+6257 2171 mt 6257  388 L
+gs 899 388 5359 1784 rc
+/c8 { 0.000000 0.000000 0.562500 sr} bdef
+c8
+0 1569 857 0 0 -1569 1006 2171 4 MP
+PP
+0 sg
+-857 0 0 1569 857 0 0 -1569 1006 2171 5 MP stroke
+c8
+0 785 857 0 0 -785 2078 2171 4 MP
+PP
+0 sg
+-857 0 0 785 857 0 0 -785 2078 2171 5 MP stroke
+c8
+0 464 858 0 0 -464 3149 2171 4 MP
+PP
+0 sg
+-858 0 0 464 858 0 0 -464 3149 2171 5 MP stroke
+c8
+0 214 857 0 0 -214 4221 2171 4 MP
+PP
+0 sg
+-857 0 0 214 857 0 0 -214 4221 2171 5 MP stroke
+c8
+0 107 857 0 0 -107 5293 2171 4 MP
+PP
+0 sg
+-857 0 0 107 857 0 0 -107 5293 2171 5 MP stroke
+
+gr 
+
+end
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
+
+%%EndDocument
+FMENDEPSF
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(F) 75.07 667.67 T
+(igur) 80.16 667.67 T
+(e 4: P) 94.83 667.67 T
+(er) 115.61 667.67 T
+(cent of wor) 122.77 667.67 T
+(ds with IWPs for eac) 162.94 667.67 T
+(h gr) 237.8 667.67 T
+(ade) 252.41 667.67 T
+(.) 265.27 667.67 T
+0 0 0 1 0 0 0 K
+56.69 70.87 283.46 771.02 C
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 4
+%%DocumentFonts: Times-Bold
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Symbol
+%%EOF

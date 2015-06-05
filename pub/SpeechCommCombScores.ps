@@ -1,0 +1,6700 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 19 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Italic FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(1) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 18 Q
+(Combination of Machine Scores for Automatic Grading of) 94.78 708 T
+(Pronunciation Quality) 226.25 685 T
+1 12 Q
+(Hor) 124.09 652 T
+(acio F) 143.24 652 T
+(r) 173.57 652 T
+(anco, Leonar) 178.06 652 T
+(do Neume) 241.61 652 T
+(yer) 289.58 652 T
+(, V) 303.57 652 T
+(assilios Digalakis, and Orith Ronen) 315.57 652 T
+0 F
+(Speech T) 197.12 620 T
+(echnology and Research Laboratory) 241.27 620 T
+(SRI International) 264.5 604 T
+(February 28, 1998) 261.84 572 T
+2 11 Q
+(Abstract) 285.54 530.67 T
+0 F
+(This w) 72 506.67 T
+(ork is part of an ef) 102.14 506.67 T
+(fort aimed at de) 182.81 506.67 T
+(v) 251.88 506.67 T
+(eloping computer) 257.22 506.67 T
+(-based systems for language instruction; we) 334.3 506.67 T
+-0 (address the task of grading the pronunciation quality of the speech of a student of a foreign language. The) 72 486.67 P
+(automatic grading system uses SRI\325) 72 466.67 T
+(s Decipher\252 continuous speech recognition system to generate pho-) 229.66 466.67 T
+(netic se) 72 446.67 T
+(gmentations. Based on these se) 105.13 446.67 T
+(gmentations and probabilistic models we produce dif) 242.15 446.67 T
+(ferent pronun-) 475.29 446.67 T
+(ciation scores for indi) 72 426.67 T
+(vidual or groups of sentences that can be used as predictors of the pronunciation) 167.35 426.67 T
+-0.35 (quality) 72 406.67 P
+-0.35 (. Dif) 101.84 406.67 P
+-0.35 (ferent types of these machine scores can be combined to obtain a better prediction of the o) 121.38 406.67 P
+-0.35 (v) 512.72 406.67 P
+-0.35 (erall) 518.05 406.67 P
+-0.42 (pronunciation quality) 72 386.67 P
+-0.42 (. In this paper we re) 165.28 386.67 P
+-0.42 (vie) 250.27 386.67 P
+-0.42 (w some of the best-performing machine scores, and discuss the) 263.44 386.67 P
+(application of se) 72 366.67 T
+(v) 144.43 366.67 T
+(eral methods based on linear and nonlinear mapping and combination of indi) 149.77 366.67 T
+(vidual) 487.7 366.67 T
+(machine scores to predict the pronunciation quality grade that a human e) 72 346.67 T
+(xpert w) 391.69 346.67 T
+(ould ha) 424.88 346.67 T
+(v) 457.35 346.67 T
+(e gi) 462.69 346.67 T
+(v) 478.6 346.67 T
+(en. W) 483.94 346.67 T
+(e e) 509.33 346.67 T
+(v) 521.57 346.67 T
+(al-) 526.79 346.67 T
+(uate these methods in a database that consists of pronunciation-quality-graded speech from American stu-) 72 326.67 T
+(dents speaking French. W) 72 306.67 T
+(ith predictors based on spectral match and on durational characteristics, we \336nd) 185.82 306.67 T
+(that the combination of scores impro) 72 286.67 T
+(v) 233.46 286.67 T
+(ed the prediction of the human grades and that nonlinear mapping) 238.79 286.67 T
+(and combination methods performed better than linear ones. Characteristics of the dif) 72 266.67 T
+(ferent nonlinear) 448.1 266.67 T
+(methods studied are discussed.) 72 246.67 T
+1 10 Q
+(K) 72 186.33 T
+(e) 78.32 186.33 T
+(ywor) 82.46 186.33 T
+(ds:) 102.09 186.33 T
+0 F
+( Automatic pronunciation scoring; Combination of scores; Hidden Mark) 114.31 186.33 T
+(o) 403.63 186.33 T
+(v models; Speech Recognition;) 408.48 186.33 T
+(Pronunciation quality assessment; Language instruction systems; Computer aided language learning.) 72 168.33 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(2) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(1  Intr) 72 710.67 T
+(oduction) 109.86 710.67 T
+0 11 Q
+(The aim of this w) 72 684.67 T
+(ork is to de) 149.49 684.67 T
+(v) 198.41 684.67 T
+(elop methods for automatic assessment of pronunciation quality) 203.75 684.67 T
+(, to be used) 484.42 684.67 T
+(as part of a computer) 72 664.67 T
+(-aided language instruction system [1][2]. T) 164.64 664.67 T
+(ypical foreign language instruction) 357.45 664.67 T
+(courses focus mainly on reading, writing, and listening comprehension, much less ef) 72 644.67 T
+(fort is de) 443.84 644.67 T
+(v) 482.67 644.67 T
+(oted to) 487.95 644.67 T
+(teaching correct pronunciation. One of the reasons possibly being that it requires more e) 72 624.67 T
+(xpensi) 459.82 624.67 T
+(v) 488.26 624.67 T
+(e) 493.6 624.67 T
+-0 (resources, such as e) 72 604.67 P
+-0 (xtensi) 158.58 604.67 P
+-0 (v) 184.58 604.67 P
+-0 (e practice with pri) 189.91 604.67 P
+-0 (v) 269.36 604.67 P
+-0 (ate tutors who are nati) 274.59 604.67 P
+-0 (v) 372.06 604.67 P
+-0 (es of the tar) 377.4 604.67 P
+-0 (get language. An interac-) 428.82 604.67 P
+-0.36 (ti) 72 584.67 P
+-0.36 (v) 77.84 584.67 P
+-0.36 (e system capable of grading the pronunciation quality could f) 83.18 584.67 P
+-0.36 (acilitate the pronunciation learning process) 349.62 584.67 P
+(by gi) 72 564.67 T
+(ving feedback on the students ability and progress to produce the foreign language sounds. A proto-) 94.03 564.67 T
+(type application [3] allo) 72 544.67 T
+(ws students to listen to nati) 177.13 544.67 T
+(v) 296.33 544.67 T
+(es saying phrases, or selected parts of phrases, and) 301.67 544.67 T
+(record themselv) 72 524.67 T
+(es to obtain pronunciations scores. Se) 142.4 524.67 T
+(gments that are dif) 307.83 524.67 T
+(\336cult to produce can be practiced) 389.73 524.67 T
+(by selecting the tar) 72 504.67 T
+(get w) 155.2 504.67 T
+(ords and obtaining scores for them. The content can be easily updated to pro) 179.23 504.67 T
+(vide) 515.11 504.67 T
+(ne) 72 484.67 T
+(w lessons with minimum ef) 82.11 484.67 T
+(fort.) 203.45 484.67 T
+(The basic pronunciation scoring paradigm [4][5][6] uses hidden Mark) 72 453.67 T
+(o) 379.82 453.67 T
+(v models \050HMMs\051 [7] to generate) 385.16 453.67 T
+(phonetic se) 72 433.67 T
+(gmentations of the student\325) 121.63 433.67 T
+(s speech. From these se) 241.1 433.67 T
+(gmentations, we use the HMMs to obtain) 344.5 433.67 T
+-0.23 (spectral match and duration scores. The ef) 72 413.67 P
+-0.23 (fecti) 256.39 413.67 P
+-0.23 (v) 275.67 413.67 P
+-0.23 (eness of the dif) 281 413.67 P
+-0.23 (ferent machine scores is e) 346.95 413.67 P
+-0.23 (v) 459.39 413.67 P
+-0.23 (aluated based on) 464.62 413.67 P
+(their correlation with human grades on a lar) 72 393.67 T
+(ge database. Pre) 264.57 393.67 T
+(vious approaches were based on statistical) 335.46 393.67 T
+(models b) 72 373.67 T
+(uilt for speci\336c sentences [6]. The current algorithms were designed to produce pronunciation) 111.81 373.67 T
+(scores for arbitrary sentences, that is, sentences for which there is no acoustic training data [1]. This) 72 353.67 T
+(approach allo) 72 333.67 T
+(ws great \337e) 131.29 333.67 T
+(xibility in the design of language instruction systems because ne) 181.84 333.67 T
+(w pronunciation) 464.79 333.67 T
+(e) 72 313.67 T
+(x) 76.72 313.67 T
+(ercises can be added without retraining the scoring system.) 82.05 313.67 T
+(In this w) 72 282.67 T
+(ork we focus on the problem of the mapping and combination of dif) 110.39 282.67 T
+(ferent machine scores to) 408.91 282.67 T
+(obtain a better prediction of the human grades. W) 72 262.67 T
+(e e) 289.55 262.67 T
+(xperimented with linear and nonlinear re) 301.9 262.67 T
+(gression) 481.06 262.67 T
+(based on neural netw) 72 242.67 T
+(orks and re) 165.06 242.67 T
+(gression trees as well as with an estimation-based approach to predict) 213.77 242.67 T
+(human grades from machine scores.) 72 222.67 T
+2 14 Q
+(2  The Database) 72 187.67 T
+0 11 Q
+(The requirements of data needed for de) 72 161.67 T
+(v) 244.61 161.67 T
+(elopment of the scoring system are more demanding than those) 249.95 161.67 T
+-0.07 (typical of speech recognition systems. Here we describe part of the data collected under the VIL) 72 141.67 P
+-0.07 (TS \050V) 493.3 141.67 P
+-0.07 (oice) 519 141.67 P
+(Interacti) 72 121.67 T
+(v) 108.38 121.67 T
+(e Language T) 113.71 121.67 T
+(raining System\051 project [1]. One database of transcribed nati) 173.8 121.67 T
+(v) 439.61 121.67 T
+(e speech is used for) 444.94 121.67 T
+(training models for speech recognition and pronunciation scoring. A second database of nonnati) 72 101.67 T
+(v) 494.23 101.67 T
+(e read) 499.57 101.67 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(3) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+-0.02 (speech is transcribed and graded for pronunciation quality at dif) 72 712.67 P
+-0.02 (ferent le) 352.89 712.67 P
+-0.02 (v) 388.93 712.67 P
+-0.02 (els of detail by e) 394.27 712.67 P
+-0.02 (xpert human rat-) 466.73 712.67 P
+(ers; it is used to de) 72 692.67 T
+(v) 153.92 692.67 T
+(elop and calibrate the pronunciation scoring algorithms.) 159.25 692.67 T
+(The nati) 72 661.67 T
+(v) 108.08 661.67 T
+(e speech database consisted of 16,000 sentences recorded from 100 nati) 113.42 661.67 T
+(v) 428.7 661.67 T
+(e speak) 434.03 661.67 T
+(ers of P) 466.6 661.67 T
+(arisian) 500.04 661.67 T
+-0.31 (French. The recordings consisted of dif) 72 641.67 P
+-0.31 (ferent read ne) 243.09 641.67 P
+-0.31 (wspaper sentences, with no common sentences across) 302.66 641.67 P
+(speak) 72 621.67 T
+(ers to maximize the co) 96.94 621.67 T
+(v) 196.37 621.67 T
+(erage of dif) 201.7 621.67 T
+(ferent w) 252.12 621.67 T
+(ords and conte) 288.36 621.67 T
+(xts. The a) 352.35 621.67 T
+(v) 395.2 621.67 T
+(erage length of a sentence w) 400.54 621.67 T
+(as) 525.35 621.67 T
+(19 w) 72 601.67 T
+(ords.) 93.58 601.67 T
+(The nonnati) 72 570.67 T
+(v) 124.58 570.67 T
+(e corpus used for this study consisted of 5089 dif) 129.91 570.67 T
+(ferent sentences read from ne) 345.65 570.67 T
+(wspapers by) 474.88 570.67 T
+(100 American students speaking in French. The a) 72 550.67 T
+(v) 289.91 550.67 T
+(erage length of the nonnati) 295.24 550.67 T
+(v) 412.89 550.67 T
+(e sentences w) 418.23 550.67 T
+(as 14 w) 478.59 550.67 T
+(ords.) 512.09 550.67 T
+-0.12 (W) 72 530.67 P
+-0.12 (e di) 81.5 530.67 P
+-0.12 (vided the 5089 sentences into tw) 97.3 530.67 P
+-0.12 (o equally sized sets, with no common speak) 240.5 530.67 P
+-0.12 (ers, that were used alter-) 432.65 530.67 P
+-0.11 (nati) 72 510.67 P
+-0.11 (v) 88.22 510.67 P
+-0.11 (ely as de) 93.56 510.67 P
+-0.11 (v) 131.55 510.67 P
+-0.11 (elopment and e) 136.89 510.67 P
+-0.11 (v) 203.6 510.67 P
+-0.11 (aluation sets. All the speech w) 208.82 510.67 P
+-0.11 (as recorded in quiet of) 341.98 510.67 P
+-0.11 (\336ces by a high-quality) 439.62 510.67 P
+-0.12 (Sennheiser microphone. The o) 72 490.67 P
+-0.12 (v) 205.9 490.67 P
+-0.12 (erall pronunciation of each of the 5089 nonnati) 211.24 490.67 P
+-0.12 (v) 416.96 490.67 P
+-0.12 (e sentences w) 422.3 490.67 P
+-0.12 (as rated on a) 482.43 490.67 P
+(scale of 1 to 5 by human e) 72 470.67 T
+(xperts. There w) 187.62 470.67 T
+(as some o) 256.24 470.67 T
+(v) 299.46 470.67 T
+(erlap in the speech material rated by the teachers for) 304.79 470.67 T
+(consistenc) 72 450.67 T
+(y checking.) 117.66 450.67 T
+2 14 Q
+(3  Pr) 72 415.67 T
+(onunciation Scoring) 100.52 415.67 T
+(3.1  Human Scoring) 72 380.67 T
+0 11 Q
+(The human grades are the reference ag) 72 355.67 T
+(ainst which the performance of the automatic scoring systems) 242.37 355.67 T
+(should be tested and calibrated; as such, it is important to assess the consistenc) 72 335.67 T
+(y of these grades both) 418.3 335.67 T
+(between raters \050inter) 72 315.67 T
+(-rater correlations\051 and within each rater \050intra-rater correlations\051 when multiple rat-) 162.19 315.67 T
+-0.03 (ings for the same sentence are gi) 72 295.67 P
+-0.03 (v) 215.12 295.67 P
+-0.03 (en. T) 220.45 295.67 P
+-0.03 (w) 242.15 295.67 P
+-0.03 (o types of correlation were computed. At the) 249.98 295.67 P
+1 F
+-0.03 (sentence le) 449.23 295.67 P
+-0.03 (vel,) 497.6 295.67 P
+0 F
+-0.03 ( pairs) 513.17 295.67 P
+(of corresponding ratings for an) 72 275.67 T
+(y pair of raters for all the indi) 208.08 275.67 T
+(vidual sentences were correlated. At the) 337.64 275.67 T
+1 F
+(speak) 72 255.67 T
+(er le) 96.94 255.67 T
+(vel) 116.63 255.67 T
+0 F
+(, \336rst, the grades for all the sentences from each speak) 129.45 255.67 T
+(er were a) 367.61 255.67 T
+(v) 407.7 255.67 T
+(eraged, and then the) 413.03 255.67 T
+(sequence of pairs of corresponding a) 72 235.67 T
+(v) 233.37 235.67 T
+(erage grades for each of the speak) 238.71 235.67 T
+(ers w) 388.25 235.67 T
+(as correlated.) 411.66 235.67 T
+(In a preliminary study) 72 204.67 T
+(, \336v) 168.74 204.67 T
+(e French teachers, certi\336ed language testers, were selected from a group of ten) 185.7 204.67 T
+-0.29 (candidates as the \336v) 72 184.67 P
+-0.29 (e most self-consistent raters. This panel of \336v) 159.87 184.67 P
+-0.29 (e teachers rated the o) 358.11 184.67 P
+-0.29 (v) 449.64 184.67 P
+-0.29 (erall pronunciation) 454.97 184.67 P
+(quality of each of the 5089 nonnati) 72 164.67 T
+(v) 225.7 164.67 T
+(e sentences on a scale of 1 to 5, ranging from the cate) 231.04 164.67 T
+(gories \322strongly) 466.39 164.67 T
+(nonnati) 72 144.67 T
+(v) 104.72 144.67 T
+(e\323 to \322almost nati) 110.06 144.67 T
+(v) 187.08 144.67 T
+(e\323. The probability distrib) 192.42 144.67 T
+(ution of grades obtained is sho) 306.46 144.67 T
+(wn in T) 440.93 144.67 T
+(able 1 [1],) 474.27 144.67 T
+(where we appreciate that the distrib) 72 124.67 T
+(ution peaks around grades 2 and 3. The consistenc) 228.49 124.67 T
+(y across raters w) 449.81 124.67 T
+(as) 523.31 124.67 T
+(assessed in a subset of 342 nonnati) 72 104.67 T
+(v) 225.1 104.67 T
+(e sentences that were rated by all \336v) 230.43 104.67 T
+(e raters. The a) 390.03 104.67 T
+(v) 452.12 104.67 T
+(erage sentence/) 457.45 104.67 T
+-0.39 (speak) 72 84.67 P
+-0.39 (er) 96.94 84.67 P
+-0.39 (-le) 105.26 84.67 P
+-0.39 (v) 116.59 84.67 P
+-0.39 (el inter) 121.93 84.67 P
+-0.39 (-rater correlation w) 152.17 84.67 P
+-0.39 (as r=0.65/0.8; the a) 236.18 84.67 P
+-0.39 (v) 319.51 84.67 P
+-0.39 (erage correlation between a rater and the a) 324.85 84.67 P
+-0.39 (v) 508.49 84.67 P
+-0.39 (erage) 513.83 84.67 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(4) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(of a pool of the other raters w) 72 712.67 T
+(as r=0.76/0.87. The consistenc) 202.33 712.67 T
+(y within raters w) 336.68 712.67 T
+(as assessed in dif) 410.81 712.67 T
+(ferent sub-) 486 712.67 T
+(sets of approximately 130 sentences per rater that were rated twice by each rater) 72 692.67 T
+(. The a) 424.2 692.67 T
+(v) 454.22 692.67 T
+(erage intra-corre-) 459.55 692.67 T
+(lation at the sentence le) 72 672.67 T
+(v) 174.98 672.67 T
+(el w) 180.32 672.67 T
+(as r=0.77. These v) 198.84 672.67 T
+(alues may be considered upper bounds on the e) 279.61 672.67 T
+(xpected) 487.18 672.67 T
+(performance for the machine scoring system. The v) 72 652.67 T
+(alues of the correlation coef) 298.39 652.67 T
+(\336cients computed in this) 420.91 652.67 T
+(w) 72 632.67 T
+(ork are dependent on the probability distrib) 79.83 632.67 T
+(ution of grades gi) 270.25 632.67 T
+(v) 347.27 632.67 T
+(en abo) 352.61 632.67 T
+(v) 381.46 632.67 T
+(e; as such, the correlation v) 386.8 632.67 T
+(alues) 506.89 632.67 T
+(should be used as relati) 72 612.67 T
+(v) 174.38 612.67 T
+(e measures.) 179.71 612.67 T
+2 14 Q
+(3.2  A) 72 572.67 T
+(utomatic Scoring) 105.91 572.67 T
+0 11 Q
+(The dif) 72 547.67 T
+(ferent pronunciation scoring algorithms studied are all based on phonetic time alignments gener-) 103.8 547.67 T
+(ated using SRI\325) 72 527.67 T
+(s Decipher\252 HMM-based speech recognition system [7]; these HMMs ha) 139.84 527.67 T
+(v) 467.2 527.67 T
+(e been trained) 472.53 527.67 T
+-0.05 (using the database of nati) 72 507.67 P
+-0.05 (v) 183.33 507.67 P
+-0.05 (e speak) 188.67 507.67 P
+-0.05 (ers. The front-end e) 221.18 507.67 P
+-0.05 (xtracts mel-frequenc) 307.61 507.67 P
+-0.05 (y cepstral coef) 398.11 507.67 P
+-0.05 (\336cients \050MFCC\051;) 461.87 507.67 P
+-0.03 (the MFCC ha) 72 487.67 P
+-0.03 (v) 131.61 487.67 P
+-0.03 (e the mean o) 136.94 487.67 P
+-0.03 (v) 192.58 487.67 P
+-0.03 (er each sentence remo) 197.91 487.67 P
+-0.03 (v) 295.08 487.67 P
+-0.03 (ed for acoustic channel normalization purposes. Both,) 300.41 487.67 P
+(conte) 72 467.67 T
+(xt-independent and triphone \050conte) 95.66 467.67 T
+(xt-dependent\051 models were trained. F) 249.77 467.67 T
+(or recognition and forced) 414.27 467.67 T
+(alignments we used the conte) 72 447.67 T
+(xt-dependent models, while the conte) 201.37 447.67 T
+(xt-independent models were used for) 365.88 447.67 T
+-0.33 (one of the scoring measures. The recognition system used Gaussian mixture models for computation of the) 72 427.67 P
+(observ) 72 407.67 T
+(ation probabilities. 100 mixture components were used in each Gaussian mixture. Also, the Gauss-) 101.05 407.67 T
+-0.3 (ians components were shared across all the triphone models corresponding to a gi) 72 387.67 P
+-0.3 (v) 427.41 387.67 P
+-0.3 (en center phone, as well) 432.75 387.67 P
+-0.24 (as its corresponding conte) 72 367.67 P
+-0.24 (xt-independent model. This type of acoustic model is usually referred to as \322pho-) 185.69 367.67 P
+(netically tied mixtures\323. The conte) 72 347.67 T
+(xt-independent phone classes corresponded to the standard set of pho-) 224.28 347.67 T
+(nemes in French with one borro) 72 327.67 T
+(wed consonant added \050/ng/\051.) 211.95 327.67 T
+(T) 72 296.67 T
+(o generate the alignments for the student\325) 77.84 296.67 T
+(s speech we must kno) 259.92 296.67 T
+(w the te) 355.58 296.67 T
+(xt read by the student. W) 390.24 296.67 T
+(e do this) 499.95 296.67 T
+-0.23 (by eliciting speech in a constrained w) 72 276.67 P
+-0.23 (ay in the language learning acti) 236.12 276.67 P
+-0.23 (vities, and then backtracking the time-) 372.49 276.67 P
+(aligned phone sequence by using the V) 72 256.67 T
+(iterbi algorithm. From these alignments, and statistical models) 243.64 256.67 T
+(obtained from the nati) 72 236.67 T
+(v) 169.18 236.67 T
+(e speech, probabilistic scores are deri) 174.52 236.67 T
+(v) 338.58 236.67 T
+(ed for the student\325) 343.92 236.67 T
+(s speech. The statistical) 423.66 236.67 T
+(models used to do the scoring are all based on phone units and, as such, no statistics of speci\336c sentences) 72 216.67 T
+-0.29 (or w) 72 196.67 P
+-0.29 (ords are used. Consequently) 91.46 196.67 P
+-0.29 (, the algorithms are te) 213.91 196.67 P
+-0.29 (xt independent. Here, we re) 308.22 196.67 P
+-0.29 (vie) 428.37 196.67 P
+-0.29 (w some of the scoring) 441.54 196.67 P
+(algorithms introduced in [1] and [8].) 72 176.67 T
+2 12 Q
+(3.2.1  HMM-based phone log-posterior pr) 72 138 T
+(obability scor) 285.44 138 T
+(es) 354.9 138 T
+0 11 Q
+-0.12 (W) 72 113.67 P
+-0.12 (e use a set of conte) 81.5 113.67 P
+-0.12 (xt-independent models along with the HMM phone alignment to compute an a) 164.15 113.67 P
+-0.12 (v) 508.21 113.67 P
+-0.12 (erage) 513.55 113.67 P
+(posterior probability for each phone. First, for each frame belonging to a se) 72 93.67 T
+(gment corresponding to the) 402.99 93.67 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(5) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(phone) 72 712.67 T
+( we compute the frame-based posterior probability) 112.77 712.67 T
+(, of the phone) 380.91 712.67 T
+( gi) 450.21 712.67 T
+(v) 461.24 712.67 T
+(en the observ) 466.57 712.67 T
+(a-) 524.95 712.67 T
+(tion v) 72 692.67 T
+(ector) 97.2 692.67 T
+(:) 132.46 692.67 T
+0 10 Q
+(\0501\051) 528.34 651.93 T
+0 11 Q
+-0.08 (where) 72 589.78 P
+-0.08 ( is the probability density of the current observ) 144.66 589.78 P
+-0.08 (ation using the model corresponding to the) 349.63 589.78 P
+-0.4 ( phone. The sum o) 83.13 569.78 P
+-0.4 (v) 162.96 569.78 P
+-0.4 (er) 168.3 569.78 P
+-0.4 ( runs o) 185.26 569.78 P
+-0.4 (v) 214.24 569.78 P
+-0.4 (er the set of all conte) 219.58 569.78 P
+-0.4 (xt-independent phone models.) 309.39 569.78 P
+-0.4 ( represents the) 474.9 569.78 P
+(prior probability of the phone) 72 549.78 T
+(.) 216.04 549.78 T
+-0.04 (The a) 72 518.78 P
+-0.04 (v) 96.48 518.78 P
+-0.04 (erage of the log) 101.82 518.78 P
+-0.04 (arithm of the frame-based phone posterior probability o) 170.39 518.78 P
+-0.04 (v) 414.69 518.78 P
+-0.04 (er all the frames of the se) 420.02 518.78 P
+-0.04 (g-) 530.84 518.78 P
+(ment is de\336ned as the posterior score) 72 498.77 T
+( for the) 249.57 498.77 T
+1 F
+(i) 284.09 498.77 T
+0 F
+(-th phone se) 287.15 498.77 T
+(gment:) 340.75 498.77 T
+0 10 Q
+(\0502\051) 528.34 448.17 T
+0 11 Q
+(The posterior) 72 410.28 T
+(-based score for a whole sentence) 130.74 410.28 T
+( is de\336ned as the a) 291.21 410.28 T
+(v) 371.95 410.28 T
+(erage of the indi) 377.29 410.28 T
+(vidual posterior) 448.8 410.28 T
+(scores o) 72 390.28 T
+(v) 107.57 390.28 T
+(er the) 112.91 390.28 T
+( phone se) 150.73 390.28 T
+(gments in a sentence:) 192.11 390.28 T
+0 10 Q
+(.) 332.38 340.25 T
+(\0503\051) 528.34 340.25 T
+0 11 Q
+(The log-posterior score is rob) 72 304.26 T
+(ust ag) 201.92 304.26 T
+(ainst changes in the spectral match that are due to particular speak) 227.84 304.26 T
+(er) 518.85 304.26 T
+(characteristics or to acoustic channel v) 72 284.26 T
+(ariations. This is a desirable property of pronunciation-e) 241.87 284.26 T
+(v) 489.05 284.26 T
+(aluation) 494.28 284.26 T
+-0.06 (scores, and can be attrib) 72 264.26 P
+-0.06 (uted to the f) 177.52 264.26 P
+-0.06 (act that the same changes in acoustic match af) 230.07 264.26 P
+-0.06 (fect both numerator and) 432.12 264.26 P
+(denominator similarly in Eq. \0501\051, making the score f) 72 244.26 T
+(airly in) 301.03 244.26 T
+(v) 332.06 244.26 T
+(ariant to those changes and focused on the) 337.29 244.26 T
+(phonetic quality) 72 224.26 T
+(.) 142.48 224.26 T
+2 12 Q
+(3.2.2  Segment duration scor) 72 185.59 T
+(es) 217.78 185.59 T
+0 11 Q
+(The procedure to compute the phone-based duration score is as follo) 72 161.26 T
+(ws: \336rst, from the V) 372.94 161.26 T
+(iterbi alignment) 461.19 161.26 T
+-0.16 (we measure the duration in frames for the) 72 141.26 P
+1 F
+-0.16 ( i) 254.51 141.26 P
+0 F
+-0.16 (-th se) 260.16 141.26 P
+-0.16 (gment; then its v) 283.97 141.26 P
+-0.16 (alue is normalized to compensate for rate) 356.88 141.26 P
+(of speech. T) 72 121.26 T
+(o obtain the corresponding phone se) 125.18 121.26 T
+(gment duration score, the log-probability of the normal-) 284.19 121.26 T
+-0.04 (ized duration is computed using a discrete distrib) 72 101.26 P
+-0.04 (ution of durations for the corresponding conte) 287.48 101.26 P
+-0.04 (xt-indepen-) 489.29 101.26 P
+-0.35 (dent phone. The discrete duration distrib) 72 81.26 P
+-0.35 (utions ha) 248.43 81.26 P
+-0.35 (v) 287.89 81.26 P
+-0.35 (e been pre) 293.22 81.26 P
+-0.35 (viously trained from alignments generated for) 337.44 81.26 P
+101.63 705.02 112.77 721.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 102.63 712.67 T
+1 8 Q
+(i) 108.55 709.57 T
+0 0 612 792 C
+337.92 703.92 380.91 723.4 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 340.53 712.67 T
+(q) 352.34 712.67 T
+1 8 Q
+(i) 358.26 709.57 T
+1 11 Q
+(y) 365.19 712.67 T
+1 8 Q
+(t) 370.49 709.57 T
+3 11 Q
+(\050) 347.9 712.67 T
+(\051) 373.64 712.67 T
+362.68 707.57 362.68 719.82 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+444.15 707.92 450.21 721.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(i) 445.15 712.67 T
+0 0 612 792 C
+121.94 685.02 132.46 701.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(y) 123 692.67 T
+1 8 Q
+(t) 128.3 689.57 T
+0 0 612 792 C
+227.55 608.11 372.79 674 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 231.69 651.93 T
+(q) 243.51 651.93 T
+1 8 Q
+(i) 249.42 648.83 T
+1 11 Q
+(y) 256.35 651.93 T
+1 8 Q
+(t) 261.65 648.83 T
+3 11 Q
+(\050) 239.06 651.93 T
+(\051) 264.8 651.93 T
+1 F
+(p) 296.77 661.48 T
+(y) 307.62 661.48 T
+1 8 Q
+(t) 312.92 658.38 T
+1 11 Q
+(q) 319.73 661.48 T
+1 8 Q
+(i) 325.65 658.38 T
+3 11 Q
+(\050) 302.91 661.48 T
+(\051) 328.65 661.48 T
+1 F
+(P) 332.96 661.48 T
+(q) 344.77 661.48 T
+1 8 Q
+(i) 350.69 658.38 T
+3 11 Q
+(\050) 340.33 661.48 T
+(\051) 353.7 661.48 T
+1 F
+(p) 304.85 632.5 T
+(y) 315.7 632.5 T
+1 8 Q
+(t) 321.01 629.4 T
+1 11 Q
+(q) 327.81 632.5 T
+1 8 Q
+(j) 334.72 629.4 T
+3 11 Q
+(\050) 311 632.5 T
+(\051) 337.73 632.5 T
+1 F
+(P) 342.04 632.5 T
+(q) 353.85 632.5 T
+1 8 Q
+(j) 360.76 629.4 T
+3 11 Q
+(\050) 349.41 632.5 T
+(\051) 363.76 632.5 T
+1 8 Q
+(j) 286.86 617.84 T
+0 F
+(1) 298.93 617.84 T
+(=) 291.75 617.84 T
+1 F
+(M) 290.98 647.36 T
+3 18 Q
+(\345) 287.98 629.08 T
+0 11 Q
+(-) 285.87 651.93 T
+(-) 287.7 651.93 T
+(-) 289.54 651.93 T
+(-) 291.37 651.93 T
+(-) 293.2 651.93 T
+(-) 295.03 651.93 T
+(-) 296.86 651.93 T
+(-) 298.69 651.93 T
+(-) 300.52 651.93 T
+(-) 302.36 651.93 T
+(-) 304.19 651.93 T
+(-) 306.02 651.93 T
+(-) 307.85 651.93 T
+(-) 309.68 651.93 T
+(-) 311.51 651.93 T
+(-) 313.35 651.93 T
+(-) 315.18 651.93 T
+(-) 317.01 651.93 T
+(-) 318.84 651.93 T
+(-) 320.67 651.93 T
+(-) 322.5 651.93 T
+(-) 324.33 651.93 T
+(-) 326.17 651.93 T
+(-) 328 651.93 T
+(-) 329.83 651.93 T
+(-) 331.66 651.93 T
+(-) 333.49 651.93 T
+(-) 335.32 651.93 T
+(-) 337.15 651.93 T
+(-) 338.99 651.93 T
+(-) 340.82 651.93 T
+(-) 342.65 651.93 T
+(-) 344.48 651.93 T
+(-) 346.31 651.93 T
+(-) 348.14 651.93 T
+(-) 349.98 651.93 T
+(-) 351.81 651.93 T
+(-) 353.64 651.93 T
+(-) 355.47 651.93 T
+(-) 357.3 651.93 T
+(-) 359.13 651.93 T
+(-) 360.96 651.93 T
+(-) 362.8 651.93 T
+(-) 363.76 651.93 T
+(=) 273.96 651.93 T
+253.85 646.83 253.85 659.08 2 L
+0.5 H
+2 Z
+N
+317.49 656.38 317.49 668.63 2 L
+N
+325.57 627.4 325.57 639.65 2 L
+N
+0 0 612 792 C
+101.54 581.58 144.66 603.4 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(p) 107.11 589.78 T
+(y) 117.97 589.78 T
+1 8 Q
+(t) 123.27 586.67 T
+1 11 Q
+(q) 130.08 589.78 T
+1 8 Q
+(i) 135.99 586.67 T
+3 11 Q
+(\050) 113.26 589.78 T
+(\051) 139 589.78 T
+127.84 584.67 127.84 596.93 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+72 562.12 83.13 579.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 73 569.78 T
+1 8 Q
+(i) 78.91 566.67 T
+0 0 612 792 C
+179.2 565.02 185.26 579.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(j) 180.2 569.78 T
+0 0 612 792 C
+443.86 562.12 474.9 579.41 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 446.68 569.78 T
+(q) 458.49 569.78 T
+1 8 Q
+(i) 464.41 566.67 T
+3 11 Q
+(\050) 454.05 569.78 T
+(\051) 467.41 569.78 T
+0 0 612 792 C
+204.9 542.12 216.03 559.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 205.9 549.78 T
+1 8 Q
+(i) 211.82 546.67 T
+0 0 612 792 C
+237.89 491.94 249.57 508.51 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 238.89 498.77 T
+0 F
+(\366) 240.08 499.31 T
+1 8 Q
+(i) 245.35 495.94 T
+0 0 612 792 C
+235.61 428.61 364.73 480.11 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 239.94 448.17 T
+0 F
+(\366) 241.13 448.71 T
+1 8 Q
+(i) 246.4 445.34 T
+0 11 Q
+(1) 267.5 454.53 T
+1 F
+(d) 266.03 441.06 T
+1 8 Q
+(i) 272.25 437.96 T
+0 11 Q
+(-) 266.03 448.43 T
+(-) 267.86 448.43 T
+(-) 269.7 448.43 T
+(-) 270.81 448.43 T
+1 F
+(P) 322.63 448.17 T
+(q) 334.44 448.17 T
+1 8 Q
+(i) 340.36 445.07 T
+1 11 Q
+(y) 347.29 448.17 T
+1 8 Q
+(t) 352.59 445.07 T
+3 11 Q
+(\050) 330 448.17 T
+(\051) 355.73 448.17 T
+0 F
+(log) 307.47 448.17 T
+1 8 Q
+(t) 282.58 433.51 T
+(t) 294.79 433.51 T
+1 6 Q
+(i) 297.46 431.11 T
+0 8 Q
+(=) 287.61 433.51 T
+1 F
+(t) 275.34 464.93 T
+1 6 Q
+(i) 278.01 462.53 T
+1 8 Q
+(d) 288.19 464.93 T
+1 6 Q
+(i) 292.71 462.53 T
+0 8 Q
+(1) 302.37 464.93 T
+(\320) 296.38 464.93 T
+(+) 281.68 464.93 T
+3 18 Q
+(\345) 284.44 444.75 T
+0 11 Q
+(=) 254.12 448.17 T
+344.78 443.07 344.78 455.32 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+281.63 405.28 291.21 420.28 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 282.62 410.28 T
+0 0 612 792 C
+140.4 385.53 150.73 399.53 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(N) 141.39 390.28 T
+0 0 612 792 C
+265.46 322.59 332.38 371.61 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 269.79 340.25 T
+0 11 Q
+(1) 295.15 346.61 T
+1 F
+(N) 294.01 333.14 T
+0 F
+(-) 293.79 340.51 T
+(-) 295.62 340.51 T
+(-) 297.45 340.51 T
+(-) 298.34 340.51 T
+3 F
+(r) 320.04 340.25 T
+0 F
+(\366) 321.22 340.79 T
+1 8 Q
+(i) 326.49 337.42 T
+(i) 302.88 325.59 T
+0 F
+(1) 314.94 325.59 T
+(=) 307.76 325.59 T
+1 F
+(N) 308.08 355.11 T
+3 18 Q
+(\345) 304.49 336.83 T
+0 11 Q
+(=) 281.87 340.25 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(6) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(the nati) 72 712.67 T
+(v) 104.42 712.67 T
+(e training data. Ag) 109.75 712.67 T
+(ain, the corresponding sentence duration score is de\336ned as the a) 191.57 712.67 T
+(v) 476.37 712.67 T
+(erage of the) 481.71 712.67 T
+-0.12 (phone se) 72 692.67 P
+-0.12 (gment scores o) 110.51 692.67 P
+-0.12 (v) 176.1 692.67 P
+-0.12 (er the sentence. Based on pre) 181.44 692.67 P
+-0.12 (vious research [1], duration measurements were nor-) 308.86 692.67 P
+(malized by rate of speech \050R) 72 672.67 T
+(OS\051 prior to the computation of the duration score. Therefore, the duration) 197.72 672.67 T
+(score is de\336ned as) 72 652.67 T
+0 10 Q
+(\0504\051) 528.34 604.34 T
+0 11 Q
+(where) 72 565.22 T
+( is the duration of the) 112.76 565.22 T
+(-th se) 215.36 565.22 T
+(gment corresponding to phone) 239.33 565.22 T
+(, and) 387.33 565.22 T
+( is the) 506.78 565.22 T
+(duration normalization function. The R) 72 545.22 T
+(OS w) 244.18 545.22 T
+(as estimated for each indi) 268.82 545.22 T
+(vidual sentence as the a) 380.97 545.22 T
+(v) 484.61 545.22 T
+(erage num-) 489.95 545.22 T
+(ber of phones per unit of time. Se) 72 525.22 T
+(gments labeled as silence as well as phones in conte) 219.09 525.22 T
+(xt with silence were) 447.75 525.22 T
+(e) 72 505.22 T
+(xcluded from the R) 76.72 505.22 T
+(OS computation based on pre) 161.52 505.22 T
+(vious research [1].) 291.39 505.22 T
+2 12 Q
+(3.2.3  T) 72 466.55 T
+(iming Scor) 109.79 466.55 T
+(es) 165.24 466.55 T
+0 11 Q
+(Gi) 72 442.22 T
+(v) 82.72 442.22 T
+(en that language learners tend to impose the rh) 88.06 442.22 T
+(ythm of their nati) 293.3 442.22 T
+(v) 369.71 442.22 T
+(e language on the language the) 375.05 442.22 T
+(y are) 510.82 442.22 T
+(learning, some measure of timing could represent the de) 72 422.22 T
+(gree of \337uenc) 318.98 422.22 T
+(y of a student and be used as a pre-) 379.3 422.22 T
+(dictor of pronunciation quality) 72 402.22 T
+(. F) 206.02 402.22 T
+(or e) 217.48 402.22 T
+(xample, English is stress-timed \050stressed syllables tend to be length-) 234.11 402.22 T
+-0.01 (ened and others shortened\051, while Spanish and French are syllable-timed. T) 72 382.22 P
+-0.01 (o attempt to e) 402.75 382.22 P
+-0.01 (xploit this aspect) 462.73 382.22 P
+(of linguistic timing, a distrib) 72 362.22 T
+(ution of normalized syllabic periods is estimated from nati) 197.38 362.22 T
+(v) 454.36 362.22 T
+(es and used to) 459.7 362.22 T
+(e) 72 342.22 T
+(v) 76.61 342.22 T
+(aluate timing scores for nonnati) 81.83 342.22 T
+(v) 220.87 342.22 T
+(e speak) 226.21 342.22 T
+(ers. The syllabic period is de\336ned as the time interv) 258.78 342.22 T
+(al between) 485.81 342.22 T
+(the centers of v) 72 322.22 T
+(o) 139.29 322.22 T
+(wels within se) 144.51 322.22 T
+(gments of speech. The normalization is based, as before, on sentence R) 207.29 322.22 T
+(OS.) 520.28 322.22 T
+(The procedure to obtain the timing distrib) 72 302.22 T
+(ution is similar to that used for the duration scores, a single dis-) 255.71 302.22 T
+-0.34 (crete distrib) 72 282.22 P
+-0.34 (ution is trained based on R) 123.68 282.22 P
+-0.34 (OS-normalized syllabic periods in the force-aligned nati) 239.18 282.22 P
+-0.34 (v) 484.33 282.22 P
+-0.34 (e database.) 489.67 282.22 P
+-0.4 (Similarly to the duration score, the timing score is computed by taking the a) 72 262.22 P
+-0.4 (v) 400.83 262.22 P
+-0.4 (erage of the log-lik) 406.16 262.22 P
+-0.4 (elihoods of) 488.86 262.22 P
+(the normalized syllabic periods o) 72 242.22 T
+(v) 217.87 242.22 T
+(er a gi) 223.21 242.22 T
+(v) 250.42 242.22 T
+(en sentence.) 255.76 242.22 T
+2 14 Q
+(3.3  Combination of Scor) 72 202.22 T
+(es) 220.69 202.22 T
+0 11 Q
+(The grade that an ideal, e) 72 177.22 T
+(xperienced human rater w) 183.02 177.22 T
+(ould assign to an utterance when rating either the gen-) 297.46 177.22 T
+-0.01 (eral pronunciation quality or a particular skill can be treated as a random v) 72 157.22 P
+-0.01 (ariable. The pronunciation e) 399.44 157.22 P
+-0.01 (v) 523.17 157.22 P
+-0.01 (al-) 528.4 157.22 P
+(uation problem can then be de\336ned as an estimation problem, where we try to estimate, or predict, the) 72 137.22 T
+-0.18 (v) 72 117.22 P
+-0.18 (alue of the ideal human grade) 77.22 117.22 P
+-0.18 ( by using a set of predictors. These predictors are the machine scores that) 217.82 117.22 P
+(we ha) 72 97.22 T
+(v) 97.74 97.22 T
+(e presented in our pre) 103.07 97.22 T
+(vious w) 198.1 97.22 T
+(ork [1]-[7], some of which were summarized in the pre) 232.52 97.22 T
+(vious section.) 474.18 97.22 T
+227.59 583.55 372.76 634 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(D) 236.17 604.34 T
+0 F
+(1) 262.88 610.7 T
+1 F
+(N) 261.74 597.23 T
+0 F
+(-) 261.52 604.59 T
+(-) 263.36 604.59 T
+(-) 265.19 604.59 T
+(-) 266.08 604.59 T
+1 F
+(p) 308.19 604.34 T
+(f) 320.4 604.34 T
+(d) 330.16 604.34 T
+1 8 Q
+(i) 336.37 601.24 T
+3 11 Q
+(\050) 325.71 604.34 T
+(\051) 339.38 604.34 T
+1 F
+(q) 347.48 604.34 T
+1 8 Q
+(i) 353.39 601.24 T
+3 11 Q
+(\050) 314.34 604.34 T
+(\051) 356.4 604.34 T
+([) 302.93 604.34 T
+(]) 360.84 604.34 T
+0 F
+(log) 287.77 604.34 T
+1 8 Q
+(i) 270.61 589.68 T
+0 F
+(1) 282.67 589.68 T
+(=) 275.5 589.68 T
+1 F
+(N) 275.81 619.2 T
+3 18 Q
+(\345) 272.22 600.92 T
+0 11 Q
+(=) 249.61 604.34 T
+345.24 599.24 345.24 611.49 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+101.62 557.57 112.76 574.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(d) 102.47 565.22 T
+1 8 Q
+(i) 108.68 562.12 T
+0 0 612 792 C
+209.3 560.47 215.36 574.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(i) 210.3 565.22 T
+0 0 612 792 C
+376.2 557.57 387.33 574.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 377.2 565.22 T
+1 8 Q
+(i) 383.11 562.12 T
+0 0 612 792 C
+411.47 556.87 506.78 579.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(f) 423.46 565.22 T
+(d) 433.21 565.22 T
+1 8 Q
+(i) 439.43 562.12 T
+3 11 Q
+(\050) 428.77 565.22 T
+(\051) 442.43 565.22 T
+1 F
+(d) 463.29 565.22 T
+1 8 Q
+(i) 469.5 562.12 T
+1 11 Q
+(R) 480.11 565.22 T
+(O) 487.48 565.22 T
+(S) 496.07 565.22 T
+3 F
+(\327) 474.47 565.22 T
+0 F
+(=) 451.59 565.22 T
+0 0 612 792 C
+209.32 112.47 217.82 126.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 210.32 117.22 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(7) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(W) 72 712.67 T
+(e in) 81.5 712.67 T
+(v) 97.26 712.67 T
+(estig) 102.59 712.67 T
+(ated the use of linear and nonlinear re) 123.32 712.67 T
+(gression methods to predict one random v) 289.02 712.67 T
+(ariable, the) 473.28 712.67 T
+(human grade, from a set of others, the machine scores.) 72 692.67 T
+(Applying a well-kno) 72 661.67 T
+(wn result from probability theory [10], when using a minimum mean square error cri-) 162.77 661.67 T
+(terion \050Eq. 5\051 between the actual human grades) 72 641.67 T
+( and the predicted ones) 290.97 641.67 T
+0 10 Q
+(\0505\051) 528.34 612.76 T
+0 11 Q
+-0.09 (the optimal predictor of the human grade) 72 582.22 P
+-0.09 ( is the conditional e) 274.73 582.22 P
+-0.09 (xpected v) 360.37 582.22 P
+-0.09 (alue of the actual human grade) 402.46 582.22 P
+( gi) 80.49 562.22 T
+(v) 91.53 562.22 T
+(en the measured machine scores) 96.86 562.22 T
+(, that is) 308.85 562.22 T
+0 10 Q
+(.) 369.4 531.06 T
+(\0506\051) 528.34 531.06 T
+2 12 Q
+(3.3.1  Linear r) 72 497.96 T
+(egr) 144.78 497.96 T
+(ession) 161.22 497.96 T
+0 11 Q
+(If the machine and human scores can be modeled as jointly Gaussian random v) 72 473.63 T
+(ariables or there is a linear) 419.69 473.63 T
+(relationship among them, then the conditional e) 72 453.63 T
+(xpected v) 281.74 453.63 T
+(alue of the human grade is a linear combination) 323.92 453.63 T
+(of tw) 72 433.63 T
+(o or more machine scores for each sentence plus a bias term. Thus, the predicted human grade) 94.8 433.63 T
+( is) 520.27 433.63 T
+0 10 Q
+(.) 385.32 403.21 T
+(\0507\051) 528.34 403.21 T
+0 11 Q
+-0.16 (The linear coef) 72 377.77 P
+-0.16 (\336cients) 137.99 377.77 P
+-0.16 ( are optimized [9] to minimize the mean square error between the pre-) 233.36 377.77 P
+-0.27 (dicted and the actual human grades o) 72 357.77 P
+-0.27 (v) 233.36 357.77 P
+-0.27 (er the sentences in a de) 238.69 357.77 P
+-0.27 (v) 338.79 357.77 P
+-0.27 (elopment set. Linear re) 344.13 357.77 P
+-0.27 (gression is a paramet-) 444.58 357.77 P
+-0.12 (ric approach; as such, the number of parameters that ha) 72 337.77 P
+-0.12 (v) 313.9 337.77 P
+-0.12 (e to be estimated is reasonably small, which leads) 319.23 337.77 P
+(to simple and rob) 72 317.77 T
+(ust estimates.) 148.47 317.77 T
+2 12 Q
+(3.3.2  Nonlinear r) 72 279.11 T
+(egr) 161.45 279.11 T
+(ession) 177.89 279.11 T
+0 11 Q
+(In the general case, this estimator is a nonlinear function of the machine scores. If we do not kno) 72 254.77 T
+(w the) 496.97 254.77 T
+(mathematical form of the underlying joint probability distrib) 72 234.77 T
+(ution of the human and machine scores, it is) 338.52 234.77 T
+(necessary to resort to nonparametric methods. The potential adv) 72 214.77 T
+(antage of the nonlinear nonparametric) 353.7 214.77 T
+-0.37 (methods is that the) 72 194.77 P
+-0.37 (y could attain a better approximation to Eq. \0506\051 than the linear estimate of Eq. \0507\051, by not) 153.52 194.77 P
+(ha) 72 174.77 T
+(ving to assume a particular form for the distrib) 82.16 174.77 T
+(utions and by being able to model nonlinear maps) 287.25 174.77 T
+-0.12 (between machine scores and human grades as well as nonlinear relationships between the machine scores.) 72 154.77 P
+(Neural Netw) 72 134.77 T
+(orks) 128.4 134.77 T
+(A neural netw) 72 103.77 T
+(ork can be considered as a v) 134.21 103.77 T
+(ery \337e) 258.05 103.77 T
+(xible function approximator capable of implementing) 285.69 103.77 T
+-0.06 (arbitrary maps between input and output spaces [11]. Its parameters, the weights, are adjusted by the train-) 72 83.77 P
+282.47 636.92 290.97 650.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 283.47 641.67 T
+0 0 612 792 C
+395.14 634.02 504.01 654.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 397.78 641.67 T
+0 F
+(\367) 398.7 645.4 T
+1 F
+(d) 420.47 641.67 T
+(m) 431.36 641.67 T
+0 8 Q
+(1) 439.72 638.57 T
+1 11 Q
+(m) 449.21 641.67 T
+0 8 Q
+(2) 457.57 638.57 T
+3 11 Q
+(\274) 467.07 641.67 T
+1 F
+(m) 483.57 641.67 T
+1 8 Q
+(n) 491.92 638.57 T
+3 11 Q
+(,) 443.72 641.67 T
+(,) 461.57 641.67 T
+(,) 478.07 641.67 T
+(\050) 426.91 641.67 T
+(\051) 496.7 641.67 T
+0 F
+(=) 408.77 641.67 T
+0 0 612 792 C
+72 72 540 720 C
+221.2 600.55 379.14 623 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 232.6 612.76 T
+(i) 241.19 612.76 T
+(n) 244.9 612.76 T
+1 8 Q
+(d) 240.82 603.55 T
+1 11 Q
+(E) 260.69 612.76 T
+(h) 272.76 612.76 T
+(d) 289.25 612.76 T
+(m) 300.14 612.76 T
+0 8 Q
+(1) 308.5 609.66 T
+1 11 Q
+(m) 317.99 612.76 T
+0 8 Q
+(2) 326.35 609.66 T
+3 11 Q
+(\274) 335.85 612.76 T
+1 F
+(m) 352.35 612.76 T
+1 8 Q
+(n) 360.71 609.66 T
+3 11 Q
+(,) 312.5 612.76 T
+(,) 330.35 612.76 T
+(,) 346.85 612.76 T
+(\050) 295.7 612.76 T
+(\051) 365.49 612.76 T
+0 F
+(\320) 281 612.76 T
+3 F
+([) 268.31 612.76 T
+(]) 369.93 612.76 T
+0 8 Q
+(2) 374.14 616 T
+72 72 540 720 C
+0 0 612 792 C
+254.37 576.2 274.73 594.72 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 255.29 582.22 T
+0 F
+(\367) 256.21 585.96 T
+1 8 Q
+(o) 261.21 580.5 T
+(p) 265.82 580.5 T
+(t) 270.44 580.5 T
+0 0 612 792 C
+72 557.47 80.49 571.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 73 562.22 T
+0 0 612 792 C
+241.35 554.57 308.85 571.47 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 242.32 562.22 T
+0 8 Q
+(1) 250.68 559.12 T
+1 11 Q
+(m) 260.17 562.22 T
+0 8 Q
+(2) 268.53 559.12 T
+3 11 Q
+(\274) 278.03 562.22 T
+1 F
+(m) 294.52 562.22 T
+1 8 Q
+(n) 302.88 559.12 T
+3 11 Q
+(,) 254.68 562.22 T
+(,) 272.53 562.22 T
+(,) 289.03 562.22 T
+0 0 612 792 C
+72 72 540 720 C
+228.44 523.96 369.4 543.55 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 234.44 531.06 T
+0 F
+(\367) 235.36 534.8 T
+1 8 Q
+(o) 240.36 529.34 T
+(p) 244.98 529.34 T
+(t) 249.59 529.34 T
+1 11 Q
+(E) 269.16 531.06 T
+(h) 281.23 531.06 T
+(m) 291.17 531.06 T
+0 8 Q
+(1) 299.52 527.96 T
+1 11 Q
+(m) 309.02 531.06 T
+0 8 Q
+(2) 317.38 527.96 T
+3 11 Q
+(\274) 326.88 531.06 T
+1 F
+(m) 343.37 531.06 T
+1 8 Q
+(n) 351.73 527.96 T
+3 11 Q
+(,) 303.52 531.06 T
+(,) 321.38 531.06 T
+(,) 337.88 531.06 T
+([) 276.78 531.06 T
+(]) 356.51 531.06 T
+0 F
+(=) 257.45 531.06 T
+288.92 528.31 288.92 538.21 2 L
+0.5 H
+2 Z
+N
+72 72 540 720 C
+0 0 612 792 C
+511.78 428.88 520.27 446.13 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 512.78 433.63 T
+0 F
+(\367) 513.7 437.36 T
+0 0 612 792 C
+212.52 396.11 385.32 414.96 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 226.85 403.21 T
+0 F
+(\367) 227.77 406.94 T
+1 F
+(a) 249.54 403.21 T
+0 8 Q
+(1) 255.46 400.11 T
+1 11 Q
+(m) 260.11 403.21 T
+0 8 Q
+(1) 268.47 400.11 T
+1 11 Q
+(a) 284.16 403.21 T
+0 8 Q
+(2) 290.08 400.11 T
+1 11 Q
+(m) 294.73 403.21 T
+0 8 Q
+(2) 303.09 400.11 T
+3 11 Q
+(\274) 318.79 403.21 T
+1 F
+(a) 341.48 403.21 T
+1 8 Q
+(n) 347.4 400.11 T
+1 11 Q
+(m) 352.05 403.21 T
+1 8 Q
+(n) 360.41 400.11 T
+1 11 Q
+(b) 376.11 403.21 T
+0 F
+(+) 275.21 403.21 T
+(+) 309.83 403.21 T
+(+) 332.53 403.21 T
+(+) 367.15 403.21 T
+(=) 237.84 403.21 T
+0 0 612 792 C
+172.36 370.12 233.36 387.02 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(a) 177.18 377.77 T
+0 8 Q
+(1) 183.1 374.67 T
+3 11 Q
+(\274) 192.59 377.77 T
+1 F
+(a) 209.09 377.77 T
+1 8 Q
+(n) 215.01 374.67 T
+1 11 Q
+(b) 224.5 377.77 T
+3 F
+(,) 187.1 377.77 T
+(,) 203.59 377.77 T
+(,) 219.01 377.77 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(8) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(ing algorithm to minimize the training criterion. W) 72 712.67 T
+(ith this approach, the machine scores to be combined) 295.83 712.67 T
+(are the input to a neural netw) 72 692.67 T
+(ork that computes the mapping between the multiple machine scores) 200.19 692.67 T
+( and the corresponding predicted human grade) 139.51 672.67 T
+(, that is) 354.81 672.67 T
+0 10 Q
+(\0508\051) 528.34 637.24 T
+0 11 Q
+(where) 72 606.81 T
+( represents the nonlinear mapping implemented by the netw) 131.16 606.81 T
+(ork. The actual human grades) 394.4 606.81 T
+(pro) 72 586.81 T
+(vide the tar) 86.5 586.81 T
+(gets --or desired output v) 135.79 586.81 T
+(alues-- for the training of the netw) 246.11 586.81 T
+(ork.) 396.91 586.81 T
+-0.35 (If the neural netw) 72 555.81 P
+-0.35 (ork is trained using the minimum mean square error criterion \0505\051, if it has enough number) 148.73 555.81 P
+(of weights and layers, and if the training does not get stuck in a local minimum, the output of the neural) 72 535.81 T
+-0.35 (netw) 72 515.81 P
+-0.35 (ork) 93.27 515.81 P
+-0.35 ( will closely approximate Eq. \0506\051, that is, the conditional e) 197.94 515.81 P
+-0.35 (xpected v) 450.02 515.81 P
+-0.35 (alue of the) 491.86 515.81 P
+(desired output gi) 72 495.81 T
+(v) 145.67 495.81 T
+(en the inputs [12],[13]:) 151 495.81 T
+0 10 Q
+(.) 396.5 467.9 T
+(\0509\051) 528.34 467.9 T
+0 11 Q
+(T) 72 442.46 T
+(raining algorithms for neural netw) 78.34 442.46 T
+(orks, such as backpropag) 229.15 442.46 T
+(ation [14], only assure the attainment of a) 339.67 442.46 T
+-0.24 (local minimum of the criterion. In addition, to obtain good performance, in practice, we ha) 72 422.46 P
+-0.24 (v) 467.36 422.46 P
+-0.24 (e to use a lar) 472.69 422.46 P
+-0.24 (ge) 527.11 422.46 P
+(number of parameters for the netw) 72 402.46 T
+(ork and therefore we need to use a re) 224.32 402.46 T
+(gularization method to a) 386.64 402.46 T
+(v) 493.66 402.46 T
+(oid o) 498.94 402.46 T
+(v) 521.09 402.46 T
+(er-) 526.42 402.46 T
+-0.32 (\336tting to the training data. T) 72 382.46 P
+-0.32 (ypically) 193.55 382.46 P
+-0.32 (, early stopping based on performance on a cross-v) 228.28 382.46 P
+-0.32 (alidation set is used.) 449.33 382.46 P
+(In this w) 72 362.46 T
+(ay) 110.39 362.46 T
+(, not e) 120.06 362.46 T
+(v) 146.98 362.46 T
+(en a local minimum of the training criterion could be attained. Ne) 152.31 362.46 T
+(v) 441.05 362.46 T
+(ertheless, cross-v) 446.39 362.46 T
+(ali-) 521.87 362.46 T
+-0.13 (dation-based training allo) 72 342.46 P
+-0.13 (ws us to rob) 183.9 342.46 P
+-0.13 (ustly train lar) 236.78 342.46 P
+-0.13 (ge netw) 294.99 342.46 P
+-0.13 (orks, which in turn results in a good approxima-) 329.28 342.46 P
+(tion to the optimal solution of Eq. \0506\051.) 72 322.46 T
+(After some preliminary e) 72 291.46 T
+(xperimentation with dif) 182.73 291.46 T
+(ferent netw) 286.33 291.46 T
+(ork architectures, we chose an architecture) 336.01 291.46 T
+(consisting of a tw) 72 271.46 T
+(o-layer perceptron with a single linear output unit and a hidden layer of sigmoidal units.) 149.8 271.46 T
+(W) 72 251.46 T
+(e v) 81.5 251.46 T
+(aried the number of hidden units from 8 to 32; the best performance w) 94.36 251.46 T
+(as obtained with 16 hidden) 403.73 251.46 T
+(units. The number of input units corresponded to the number of machine scores combined. The netw) 72 231.46 T
+(ork) 514.57 231.46 T
+(w) 72 211.46 T
+(as trained with backpropag) 79.83 211.46 T
+(ation using the mean square error criterion. A momentum term w) 198.61 211.46 T
+(as used in) 485.37 211.46 T
+(the weight update rule [14]. T) 72 191.46 T
+(o a) 202.48 191.46 T
+(v) 215.4 191.46 T
+(oid o) 220.68 191.46 T
+(v) 242.82 191.46 T
+(er\336tting to the training data and to obtain good generalization, we) 248.15 191.46 T
+(used a cross-v) 72 171.46 T
+(alidation set formed with 15% of the training data. Prediction performance w) 134.04 171.46 T
+(as assessed) 473.04 171.46 T
+-0.14 (after each training iteration on this set; the training w) 72 151.46 P
+-0.14 (as stopped when performance, measured by the same) 304.36 151.46 P
+(error criterion, did not impro) 72 131.46 T
+(v) 198.62 131.46 T
+(e on the cross-v) 203.96 131.46 T
+(alidation set.) 273.02 131.46 T
+72 665.02 139.51 681.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 72.97 672.67 T
+0 8 Q
+(1) 81.33 669.57 T
+1 11 Q
+(m) 90.83 672.67 T
+0 8 Q
+(2) 99.19 669.57 T
+3 11 Q
+(\274) 108.68 672.67 T
+1 F
+(m) 125.18 672.67 T
+1 8 Q
+(n) 133.54 669.57 T
+3 11 Q
+(,) 85.33 672.67 T
+(,) 103.19 672.67 T
+(,) 119.68 672.67 T
+0 0 612 792 C
+346.32 667.92 354.81 685.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 347.32 672.67 T
+0 F
+(\367) 348.23 676.4 T
+0 0 612 792 C
+242.21 625.15 358.13 654 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 249.46 637.25 T
+0 F
+(\367) 250.38 640.98 T
+1 F
+(o) 272.15 637.25 T
+(m) 282.74 637.25 T
+0 8 Q
+(1) 291.1 634.15 T
+1 11 Q
+(m) 300.6 637.25 T
+0 8 Q
+(2) 308.96 634.15 T
+3 11 Q
+(\274) 318.45 637.25 T
+1 F
+(m) 334.95 637.25 T
+1 8 Q
+(n) 343.31 634.15 T
+3 11 Q
+(,) 295.1 637.25 T
+(,) 312.96 637.25 T
+(,) 329.45 637.25 T
+(\050) 278.3 637.25 T
+(\051) 348.09 637.25 T
+0 F
+(=) 260.45 637.25 T
+0 0 612 792 C
+101.62 602.06 131.16 616.06 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(o) 108.62 606.81 T
+3 F
+(\050) 114.77 606.81 T
+(\051) 125.49 606.81 T
+0 0 612 792 C
+72 72 540 720 C
+110.34 505.59 197.94 528.81 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(o) 115.09 515.81 T
+(m) 125.68 515.81 T
+0 8 Q
+(1) 134.04 512.71 T
+1 11 Q
+(m) 143.54 515.81 T
+0 8 Q
+(2) 151.9 512.71 T
+3 11 Q
+(\274) 161.39 515.81 T
+1 F
+(m) 177.89 515.81 T
+1 8 Q
+(n) 186.25 512.71 T
+3 11 Q
+(,) 138.04 515.81 T
+(,) 155.9 515.81 T
+(,) 172.39 515.81 T
+(\050) 121.24 515.81 T
+(\051) 191.03 515.81 T
+72 72 540 720 C
+0 0 612 792 C
+72 72 540 720 C
+201.34 460.8 396.5 477.15 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(o) 206.09 467.9 T
+(m) 216.68 467.9 T
+0 8 Q
+(1) 225.04 464.8 T
+1 11 Q
+(m) 234.54 467.9 T
+0 8 Q
+(2) 242.9 464.8 T
+3 11 Q
+(\274) 252.39 467.9 T
+1 F
+(m) 268.89 467.9 T
+1 8 Q
+(n) 277.25 464.8 T
+3 11 Q
+(,) 229.04 467.9 T
+(,) 246.9 467.9 T
+(,) 263.39 467.9 T
+(\050) 212.24 467.9 T
+(\051) 282.03 467.9 T
+1 F
+(E) 297.23 467.9 T
+(h) 309.3 467.9 T
+(m) 319.24 467.9 T
+0 8 Q
+(1) 327.6 464.8 T
+1 11 Q
+(m) 337.1 467.9 T
+0 8 Q
+(2) 345.45 464.8 T
+3 11 Q
+(\274) 354.95 467.9 T
+1 F
+(m) 371.45 467.9 T
+1 8 Q
+(n) 379.81 464.8 T
+3 11 Q
+(,) 331.6 467.9 T
+(,) 349.45 467.9 T
+(,) 365.95 467.9 T
+([) 304.86 467.9 T
+(]) 384.59 467.9 T
+(@) 288.44 467.9 T
+317 465.15 317 475.05 2 L
+0.5 H
+2 Z
+N
+72 72 540 720 C
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(9) 304 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 12 Q
+(3.3.2.1    Pr) 72 712 T
+(obability distrib) 129.44 712 T
+(ution estimation) 211.56 712 T
+0 11 Q
+-0.19 (In this approach we approximate the conditional e) 72 687.67 P
+-0.19 (xpectation \050Eq. 6\051 by direct computation of the e) 290.76 687.67 P
+-0.19 (xpected) 503.23 687.67 P
+(v) 72 667.67 T
+(alue by using estimates of the necessary conditional probabilities. The predicted human grade) 77.22 667.67 T
+( is com-) 500.59 667.67 T
+(puted as) 72 647.67 T
+0 10 Q
+(\05010\051) 523.34 602.94 T
+0 11 Q
+(where) 72 566.95 T
+( is the estimated conditional probability of the human grade) 201.03 566.95 T
+( gi) 477.36 566.95 T
+(v) 488.39 566.95 T
+(en the) 493.73 566.95 T
+-0.28 (machine scores and) 72 546.95 P
+-0.28 ( is the number of distinct grades. T) 170.97 546.95 P
+-0.28 (aking adv) 321.47 546.95 P
+-0.28 (antage of the f) 363.99 546.95 P
+-0.28 (act that the human grades) 426.25 546.95 P
+-0.07 (are discrete v) 72 526.95 P
+-0.07 (ariables \050in this case in the range of 1 to 5\051, by using Bayes rule we can e) 130.23 526.95 P
+-0.07 (xpress this probabil-) 450.31 526.95 P
+(ity as) 72 506.95 T
+0 10 Q
+(\05011\051) 523.34 458.78 T
+0 11 Q
+-0.25 (where) 72 400.95 P
+-0.25 ( is the estimated prior probability of the human grade) 129.68 400.95 P
+-0.25 ( and) 375.37 400.95 P
+-0.25 ( is the esti-) 492.79 400.95 P
+(mate of the conditional distrib) 72 380.95 T
+(ution of the machine scores for a gi) 204.38 380.95 T
+(v) 359.61 380.95 T
+(en human grade) 364.94 380.95 T
+(.) 449.08 380.95 T
+-0.07 (In this w) 72 349.95 P
+-0.07 (ork we modeled) 110.25 349.95 P
+-0.07 ( by discrete distrib) 283.66 349.95 P
+-0.07 (utions that were estimated based on the) 364.81 349.95 P
+(quantization of the machine scores.W) 72 329.95 T
+(e studied both scalar and v) 237 329.95 T
+(ector quantization \050VQ\051 cases. In the sca-) 353.84 329.95 T
+-0.04 (lar case, we linearly quantized each machine score and estimated the joint discrete distrib) 72 309.95 P
+-0.04 (ution of the com-) 464.06 309.95 P
+(bination of quantized machine scores. In the VQ case, the joint distrib) 72 289.95 T
+(ution of machine scores w) 379.43 289.95 T
+(as) 494.8 289.95 T
+(modeled by a single discrete distrib) 72 269.95 T
+(ution on the VQ inde) 227.9 269.95 T
+(x) 320.62 269.95 T
+(.) 400.67 269.95 T
+0 10 Q
+(\05012\051) 523.34 235.66 T
+0 11 Q
+(In the design of the scalar quantizer we e) 72 209.13 T
+(xperimented with a dif) 252.06 209.13 T
+(ferent number of bins for each machine) 351.69 209.13 T
+(score. W) 72 189.13 T
+(e searched for the maximum correlation in the range of 5 to 20 bins when combining scores, and) 110.21 189.13 T
+(in the range of 5 to 100 bins when mapping posterior scores only) 72 169.13 T
+(. W) 357.25 169.13 T
+(e found that when there are too fe) 372.26 169.13 T
+(w) 520.13 169.13 T
+(bins or too man) 72 149.13 T
+(y bins, the correlation is lo) 140.59 149.13 T
+(w) 257.64 149.13 T
+(. W) 264.86 149.13 T
+(e obtained the best result with 10 bins when combining) 279.87 149.13 T
+(three scores, 12 bins when combining tw) 72 129.13 T
+(o scores, and 50 bins when using a single machine score. Bin) 251.84 129.13 T
+(probabilities were estimated by frequenc) 72 109.13 T
+(y counts on the training data and smoothed by \337ooring their v) 250.85 109.13 T
+(al-) 522.2 109.13 T
+(ues. W) 72 89.13 T
+(e designed the v) 101.67 89.13 T
+(ector quantizer \050VQ\051 with K code) 172.68 89.13 T
+(w) 320.56 89.13 T
+(ords for the machine score combination, using) 328.39 89.13 T
+492.1 662.92 500.59 680.17 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 493.1 667.67 T
+0 F
+(\367) 494.02 671.4 T
+0 0 612 792 C
+72 72 540 720 C
+155.24 585.28 440.1 629 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 164.66 602.94 T
+0 F
+(\367) 165.58 606.67 T
+1 F
+(E) 187.36 602.94 T
+(h) 199.43 602.94 T
+(m) 209.37 602.94 T
+0 8 Q
+(1) 217.73 599.84 T
+1 11 Q
+(m) 227.22 602.94 T
+0 8 Q
+(2) 235.58 599.84 T
+3 11 Q
+(\274) 245.08 602.94 T
+1 F
+(m) 261.58 602.94 T
+1 8 Q
+(n) 269.93 599.84 T
+3 11 Q
+(,) 221.73 602.94 T
+(,) 239.58 602.94 T
+(,) 256.08 602.94 T
+([) 194.99 602.94 T
+(]) 274.71 602.94 T
+1 F
+(h) 326.11 602.94 T
+1 8 Q
+(i) 332.03 599.84 T
+1 11 Q
+(P) 342.5 602.94 T
+(h) 354.31 602.94 T
+1 8 Q
+(i) 360.23 599.84 T
+1 11 Q
+(m) 366.89 602.94 T
+0 8 Q
+(1) 375.25 599.84 T
+1 11 Q
+(m) 384.74 602.94 T
+0 8 Q
+(2) 393.1 599.84 T
+3 11 Q
+(\274) 402.6 602.94 T
+1 F
+(m) 419.1 602.94 T
+1 8 Q
+(n) 427.46 599.84 T
+3 11 Q
+(,) 379.25 602.94 T
+(,) 397.1 602.94 T
+(,) 413.6 602.94 T
+(\050) 349.86 602.94 T
+(\051) 432.24 602.94 T
+(\327) 337 602.94 T
+1 8 Q
+(i) 308.4 595.57 T
+0 F
+(1) 320.46 595.57 T
+(=) 313.29 595.57 T
+1 F
+(G) 308.4 611.05 T
+3 18 Q
+(\345) 295.57 599.52 T
+0 11 Q
+(=) 175.65 602.94 T
+(=) 283.87 602.94 T
+207.12 600.19 207.12 610.09 2 L
+0.5 H
+2 Z
+N
+364.65 597.84 364.65 610.09 2 L
+N
+72 72 540 720 C
+0 0 612 792 C
+72 72 540 720 C
+101.62 558.75 201.03 578.37 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 105.62 566.95 T
+(h) 117.43 566.95 T
+1 8 Q
+(i) 123.35 563.84 T
+1 11 Q
+(m) 130.02 566.95 T
+0 8 Q
+(1) 138.38 563.84 T
+1 11 Q
+(m) 147.87 566.95 T
+0 8 Q
+(2) 156.23 563.84 T
+3 11 Q
+(\274) 165.73 566.95 T
+1 F
+(m) 182.23 566.95 T
+1 8 Q
+(n) 190.58 563.84 T
+3 11 Q
+(,) 142.38 566.95 T
+(,) 160.23 566.95 T
+(,) 176.73 566.95 T
+(\050) 112.99 566.95 T
+(\051) 195.36 566.95 T
+127.77 561.84 127.77 574.1 2 L
+0.5 H
+2 Z
+N
+72 72 540 720 C
+0 0 612 792 C
+466.23 559.3 477.36 576.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 467.22 566.95 T
+1 8 Q
+(i) 473.14 563.84 T
+0 0 612 792 C
+160.04 542.2 170.97 556.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(G) 161.03 546.95 T
+0 0 612 792 C
+72 72 540 720 C
+156.73 419.29 438.61 488.28 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 166.3 458.78 T
+(h) 178.11 458.78 T
+1 8 Q
+(i) 184.03 455.68 T
+1 11 Q
+(m) 190.69 458.78 T
+0 8 Q
+(1) 199.05 455.68 T
+1 11 Q
+(m) 208.55 458.78 T
+0 8 Q
+(2) 216.91 455.68 T
+3 11 Q
+(\274) 226.41 458.78 T
+1 F
+(m) 242.9 458.78 T
+1 8 Q
+(n) 251.26 455.68 T
+3 11 Q
+(,) 203.05 458.78 T
+(,) 220.91 458.78 T
+(,) 237.41 458.78 T
+(\050) 173.67 458.78 T
+(\051) 256.04 458.78 T
+1 F
+(P) 295.2 468.33 T
+(m) 307.01 468.33 T
+0 8 Q
+(1) 315.37 465.23 T
+1 11 Q
+(m) 324.86 468.33 T
+0 8 Q
+(2) 333.22 465.23 T
+3 11 Q
+(\274) 342.72 468.33 T
+1 F
+(m) 359.22 468.33 T
+1 8 Q
+(n) 367.58 465.23 T
+1 11 Q
+(h) 376.02 468.33 T
+3 F
+(,) 319.37 468.33 T
+(,) 337.22 468.33 T
+(,) 353.72 468.33 T
+(\050) 302.57 468.33 T
+(\051) 382.3 468.33 T
+1 F
+(P) 386.61 468.33 T
+(h) 398.42 468.33 T
+1 8 Q
+(i) 404.34 465.23 T
+3 11 Q
+(\050) 393.98 468.33 T
+(\051) 407.34 468.33 T
+1 F
+(P) 308.65 445.55 T
+(m) 320.46 445.55 T
+0 8 Q
+(1) 328.82 442.45 T
+1 11 Q
+(m) 338.32 445.55 T
+0 8 Q
+(2) 346.68 442.45 T
+3 11 Q
+(\274) 356.17 445.55 T
+1 F
+(m) 372.67 445.55 T
+1 8 Q
+(n) 381.03 442.45 T
+1 11 Q
+(h) 389.47 445.55 T
+1 8 Q
+(j) 396.38 442.45 T
+3 11 Q
+(,) 332.82 445.55 T
+(,) 350.68 445.55 T
+(,) 367.17 445.55 T
+(\050) 316.02 445.55 T
+(\051) 399.38 445.55 T
+1 F
+(P) 403.7 445.55 T
+(h) 415.51 445.55 T
+1 8 Q
+(j) 422.42 442.45 T
+3 11 Q
+(\050) 411.06 445.55 T
+(\051) 425.42 445.55 T
+1 8 Q
+(j) 290.94 438.18 T
+0 F
+(1) 303 438.18 T
+(=) 295.83 438.18 T
+1 F
+(G) 289.95 453.66 T
+3 18 Q
+(\345) 277.11 442.12 T
+0 11 Q
+(-) 277.11 458.78 T
+(-) 278.95 458.78 T
+(-) 280.78 458.78 T
+(-) 282.61 458.78 T
+(-) 284.44 458.78 T
+(-) 286.27 458.78 T
+(-) 288.1 458.78 T
+(-) 289.94 458.78 T
+(-) 291.77 458.78 T
+(-) 293.6 458.78 T
+(-) 295.43 458.78 T
+(-) 297.26 458.78 T
+(-) 299.09 458.78 T
+(-) 300.92 458.78 T
+(-) 302.76 458.78 T
+(-) 304.59 458.78 T
+(-) 306.42 458.78 T
+(-) 308.25 458.78 T
+(-) 310.08 458.78 T
+(-) 311.91 458.78 T
+(-) 313.74 458.78 T
+(-) 315.58 458.78 T
+(-) 317.41 458.78 T
+(-) 319.24 458.78 T
+(-) 321.07 458.78 T
+(-) 322.9 458.78 T
+(-) 324.73 458.78 T
+(-) 326.57 458.78 T
+(-) 328.4 458.78 T
+(-) 330.23 458.78 T
+(-) 332.06 458.78 T
+(-) 333.89 458.78 T
+(-) 335.72 458.78 T
+(-) 337.55 458.78 T
+(-) 339.39 458.78 T
+(-) 341.22 458.78 T
+(-) 343.05 458.78 T
+(-) 344.88 458.78 T
+(-) 346.71 458.78 T
+(-) 348.54 458.78 T
+(-) 350.38 458.78 T
+(-) 352.21 458.78 T
+(-) 354.04 458.78 T
+(-) 355.87 458.78 T
+(-) 357.7 458.78 T
+(-) 359.53 458.78 T
+(-) 361.36 458.78 T
+(-) 363.2 458.78 T
+(-) 365.03 458.78 T
+(-) 366.86 458.78 T
+(-) 368.69 458.78 T
+(-) 370.52 458.78 T
+(-) 372.35 458.78 T
+(-) 374.18 458.78 T
+(-) 376.02 458.78 T
+(-) 377.85 458.78 T
+(-) 379.68 458.78 T
+(-) 381.51 458.78 T
+(-) 383.34 458.78 T
+(-) 385.17 458.78 T
+(-) 387.01 458.78 T
+(-) 388.84 458.78 T
+(-) 390.67 458.78 T
+(-) 392.5 458.78 T
+(-) 394.33 458.78 T
+(-) 396.16 458.78 T
+(-) 397.99 458.78 T
+(-) 399.83 458.78 T
+(-) 401.66 458.78 T
+(-) 403.49 458.78 T
+(-) 405.32 458.78 T
+(-) 407.15 458.78 T
+(-) 408.98 458.78 T
+(-) 410.82 458.78 T
+(-) 412.65 458.78 T
+(-) 414.48 458.78 T
+(-) 416.31 458.78 T
+(-) 418.14 458.78 T
+(-) 419.97 458.78 T
+(-) 421.8 458.78 T
+(-) 423.64 458.78 T
+(-) 425.42 458.78 T
+(=) 265.2 458.78 T
+188.45 453.68 188.45 465.93 2 L
+0.5 H
+2 Z
+N
+373.77 463.23 373.77 475.48 2 L
+N
+387.23 440.45 387.23 452.7 2 L
+N
+72 72 540 720 C
+0 0 612 792 C
+72 72 540 720 C
+101.37 393.85 129.68 410.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 102.83 400.95 T
+(h) 114.64 400.95 T
+1 8 Q
+(i) 120.56 397.85 T
+3 11 Q
+(\050) 110.2 400.95 T
+(\051) 123.56 400.95 T
+72 72 540 720 C
+0 0 612 792 C
+364.23 393.3 375.37 410.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 365.23 400.95 T
+1 8 Q
+(i) 371.15 397.85 T
+0 0 612 792 C
+396.25 392.76 492.79 415.88 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 398.7 400.95 T
+(m) 410.52 400.95 T
+0 8 Q
+(1) 418.88 397.85 T
+1 11 Q
+(m) 428.37 400.95 T
+0 8 Q
+(2) 436.73 397.85 T
+3 11 Q
+(\274) 446.23 400.95 T
+1 F
+(m) 462.72 400.95 T
+1 8 Q
+(n) 471.08 397.85 T
+1 11 Q
+(h) 479.52 400.95 T
+1 8 Q
+(i) 485.44 397.85 T
+3 11 Q
+(,) 422.88 400.95 T
+(,) 440.73 400.95 T
+(,) 457.23 400.95 T
+(\050) 406.07 400.95 T
+(\051) 488.44 400.95 T
+477.28 395.85 477.28 408.11 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+437.95 373.3 449.08 390.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 438.94 380.95 T
+1 8 Q
+(i) 444.86 377.85 T
+0 0 612 792 C
+183.67 341.2 283.66 366.09 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 186.46 349.95 T
+(m) 198.27 349.95 T
+0 8 Q
+(1) 206.63 346.85 T
+1 11 Q
+(m) 216.13 349.95 T
+0 8 Q
+(2) 224.49 346.85 T
+3 11 Q
+(\274) 233.99 349.95 T
+1 F
+(m) 250.48 349.95 T
+1 8 Q
+(n) 258.84 346.85 T
+1 11 Q
+(h) 267.28 349.95 T
+1 8 Q
+(i) 273.2 346.85 T
+3 11 Q
+(,) 210.63 349.95 T
+(,) 228.49 349.95 T
+(,) 244.99 349.95 T
+(\050) 193.83 349.95 T
+(\051) 276.2 349.95 T
+265.04 344.85 265.04 357.11 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+328.87 261.76 400.67 279.2 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(V) 332.92 269.95 T
+(m) 345.58 269.95 T
+0 8 Q
+(1) 353.94 266.85 T
+3 11 Q
+(\274) 363.43 269.95 T
+1 F
+(m) 379.93 269.95 T
+1 8 Q
+(n) 388.29 266.85 T
+3 11 Q
+(,) 357.94 269.95 T
+(,) 374.43 269.95 T
+(\050) 341.13 269.95 T
+(\051) 393.07 269.95 T
+0 0 612 792 C
+183.5 227.46 411.84 251.29 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 193.17 235.66 T
+(m) 204.98 235.66 T
+0 8 Q
+(1) 213.34 232.56 T
+1 11 Q
+(m) 222.84 235.66 T
+0 8 Q
+(2) 231.2 232.56 T
+3 11 Q
+(\274) 240.69 235.66 T
+1 F
+(m) 257.19 235.66 T
+1 8 Q
+(n) 265.55 232.56 T
+1 11 Q
+(h) 273.99 235.66 T
+3 F
+(,) 217.34 235.66 T
+(,) 235.2 235.66 T
+(,) 251.69 235.66 T
+(\050) 200.54 235.66 T
+(\051) 280.27 235.66 T
+1 F
+(P) 295.46 235.66 T
+(V) 307.28 235.66 T
+(m) 319.94 235.66 T
+0 8 Q
+(1) 328.3 232.56 T
+1 11 Q
+(m) 337.79 235.66 T
+0 8 Q
+(2) 346.15 232.56 T
+3 11 Q
+(\274) 355.65 235.66 T
+1 F
+(m) 372.14 235.66 T
+1 8 Q
+(n) 380.5 232.56 T
+3 11 Q
+(,) 332.3 235.66 T
+(,) 350.15 235.66 T
+(,) 366.65 235.66 T
+(\050) 315.49 235.66 T
+(\051) 385.28 235.66 T
+1 F
+(h) 393.39 235.66 T
+1 8 Q
+(i) 399.3 232.56 T
+3 11 Q
+(\050) 302.83 235.66 T
+(\051) 402.31 235.66 T
+(@) 286.68 235.66 T
+271.75 230.56 271.75 242.82 2 L
+0.5 H
+2 Z
+N
+391.14 230.56 391.14 242.82 2 L
+N
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(10) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+-0.27 (the Euclidean distance as the distortion measure; the indi) 72 712.67 P
+-0.27 (vidual machine scores had been pre) 320.08 712.67 P
+-0.27 (viously scaled) 475.16 712.67 P
+-0.21 (to zero mean and unit v) 72 692.67 P
+-0.21 (ariance o) 174.23 692.67 P
+-0.21 (v) 213.86 692.67 P
+-0.21 (er the whole database. W) 219.2 692.67 P
+-0.21 (e initialized the VQ by choosing K random data) 328.35 692.67 P
+(points from the training set, and then we performed 15 iterations of the LBG algorithm. F) 72 672.67 T
+(or the VQ case,) 465.66 672.67 T
+(we estimated the discrete distrib) 72 652.67 T
+(ution of the machine score combination for each human grade by using) 213.54 652.67 T
+(smoothed relati) 72 632.67 T
+(v) 139.86 632.67 T
+(e frequenc) 145.19 632.67 T
+(y) 191.14 632.67 T
+(. W) 195.93 632.67 T
+(e tested codebooks of K=10 to K=100 code) 210.93 632.67 T
+(w) 401.78 632.67 T
+(ords. The best results were) 409.61 632.67 T
+( code) 110.5 612.67 T
+(w) 133.74 612.67 T
+(ords for posteriors,) 141.57 612.67 T
+( code) 266.22 612.67 T
+(w) 289.46 612.67 T
+(ords for posterior and duration, and) 297.3 612.67 T
+( code-) 494.35 612.67 T
+(w) 72 592.67 T
+(ords for posterior) 79.83 592.67 T
+(, duration, and timing.) 155.76 592.67 T
+(The v) 72 561.67 T
+(ector quantization approach, which is more ef) 97.19 561.67 T
+(\336cient in the use of parameters, resulted in more accu-) 298.23 561.67 T
+(rate and rob) 72 541.67 T
+(ust estimates of the distrib) 124.32 541.67 T
+(utions, as w) 239.6 541.67 T
+(as re\337ected in the e) 291.74 541.67 T
+(xperimental results.) 376.49 541.67 T
+2 12 Q
+(3.3.2.2    Regr) 72 507 T
+(ession tr) 142.1 507 T
+(ees) 184.88 507 T
+0 11 Q
+(In the pre) 72 482.67 T
+(vious section we estimated the conditional posterior distrib) 113.88 482.67 T
+(ution of the human grade, gi) 373.06 482.67 T
+(v) 497.44 482.67 T
+(en the) 502.77 482.67 T
+(machine scores, by using Bayes rule and the class distrib) 72 462.67 T
+(utions of the quantized machine scores. An alter-) 321.69 462.67 T
+-0.22 (nati) 72 442.67 P
+-0.22 (v) 88.22 442.67 P
+-0.22 (e approach is to estimate the conditional posterior distrib) 93.56 442.67 P
+-0.22 (ution directly) 341.54 442.67 P
+-0.22 (, using classi\336cation and re) 399.58 442.67 P
+-0.22 (gres-) 518.01 442.67 P
+-0.32 (sion trees [15]. A tree can be used to classify a v) 72 422.67 P
+-0.32 (ector of machine scores) 281.49 422.67 P
+-0.32 ( to one of se) 463.55 422.67 P
+-0.32 (v) 515.75 422.67 P
+-0.32 (eral) 521.09 422.67 P
+(possible classes) 72 402.67 T
+(, each class representing a \336nal node \050a leaf\051 of the tree. The conditional) 211.71 402.67 T
+(distrib) 72 382.67 T
+(ution of the human grade, gi) 99.9 382.67 T
+(v) 224.27 382.67 T
+(en a set of machine scores, is then approximated by) 229.61 382.67 T
+0 10 Q
+(\05013\051) 523.34 354.75 T
+0 11 Q
+(where) 72 329.32 T
+( is the leaf corresponding to the machine scores) 107.68 329.32 T
+(.) 386.89 329.32 T
+-0.09 (Speci\336cally) 72 298.32 P
+-0.09 (, starting at the root of the tree, a question is ask) 123.23 298.32 P
+-0.09 (ed at each node, resulting in a choice of one of) 333.25 298.32 P
+(tw) 72 278.32 T
+(o branches lea) 82.89 278.32 T
+(ving that node; the process is repeated until a leaf node is reached. Each leaf represents a) 145.59 278.32 T
+(subset of the training data with similar or homogeneous properties, and an estimate of the conditional dis-) 72 258.32 T
+(trib) 72 238.32 T
+(ution \05013\051 can be obtained using this data. The estimate of the human grade assigned to that leaf is the) 87.06 238.32 T
+(mean of that conditional distrib) 72 218.32 T
+(ution, obtained by combining Eqs. \05010\051 and \05013\051:) 209.88 218.32 T
+0 10 Q
+(\05014\051) 523.34 170.91 T
+0 11 Q
+(When an input machine score v) 72 131.79 T
+(ector ends up in a leaf, the predicted human grade is the one assigned to) 210.83 131.79 T
+(that leaf. W) 72 111.79 T
+(ith trees, the machine score\325) 123.18 111.79 T
+(s input space is partitioned by the sequence of binary splits into) 246.29 111.79 T
+(re) 72 91.79 T
+(gions assigned to leaf nodes. In each leaf node) 80.38 91.79 T
+(, the predicted response v) 293.55 91.79 T
+(alue \050the predicted human) 405.39 91.79 T
+72 607.92 110.5 621.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(K) 72.68 612.67 T
+0 F
+(20) 97.82 612.67 T
+(=) 86.12 612.67 T
+0 0 612 792 C
+227.72 607.92 266.22 621.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(K) 228.41 612.67 T
+0 F
+(15) 253.54 612.67 T
+(=) 241.84 612.67 T
+0 0 612 792 C
+455.85 607.92 494.35 621.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(K) 456.53 612.67 T
+0 F
+(50) 481.66 612.67 T
+(=) 469.97 612.67 T
+0 0 612 792 C
+387.1 415.57 463.56 431.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 392.54 422.67 T
+0 8 Q
+(1) 400.9 419.57 T
+1 11 Q
+(m) 410.4 422.67 T
+0 8 Q
+(2) 418.76 419.57 T
+3 11 Q
+(\274) 428.26 422.67 T
+1 F
+(m) 444.75 422.67 T
+1 8 Q
+(n) 453.11 419.57 T
+3 11 Q
+(,) 404.9 422.67 T
+(,) 422.76 422.67 T
+(,) 439.26 422.67 T
+(\050) 388.1 422.67 T
+(\051) 457.89 422.67 T
+0 0 612 792 C
+144.1 395.57 211.71 411.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(t) 151.16 402.67 T
+0 8 Q
+(1) 154.84 399.57 T
+1 11 Q
+(t) 164.34 402.67 T
+0 8 Q
+(2) 168.01 399.57 T
+3 11 Q
+(\274) 177.51 402.67 T
+1 F
+(t) 194 402.67 T
+1 8 Q
+(N) 197.84 399.57 T
+3 11 Q
+(,) 158.84 402.67 T
+(,) 172.01 402.67 T
+(,) 188.51 402.67 T
+({) 145.1 402.67 T
+(}) 204.43 402.67 T
+0 0 612 792 C
+223.19 347.65 372.15 364 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(p) 234.39 354.75 T
+(h) 244.99 354.75 T
+(m) 254.92 354.75 T
+0 8 Q
+(1) 263.28 351.65 T
+1 11 Q
+(m) 272.78 354.75 T
+0 8 Q
+(2) 281.14 351.65 T
+3 11 Q
+(\274) 290.64 354.75 T
+1 F
+(m) 307.13 354.75 T
+1 8 Q
+(n) 315.49 351.65 T
+3 11 Q
+(,) 267.28 354.75 T
+(,) 285.14 354.75 T
+(,) 301.64 354.75 T
+(\050) 240.54 354.75 T
+(\051) 320.27 354.75 T
+1 F
+(p) 336.29 354.75 T
+(h) 346.88 354.75 T
+(t) 356.82 354.75 T
+3 F
+(\050) 342.44 354.75 T
+(\051) 360.86 354.75 T
+(@) 326.68 354.75 T
+252.68 352 252.68 361.9 2 L
+0.5 H
+2 Z
+N
+354.58 352 354.58 361.9 2 L
+N
+0 0 612 792 C
+101.62 324.57 107.68 338.57 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(t) 102.62 329.32 T
+0 0 612 792 C
+319.38 321.67 386.89 338.57 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 320.35 329.32 T
+0 8 Q
+(1) 328.71 326.22 T
+1 11 Q
+(m) 338.21 329.32 T
+0 8 Q
+(2) 346.57 326.22 T
+3 11 Q
+(\274) 356.07 329.32 T
+1 F
+(m) 372.56 329.32 T
+1 8 Q
+(n) 380.92 326.22 T
+3 11 Q
+(,) 332.71 329.32 T
+(,) 350.57 329.32 T
+(,) 367.07 329.32 T
+0 0 612 792 C
+211.12 150.13 384.22 199.65 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 221.68 170.91 T
+0 F
+(\367) 222.6 174.65 T
+1 F
+(t) 232.27 170.91 T
+3 F
+(\050) 227.83 170.91 T
+(\051) 236.31 170.91 T
+1 F
+(E) 257.17 170.91 T
+(h) 269.24 170.91 T
+(t) 279.18 170.91 T
+3 F
+(\050) 264.8 170.91 T
+(\051) 283.21 170.91 T
+1 F
+(h) 328.95 170.91 T
+1 8 Q
+(i) 334.87 167.81 T
+1 11 Q
+(p) 346.16 170.91 T
+(h) 356.75 170.91 T
+1 8 Q
+(i) 362.67 167.81 T
+1 11 Q
+(t) 369.33 170.91 T
+3 F
+(\050) 352.31 170.91 T
+(\051) 373.37 170.91 T
+(\327) 339.84 170.91 T
+1 8 Q
+(i) 311.24 163.55 T
+0 F
+(1) 323.3 163.55 T
+(=) 316.13 163.55 T
+1 F
+(G) 311.24 179.03 T
+3 18 Q
+(\345) 298.41 167.49 T
+3 11 Q
+(@) 289.62 170.91 T
+0 F
+(=) 245.47 170.91 T
+276.94 168.16 276.94 178.06 2 L
+0.5 H
+2 Z
+N
+367.09 165.81 367.09 178.06 2 L
+N
+0 0 612 792 C
+287.5 87.04 293.55 101.04 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(t) 288.5 91.79 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(11) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(grade\051) 72 712.67 T
+( is constant; therefore, the tree can be considered as a histogram-lik) 134.7 712.67 T
+(e estimate of the re) 430.9 712.67 T
+(gres-) 514.44 712.67 T
+(sion surf) 72 692.67 T
+(ace.) 110.08 692.67 T
+(By using the supervised training data composed of machine scores) 72 661.67 T
+( and the corresponding human) 398.94 661.67 T
+-0.35 (grades \050where) 72 641.67 P
+-0.35 ( represents the v) 146.99 641.67 P
+-0.35 (ector of machine scores) 217.56 641.67 P
+-0.35 (\051, we can b) 390.58 641.67 P
+-0.35 (uild the tree and obtain) 437.57 641.67 P
+-0.14 (the rule that assigns the predicted human grade to each leaf with the aid of a) 72 621.67 P
+-0.14 (v) 404.15 621.67 P
+-0.14 (ailable tree construction algo-) 409.37 621.67 P
+(rithms [15]. The mean of the conditional distrib) 72 601.67 T
+(ution computed in Eq. \05014\051 can also be computed as the) 281.37 601.67 T
+(sample mean of the human grades) 72 581.67 T
+( corresponding to all) 235.89 581.67 T
+( cases that f) 358.78 581.67 T
+(all into node) 410.3 581.67 T
+(:) 474.1 581.67 T
+(.) 348.2 542.8 T
+0 10 Q
+(\05015\051) 523.34 542.8 T
+0 11 Q
+(This predictor minimizes the mean square error o) 72 497.21 T
+(v) 289.04 497.21 T
+(er the training samples for a gi) 294.38 497.21 T
+(v) 428.52 497.21 T
+(en tree structure. It is) 433.86 497.21 T
+(important then, to gro) 72 477.21 T
+(w a tree structure in a w) 167.67 477.21 T
+(ay that w) 273.24 477.21 T
+(ould achie) 313.46 477.21 T
+(v) 358.7 477.21 T
+(e the minimum of the global mean) 364.04 477.21 T
+(square error computed o) 72 457.21 T
+(v) 179.05 457.21 T
+(er all the data, which in turn w) 184.39 457.21 T
+(ould approximate the optimal estimator \050Eq. 6\051.) 318.7 457.21 T
+-0.31 (The procedure is to generate, at each node, the split that maximizes the decrease of the accumulated square) 72 437.21 P
+(error for the samples at the node being split.) 72 417.21 T
+(In practice, we took a rather heuristic approach to gro) 72 386.21 T
+(wing the tree, as it w) 307.54 386.21 T
+(as important to ha) 399.08 386.21 T
+(v) 478 386.21 T
+(e both small) 483.33 386.21 T
+-0.11 (size and good prediction. W) 72 366.21 P
+-0.11 (e used a public domain softw) 194.42 366.21 P
+-0.11 (are package [16] to test dif) 322.4 366.21 P
+-0.11 (ferent splitting criteria) 439.2 366.21 P
+(and pruning le) 72 346.21 T
+(v) 135.27 346.21 T
+(els. The predicted scores were then correlated with the human grades. W) 140.61 346.21 T
+(e chose the crite-) 459.55 346.21 T
+(rion that allo) 72 326.21 T
+(wed us to obtain the best correlation between the predicted and the actual human grades in a) 127.95 326.21 T
+(de) 72 306.21 T
+(v) 82.11 306.21 T
+(elopment set. The heuristic splitting rule based on information g) 87.44 306.21 T
+(ain [16][17] produced slightly better) 369.7 306.21 T
+(results. F) 72 286.21 T
+(or each dif) 112.17 286.21 T
+(ferent number of input features, the depth of the trees w) 158.93 286.21 T
+(as optimized by e) 404.12 286.21 T
+(xhausti) 481.26 286.21 T
+(v) 512.76 286.21 T
+(e) 518.09 286.21 T
+(search in the range of 3 to 10 le) 72 266.21 T
+(v) 210.41 266.21 T
+(els; then, dif) 215.75 266.21 T
+(ferent de) 270.17 266.21 T
+(grees of pruning were e) 308.79 266.21 T
+(xplored. F) 412.47 266.21 T
+(or each case, we) 457.53 266.21 T
+(chose the tree with the highest correlation between the predicted grades and the human grades; we pick) 72 246.21 T
+(ed) 525.84 246.21 T
+-0.09 (the smallest trees in cases of equal performance. F) 72 226.21 P
+-0.09 (or the case that combines three machine scores, the best) 292.57 226.21 P
+(tree had a depth of 5 le) 72 206.21 T
+(v) 172.53 206.21 T
+(els. A depth of 4 le) 177.86 206.21 T
+(v) 261.3 206.21 T
+(els w) 266.63 206.21 T
+(as optimal for the combination of tw) 289.44 206.21 T
+(o scores and for the) 450.04 206.21 T
+(scalar case. Best results were obtained with mild pruning which remo) 72 186.21 T
+(v) 377.65 186.21 T
+(ed option branches whose propor-) 382.98 186.21 T
+(tion w) 72 166.21 T
+(as less than 0.01.) 99.7 166.21 T
+102.84 707.92 134.7 726.87 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 112.84 712.67 T
+(t) 123.43 712.67 T
+3 F
+(\051) 128.25 712.67 T
+(\050) 118.99 712.67 T
+113.94 721.77 117.25 721.77 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+367.73 654.57 398.94 676.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 374.48 661.67 T
+(h) 387.92 661.67 T
+3 F
+(,) 382.42 661.67 T
+(\050) 370.04 661.67 T
+(\051) 394.2 661.67 T
+375.58 668.11 381.32 668.11 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+136.05 636.92 146.99 650.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 137.05 641.67 T
+138.15 648.11 143.89 648.11 2 L
+0.5 H
+2 Z
+N
+0 0 612 792 C
+323.07 634.02 390.58 650.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 324.04 641.67 T
+0 8 Q
+(1) 332.4 638.57 T
+1 11 Q
+(m) 341.9 641.67 T
+0 8 Q
+(2) 350.26 638.57 T
+3 11 Q
+(\274) 359.75 641.67 T
+1 F
+(m) 376.25 641.67 T
+1 8 Q
+(n) 384.61 638.57 T
+3 11 Q
+(,) 336.4 641.67 T
+(,) 354.26 641.67 T
+(,) 370.75 641.67 T
+0 0 612 792 C
+224.75 574.57 235.89 590.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 227.07 581.67 T
+0 0 612 792 C
+329.38 576.92 358.78 590.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(N) 336 581.67 T
+(t) 349.08 581.67 T
+3 F
+(\050) 344.64 581.67 T
+(\051) 353.12 581.67 T
+0 0 612 792 C
+468.05 576.92 474.1 590.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(t) 469.04 581.67 T
+0 0 612 792 C
+244.39 515.54 348.2 563 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(h) 253.51 542.8 T
+0 F
+(\367) 254.43 546.54 T
+1 F
+(t) 264.11 542.8 T
+3 F
+(\050) 259.66 542.8 T
+(\051) 268.14 542.8 T
+0 F
+(1) 296.97 549.17 T
+1 F
+(N) 289.43 535.69 T
+(t) 302.52 535.69 T
+3 F
+(\050) 298.08 535.69 T
+(\051) 306.56 535.69 T
+0 F
+(-) 289.21 543.06 T
+(-) 291.05 543.06 T
+(-) 292.88 543.06 T
+(-) 294.71 543.06 T
+(-) 296.54 543.06 T
+(-) 298.37 543.06 T
+(-) 300.2 543.06 T
+(-) 302.04 543.06 T
+(-) 303.87 543.06 T
+(-) 305.7 543.06 T
+(-) 306.56 543.06 T
+1 F
+(h) 330.03 542.8 T
+1 8 Q
+(n) 335.95 539.7 T
+(m) 311.09 528.14 T
+(t) 326.57 528.14 T
+3 F
+(\316) 318.86 528.14 T
+3 18 Q
+(\345) 313.6 539.38 T
+0 11 Q
+(=) 277.3 542.8 T
+311.89 532.83 316.07 532.83 2 L
+0.36 H
+2 Z
+N
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(12) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 14 Q
+(3.4  Experimental Results) 72 710.67 T
+0 11 Q
+(W) 72 685.67 T
+(e e) 81.5 685.67 T
+(v) 93.75 685.67 T
+(aluated each indi) 98.97 685.67 T
+(vidual machine score in terms of its le) 173.23 685.67 T
+(v) 340.69 685.67 T
+(el of correlation with human grades. Then,) 346.02 685.67 T
+(we e) 72 665.67 T
+(v) 92.18 665.67 T
+(aluated methods of combining the dif) 97.41 665.67 T
+(ferent types of machine scoring to obtain a better prediction of) 261.82 665.67 T
+(the human grades.) 72 645.67 T
+2 12 Q
+(3.4.1  Human-machine corr) 72 607 T
+(elation of indi) 212.77 607 T
+(vidual scor) 283.33 607 T
+(es) 339.46 607 T
+0 11 Q
+-0.37 (W) 72 582.67 P
+-0.37 (e e) 81.5 582.67 P
+-0.37 (v) 93.38 582.67 P
+-0.37 (aluated each of the proposed scoring methods e) 98.61 582.67 P
+-0.37 (xperimentally by computing the correlations between) 304.52 582.67 P
+(machine and human scores at the sentence le) 72 562.67 T
+(v) 268.76 562.67 T
+(el. The speech material consisted of the 5089 sentences of) 274.09 562.67 T
+(the nonnati) 72 542.67 T
+(v) 120.92 542.67 T
+(e database which were graded for pronunciation quality by e) 126.25 542.67 T
+(xpert human raters. The machine) 392.15 542.67 T
+(scores for each indi) 72 522.67 T
+(vidual sentence were correlated with the corresponding human ratings. F) 157.56 522.67 T
+(or the sen-) 477.55 522.67 T
+(tences that had more than one human grade assigned, we pick) 72 502.67 T
+(ed randomly one of them.) 343.47 502.67 T
+-0.18 (In all the e) 72 471.67 P
+-0.18 (xperiments, when obtaining the machine scores for each sentence, we remo) 118.05 471.67 P
+-0.18 (v) 447.87 471.67 P
+-0.18 (ed the scores of the) 453.21 471.67 P
+(phones in conte) 72 451.67 T
+(xt with silence because their alignments could ha) 140.88 451.67 T
+(v) 356.66 451.67 T
+(e been inaccurate. The results w) 361.99 451.67 T
+(as a) 503 451.67 T
+(small b) 72 431.67 T
+(ut consistent increase in the correlation for all the machine score types [1].) 103.87 431.67 T
+(In T) 72 400.67 T
+(able 2 we see that at the sentence le) 89.75 400.67 T
+(v) 245.88 400.67 T
+(el the posterior) 251.21 400.67 T
+(-based score has the highest correlation, follo) 316.98 400.67 T
+(wed) 516.19 400.67 T
+-0.17 (by the duration score ha) 72 380.67 P
+-0.17 (ving a 20% lo) 176.79 380.67 P
+-0.17 (wer correlation, and then the syllabic timing with 39% lo) 237.41 380.67 P
+-0.17 (wer correla-) 486.73 380.67 P
+-0.22 (tion. Sentence-le) 72 360.67 P
+-0.22 (v) 145.44 360.67 P
+-0.22 (el correlations are still lo) 150.77 360.67 P
+-0.22 (wer than those among humans, which moti) 259.01 360.67 P
+-0.22 (v) 446.55 360.67 P
+-0.22 (ates further w) 451.78 360.67 P
+-0.22 (ork to) 511.71 360.67 P
+(predict pronunciation ratings for only a single utterance.) 72 340.67 T
+(W) 72 309.67 T
+(e w) 81.5 309.67 T
+(ould consider attempting to increase human-machine correlation by using multiple scores. This) 96.97 309.67 T
+(approach is practical, ho) 72 289.67 T
+(we) 179.25 289.67 T
+(v) 191.8 289.67 T
+(er) 197.14 289.67 T
+(, only if the machine scores are not highly dependent on each other) 205.24 289.67 T
+(. As) 499.44 289.67 T
+-0.04 (sho) 72 269.67 P
+-0.04 (wn in T) 87 269.67 P
+-0.04 (able 3, we computed the correlation coef) 120.26 269.67 P
+-0.04 (\336cient between pairs of machine scores, and we found) 299.05 269.67 P
+(a moderate le) 72 249.67 T
+(v) 130.98 249.67 T
+(el of correlation between posterior and duration scores, and a lo) 136.32 249.67 T
+(wer de) 416.17 249.67 T
+(gree of correlation) 445.63 249.67 T
+(between syllabic timing and both posterior and duration scores. Assuming that the joint probability distri-) 72 229.67 T
+(b) 72 209.67 T
+(ution of the machine scores does not de) 77.28 209.67 T
+(viate v) 250.84 209.67 T
+(ery much from a multi) 280.31 209.67 T
+(v) 379.02 209.67 T
+(ariate Gaussian, and gi) 384.25 209.67 T
+(v) 484.17 209.67 T
+(en that the) 489.51 209.67 T
+(correlations between the scores are not v) 72 189.67 T
+(ery high, we consider that there may be some independent infor-) 250.84 189.67 T
+-0.12 (mation in the dif) 72 169.67 P
+-0.12 (ferent machine scores, so that the combination could help to predict pronunciation quality) 144.39 169.67 P
+-0.12 (.) 537.25 169.67 P
+2 12 Q
+(3.4.2  Combination of scor) 72 131 T
+(es) 206.45 131 T
+0 11 Q
+-0.09 (W) 72 106.67 P
+-0.09 (e e) 81.5 106.67 P
+-0.09 (v) 93.66 106.67 P
+-0.09 (aluated the four dif) 98.88 106.67 P
+-0.09 (ferent types of predictors --linear re) 182.35 106.67 P
+-0.09 (gression, neural netw) 338.43 106.67 P
+-0.09 (ork, probability distrib) 431.93 106.67 P
+-0.09 (u-) 530.84 106.67 P
+(tion estimation, and re) 72 86.67 T
+(gression tree-- in mapping and combining dif) 170.22 86.67 T
+(ferent types of machine scores to) 369.14 86.67 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(13) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(increase the correlation at the sentence le) 72 712.67 T
+(v) 252.55 712.67 T
+(el. As referred in section Section) 257.89 712.67 T
+(2, the nonnati) 404.83 712.67 T
+(v) 464.74 712.67 T
+(e speech data-) 470.08 712.67 T
+-0.34 (base w) 72 692.67 P
+-0.34 (as di) 101.79 692.67 P
+-0.34 (vided into tw) 121.64 692.67 P
+-0.34 (o equally sized sets with no common speak) 178.9 692.67 P
+-0.34 (ers. W) 366.73 692.67 P
+-0.34 (e estimated the parameters of the) 394.21 692.67 P
+(dif) 72 672.67 T
+(ferent re) 83.95 672.67 T
+(gression and estimation models in one set, and we e) 120.73 672.67 T
+(v) 348.38 672.67 T
+(aluated the correlation of the predicted) 353.6 672.67 T
+(scores and the corresponding actual human grades in the other set. Then we repeated the procedure with) 72 652.67 T
+(the sets sw) 72 632.67 T
+(apped, and we a) 119.55 632.67 T
+(v) 190.2 632.67 T
+(eraged the correlation coef) 195.53 632.67 T
+(\336cients.) 312.85 632.67 T
+-0.04 (In T) 72 601.67 P
+-0.04 (able 4 we sho) 89.72 601.67 P
+-0.04 (w the a) 149.51 601.67 P
+-0.04 (v) 180.99 601.67 P
+-0.04 (erage correlation coef) 186.32 601.67 P
+-0.04 (\336cients for the dif) 281.87 601.67 P
+-0.04 (ferent types of predictors and score com-) 360 601.67 P
+(binations. A linear combination of posterior and duration scores produced a minor increase in correlation) 72 581.67 T
+(o) 72 561.67 T
+(v) 77.33 561.67 T
+(er the use of posterior scores alone. The addition of syllabic timing resulted in a small additional) 82.67 561.67 T
+(impro) 72 541.67 T
+(v) 98.11 541.67 T
+(ement.) 103.45 541.67 T
+(The nonlinear combination using a neural netw) 72 510.67 T
+(ork w) 279.64 510.67 T
+(as more ef) 304.88 510.67 T
+(fecti) 350.42 510.67 T
+(v) 369.69 510.67 T
+(e, in the best case increasing the cor-) 375.03 510.67 T
+(relation 11.5% with respect to that of the single posterior score. T) 72 490.67 T
+(able 4 sho) 359.83 490.67 T
+(ws that a big part of this g) 404.16 490.67 T
+(ain,) 518.68 490.67 T
+(8%, is due only to the ef) 72 470.67 T
+(fect of the nonlinear mapping of the posterior scores to the human grades that the) 178.96 470.67 T
+(netw) 72 450.67 T
+(ork is implementing. The addition of the duration score led to a g) 93.27 450.67 T
+(ain of 10.8% with respect to the) 380.11 450.67 T
+(baseline. The further addition of timing scores allo) 72 430.67 T
+(wed to reach the best case, with a correlation of) 294.75 430.67 T
+(0.642, which is v) 92.78 410.67 T
+(ery close to the sentence-le) 168.08 410.67 T
+(v) 286.94 410.67 T
+(el human-to-human correlation reported in Section) 292.27 410.67 T
+(3.1.) 518.34 410.67 T
+(Assuming independent measurements, this impro) 72 390.67 T
+(v) 289.07 390.67 T
+(ement w) 294.41 390.67 T
+(as statistically signi\336cant at the le) 331.88 390.67 T
+(v) 479.79 390.67 T
+(el of 0.95.) 485.13 390.67 T
+-0.37 (The distrib) 72 359.67 P
+-0.37 (ution estimation method with scalar quantization produced a good prediction \050) 119.38 359.67 P
+-0.37 ( 0.611\051 of the) 479.45 359.67 P
+-0.34 (human grades when using only the posterior score, b) 72 339.67 P
+-0.34 (ut de) 300.95 339.67 P
+-0.34 (graded rapidly when the number of input features) 322.14 339.67 P
+(w) 72 319.67 T
+(as augmented. T) 79.83 319.67 T
+(o maintain a rob) 151.35 319.67 T
+(ust distrib) 222.93 319.67 T
+(ution estimate, we could mak) 266.41 319.67 T
+(e only a small increase in the) 395.54 319.67 T
+(number of parameters. Therefore, when adding a second machine score, we had to reduce the number of) 72 299.67 T
+(quantization le) 72 279.67 T
+(v) 136.8 279.67 T
+(els. Thus, the quantization error increased, reducing the correlation.) 142.14 279.67 T
+-0.06 (The estimation method with v) 72 248.67 P
+-0.06 (ector quantization of the scores w) 203.59 248.67 P
+-0.06 (as better than the method with scalar quan-) 351.33 248.67 P
+-0.07 (tization and g) 72 228.67 P
+-0.07 (a) 131.68 228.67 P
+-0.07 (v) 136.35 228.67 P
+-0.07 (e, in the best case, a 7.3% impro) 141.68 228.67 P
+-0.07 (v) 283.38 228.67 P
+-0.07 (ement in correlation o) 288.71 228.67 P
+-0.07 (v) 385.17 228.67 P
+-0.07 (er the case with a single posterior) 390.51 228.67 P
+(score. This impro) 72 208.67 T
+(v) 149.13 208.67 T
+(ement w) 154.47 208.67 T
+(as also statistically signi\336cant at the le) 191.93 208.67 T
+(v) 360.32 208.67 T
+(el of 0.95. Most of the g) 365.66 208.67 T
+(ain w) 471.93 208.67 T
+(as pro-) 495.95 208.67 T
+-0.04 (duced by the nonlinear mapping of the posterior scores rather that by the addition of more machine scores.) 72 188.67 P
+(The tree approach achie) 72 157.67 T
+(v) 177.09 157.67 T
+(ed slightly better performance than the estimation method. It sho) 182.43 157.67 T
+(wed a mark) 466.9 157.67 T
+(ed) 518.1 157.67 T
+(increase in prediction performance with the addition of ne) 72 137.67 T
+(w input scores. The impro) 327.11 137.67 T
+(v) 442.13 137.67 T
+(ements ranged from) 447.46 137.67 T
+(5.7%, with posterior scores only) 72 117.67 T
+(, to the best-performing case, with posterior) 213.66 117.67 T
+(, duration, and timing, which) 405.68 117.67 T
+(reached an 8% increase in correlation with respect to the baseline.) 72 97.67 T
+72 405.92 92.78 419.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 73 410.67 T
+0 F
+(=) 83.03 410.67 T
+0 0 612 792 C
+460.34 354.92 479.45 368.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 461.34 359.67 T
+0 F
+(=) 471.36 359.67 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(14) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(Our e) 72 712.67 T
+(xperiments sho) 96.57 712.67 T
+(wed that adding other machine scores, such as global lik) 163.21 712.67 T
+(elihood and phone recogni-) 411.17 712.67 T
+(tion rate [1], to the posterior score did not lead to an impro) 72 692.67 T
+(v) 329.99 692.67 T
+(ement.) 335.33 692.67 T
+(Another consideration is that the correlation results we ha) 72 661.67 T
+(v) 325.96 661.67 T
+(e sho) 331.29 661.67 T
+(wn are v) 353.93 661.67 T
+(ery dependent on the distrib) 391.64 661.67 T
+(ution) 514.23 661.67 T
+(of grades in the particular speech database. The VIL) 72 641.67 T
+(TS database, for instance, has a concentration around) 301 641.67 T
+(the intermediate human grades of 3, 2, and 4 and fe) 72 621.67 T
+(wer e) 297.79 621.67 T
+(xamples of 5 and 1 [1]. A more e) 321.74 621.67 T
+(v) 467.19 621.67 T
+(en distrib) 472.52 621.67 T
+(ution) 513.55 621.67 T
+(across all the grades w) 72 601.67 T
+(ould tend to ha) 171.47 601.67 T
+(v) 236.95 601.67 T
+(e a higher human-machine correlation because ha) 242.28 601.67 T
+(ving more e) 460.16 601.67 T
+(xam-) 512.54 601.67 T
+(ples of speech with the highest and lo) 72 581.67 T
+(west human grades e) 237.01 581.67 T
+(x) 328.8 581.67 T
+(ercises the ranges of machine scores that are) 334.13 581.67 T
+(more reliable or ha) 72 561.67 T
+(v) 155.17 561.67 T
+(e less superposition with those associated to other human grades. F) 160.51 561.67 T
+(or instance, when) 455.17 561.67 T
+(we increased the nati) 72 541.67 T
+(v) 164.28 541.67 T
+(e sentences in the database by 7.5%, and assigned the human grade 5 to those sen-) 169.61 541.67 T
+-0.09 (tences, the baseline correlation using posterior scores increased to) 72 521.67 P
+-0.09 ( and the correlation between) 413.05 521.67 P
+-0.37 (the human and the predicted grades, using a re) 72 501.67 P
+-0.37 (gression tree, rose to) 273.27 501.67 P
+-0.37 (. This represents an increase) 414.76 501.67 P
+-0.25 (in correlation of 10.7%, which is almost twice the increment obtained with the tree in the original database.) 72 481.67 P
+2 14 Q
+(4  Discussion and Summary) 72 446.67 T
+0 11 Q
+-0.35 (W) 72 420.67 P
+-0.35 (e ha) 81.5 420.67 P
+-0.35 (v) 98.95 420.67 P
+-0.35 (e presented and e) 104.29 420.67 P
+-0.35 (xperimentally e) 179.12 420.67 P
+-0.35 (v) 247.24 420.67 P
+-0.35 (aluated se) 252.46 420.67 P
+-0.35 (v) 295.52 420.67 P
+-0.35 (eral linear and nonlinear methods of predicting human) 300.85 420.67 P
+(pronunciation-quality grades based on machine scores. Nonlinear predictors based on a combination of) 72 400.67 T
+-0.25 (machine scores produced better results than a linear combination of scores. Each of the nonlinear combina-) 72 380.67 P
+(tion methods allo) 72 360.67 T
+(wed us to approximate in dif) 148.12 360.67 T
+(ferent w) 274.03 360.67 T
+(ays the optimal predictor of the human grades, the) 310.26 360.67 T
+-0.19 (conditional e) 72 340.67 P
+-0.19 (xpected v) 128.78 340.67 P
+-0.19 (alue gi) 170.77 340.67 P
+-0.19 (v) 199.93 340.67 P
+-0.19 (en by Eq. 6. F) 205.27 340.67 P
+-0.19 (or the speci\336c machine scores used in this w) 266.05 340.67 P
+-0.19 (ork, the nonlinear) 459.93 340.67 P
+(mapping implemented by the nonlinear predictors w) 72 320.67 T
+(as more ef) 302.25 320.67 T
+(fecti) 347.79 320.67 T
+(v) 367.06 320.67 T
+(e than a combination of machine) 372.4 320.67 T
+(scores.) 72 300.67 T
+(Each method presents dif) 72 269.67 T
+(ferent tradeof) 183.23 269.67 T
+(fs in terms of implementation dif) 242.51 269.67 T
+(\336culty) 387.37 269.67 T
+(, speed, and necessary) 414.77 269.67 T
+(de) 72 249.67 T
+(gree of manual tuning and optimization. In the case of the neural netw) 82.22 249.67 T
+(ork predictor we had to e) 390.97 249.67 T
+(xperi-) 501.08 249.67 T
+(ment with dif) 72 229.67 T
+(ferent netw) 131 229.67 T
+(ork architectures to \336nd the with the best performance. This method had a higher) 180.68 229.67 T
+-0.23 (computational cost in training than other methods, and it required manual tuning of training parameters. In) 72 209.67 P
+-0.15 (addition, it w) 72 189.67 P
+-0.15 (as not easy to interpret the processing of the neural netw) 129.95 189.67 P
+-0.15 (ork. The VQ-based estimation of dis-) 376.39 189.67 P
+(trib) 72 169.67 T
+(utions also required substantial e) 87.06 169.67 T
+(xperimentation to de\336ne the quantization le) 231.1 169.67 T
+(v) 422.39 169.67 T
+(els or codebook size) 427.73 169.67 T
+(needed for good performance. The method based on re) 72 149.67 T
+(gression with trees w) 312.85 149.67 T
+(as v) 405.92 149.67 T
+(ery ef) 423.16 149.67 T
+(\336cient in de) 448.23 149.67 T
+(v) 499.9 149.67 T
+(elop-) 505.23 149.67 T
+(ment time because the architecture of the tree is generated automatically) 72 129.67 T
+(, training is not computationally) 389.59 129.67 T
+(e) 72 109.67 T
+(xpensi) 76.72 109.67 T
+(v) 105.17 109.67 T
+(e, and humans can easily interpret the processing of the tree. In addition, it can deal easily with) 110.5 109.67 T
+(missing features, which is not true for the other methods. On the other hand, both trees and the VQ-based) 72 89.67 T
+363.88 516.92 413.05 530.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 367.48 521.67 T
+0 F
+(0.64) 389.2 521.67 T
+(=) 377.5 521.67 T
+0 0 612 792 C
+365.59 496.92 414.76 510.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 369.19 501.67 T
+0 F
+(0.71) 390.91 501.67 T
+(=) 379.21 501.67 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(15) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(prediction produce only a set of possible discrete v) 72 712.67 T
+(alues as the predicted human grades, while the neural) 295.36 712.67 T
+(netw) 72 692.67 T
+(ork method produces a continuous v) 93.27 692.67 T
+(ariable, which may be a desirable feature in some applications,) 252.79 692.67 T
+(such as pronunciation quality \322meters\323. The continuous-v) 72 672.67 T
+(ariable output combined with well-kno) 325.61 672.67 T
+(wn inter-) 496.42 672.67 T
+(polating capabilities may ha) 72 652.67 T
+(v) 195.52 652.67 T
+(e contrib) 200.85 652.67 T
+(uted to neural netw) 239.43 652.67 T
+(ork\325) 323.94 652.67 T
+(s performance, which w) 341.67 652.67 T
+(as better than that of) 447.24 652.67 T
+(the other methods.) 72 632.67 T
+(In the best case, an o) 72 601.67 T
+(v) 163.48 601.67 T
+(erall g) 168.81 601.67 T
+(ain of 11.5% increase in correlation \050from) 196.55 601.67 T
+( to) 433.29 601.67 T
+(\051 at the) 496.52 601.67 T
+(sentence le) 72 581.67 T
+(v) 120.29 581.67 T
+(el w) 125.62 581.67 T
+(as obtained in the VIL) 144.15 581.67 T
+(TS database by using nonlinear re) 241.51 581.67 T
+(gression with a neural netw) 390.74 581.67 T
+(ork) 511.6 581.67 T
+(combining posterior) 72 561.67 T
+(, duration, and timing scores.) 160.47 561.67 T
+2 14 Q
+(Ackno) 72 495.67 T
+(wledgment) 110.75 495.67 T
+0 11 Q
+(W) 72 469.67 T
+(e gratefully ackno) 81.5 469.67 T
+(wledge support from the U.S. Go) 160.65 469.67 T
+(v) 306.83 469.67 T
+(ernment under the T) 312.16 469.67 T
+(echnology Rein) 400.9 469.67 T
+(v) 469.82 469.67 T
+(estment Pro-) 475.15 469.67 T
+(gram. The vie) 72 449.67 T
+(ws e) 133.13 449.67 T
+(xpressed here do not necessarily re\337ect those of the Go) 152.82 449.67 T
+(v) 395.51 449.67 T
+(ernment.) 400.85 449.67 T
+2 14 Q
+(Refer) 72 414.67 T
+(ences) 105.17 414.67 T
+0 11 Q
+([1]) 72 392.67 T
+0.28 0.08 (L. Neume) 99 392.67 B
+0.28 0.08 (yer) 143.71 392.67 B
+0.28 0.08 (, H. Franco, M. W) 157.55 392.67 B
+0.28 0.08 (eintraub, and P) 239.73 392.67 B
+0.28 0.08 (. Price, \322) 306.51 392.67 B
+0.28 0.08 (Automatic T) 345.44 392.67 B
+0.28 0.08 (e) 401.71 392.67 B
+0.28 0.08 (xt-Independent Pronunciation) 406.5 392.67 B
+0.28 0.16 (Scoring of F) 99 374.67 B
+0.28 0.16 (oreign Language Student Speech,) 156.29 374.67 B
+0.28 0.16 (\323) 309.13 374.67 B
+1 F
+0.28 0.16 (Pr) 317.35 374.67 B
+0.28 0.16 (oc. of ICSLP 96) 328.17 374.67 B
+0 F
+0.28 0.16 (, pp. 1457-1460, Philadelphia,) 401.66 374.67 B
+(Pennsylv) 99 356.67 T
+(ania, 1996.) 139.06 356.67 T
+([2]) 72 333.67 T
+0.28 0.24 (M. Rypa, \322ECHOS: A V) 99 333.67 B
+0.28 0.24 (oice Interacti) 212.9 333.67 B
+0.28 0.24 (v) 274.01 333.67 B
+0.28 0.24 (e Language T) 279.59 333.67 B
+0.28 0.24 (raining System,) 343.13 333.67 B
+0.28 0.24 (\323) 415.32 333.67 B
+1 F
+0.28 0.24 (Pr) 423.71 333.67 B
+0.28 0.24 (oceedings of CALICO) 434.7 333.67 B
+0 F
+0.28 0.24 (,) 537.01 333.67 B
+(Alb) 99 315.67 T
+(uquerque, Ne) 115.28 315.67 T
+(w Me) 174.26 315.67 T
+(xico, 1996.) 199.45 315.67 T
+([3]) 72 292.67 T
+0.28 0.1 (L. Neume) 99 292.67 B
+0.28 0.1 (yer) 143.93 292.67 B
+0.28 0.1 (, H. Franco, V) 157.85 292.67 B
+0.28 0.1 (. Abrash, L. Julia, O. Ronen, H. Bratt, J. Bing, V) 221.63 292.67 B
+0.28 0.1 (. Dig) 442.64 292.67 B
+0.28 0.1 (alakis, M. Rypa,) 465.38 292.67 B
+0.28 0.15 (\322W) 99 274.67 B
+0.28 0.15 (eb Grader: A Multilingual Pronunciation practice T) 113.69 274.67 B
+0.28 0.15 (ool\323,) 348.76 274.67 B
+1 F
+0.28 0.15 (Pr) 374.39 274.67 B
+0.28 0.15 (oceedings of W) 385.2 274.67 B
+0.28 0.15 (orkshop on Speec) 454.08 274.67 B
+0.28 0.15 (h) 534.5 274.67 B
+(T) 99 256.67 T
+(ec) 104.1 256.67 T
+(hnolo) 113.71 256.67 T
+(gy in Langua) 138.65 256.67 T
+(g) 196.6 256.67 T
+(e Learning \050ST) 201.99 256.67 T
+(iLL\051 98,) 267.39 256.67 T
+0 F
+(pp. 61-64, Marholmen, Sweden, 1998.) 305.59 256.67 T
+([4]) 72 233.67 T
+0.28 0.17 (J. Bernstein, M. Cohen, H. Murv) 99 233.67 B
+0.28 0.17 (eit, D. Rtische) 250.3 233.67 B
+0.28 0.17 (v) 316.07 233.67 B
+0.28 0.17 (, and M. W) 321.02 233.67 B
+0.28 0.17 (eintraub, \322) 372.46 233.67 B
+0.28 0.17 (Automatic Ev) 420.16 233.67 B
+0.28 0.17 (aluation and) 483.61 233.67 B
+(T) 99 215.67 T
+(raining in English Pronunciation,) 105.34 215.67 T
+(\323) 250.62 215.67 T
+1 F
+(ICSLP 1990) 258.26 215.67 T
+0 F
+(, pp. 1185-1188, K) 312.35 215.67 T
+(obe, Japan.) 395.07 215.67 T
+([5]) 72 192.67 T
+0 (J. Bernstein, \322) 99 192.67 P
+0 (Automatic Grading of English Spok) 160.46 192.67 P
+0 (en by Japanese Students,) 319.25 192.67 P
+0 (\323) 427.86 192.67 P
+1 F
+0 (SRI International Inter-) 435.5 192.67 P
+(nal Reports Pr) 99 174.67 T
+(oject 2417) 163.28 174.67 T
+0 F
+(, 1992.) 209.42 174.67 T
+([6]) 72 151.67 T
+0.28 0.01 (V) 99 151.67 B
+0.28 0.01 (. Dig) 105.53 151.67 B
+0.28 0.01 (alakis, \322) 127.81 151.67 B
+0.28 0.01 (Algorithm De) 163.34 151.67 B
+0.28 0.01 (v) 224.88 151.67 B
+0.28 0.01 (elopment in the Autograder Project,) 230.22 151.67 B
+0.28 0.01 (\323) 388.86 151.67 B
+1 F
+0.28 0.01 (SRI International Internal Com-) 396.79 151.67 B
+(munication) 99 133.67 T
+0 F
+(, 1992.) 148.5 133.67 T
+384.11 596.92 433.29 610.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 384.97 601.67 T
+0 F
+(0.576) 406.69 601.67 T
+(=) 394.99 601.67 T
+0 0 612 792 C
+447.35 596.92 496.52 610.92 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 448.2 601.67 T
+0 F
+(0.642) 469.92 601.67 T
+(=) 458.22 601.67 T
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 15
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(16) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+([7]) 72 712.67 T
+0.28 0.22 (V) 99 712.67 B
+0.28 0.22 (. Dig) 105.74 712.67 B
+0.28 0.22 (alakis and H. Murv) 129.06 712.67 B
+0.28 0.22 (eit, \322GENONES: Optimizing the De) 218.61 712.67 B
+0.28 0.22 (gree of Mixture T) 386.98 712.67 B
+0.28 0.22 (ying in a Lar) 469.17 712.67 B
+0.28 0.22 (ge) 529.17 712.67 B
+0.04 (V) 99 694.67 P
+0.04 (ocab) 105.52 694.67 P
+0.04 (ulary Hidden Mark) 126.07 694.67 P
+0.04 (o) 210.35 694.67 P
+0.04 (v Model Based Speech Recognizer) 215.68 694.67 P
+0.04 (,) 369.35 694.67 P
+0.04 (\323) 371.33 694.67 P
+1 F
+0.04 (Pr) 379 694.67 P
+0.04 (oc. of) 389.51 694.67 P
+0.04 (Pr) 416.77 694.67 P
+0.04 (oc. Intl. Conf) 427.27 694.67 P
+0.04 (. on Acoust.,) 485.24 694.67 P
+(Speec) 99 676.67 T
+(h and Signal Pr) 124.49 676.67 T
+(ocessing 94,) 193.36 676.67 T
+0 F
+(pp. 1537-1540) 250.49 676.67 T
+1 F
+(,) 314.65 676.67 T
+0 F
+( 1994.) 317.4 676.67 T
+([8]) 72 653.67 T
+0.28 0.09 (H. Franco, L. Neume) 99 653.67 B
+0.28 0.09 (yer) 194.82 653.67 B
+0.28 0.09 (, Y) 208.69 653.67 B
+0.28 0.09 (. Kim, and O. Ronen, \322) 221.25 653.67 B
+0.28 0.09 (Automatic Pronunciation Scoring for Language) 325.43 653.67 B
+-0.02 (Instruction,) 99 635.67 P
+-0.02 (\323) 148.64 635.67 P
+1 F
+-0.02 (Pr) 156.26 635.67 P
+-0.02 (oc. Intl. Conf) 166.76 635.67 P
+-0.02 (. on Acoust., Speec) 224.62 635.67 P
+-0.02 (h and Signal Pr) 307.49 635.67 P
+-0.02 (ocessing 97,) 376.31 635.67 P
+0 F
+-0.02 ( pp. 1471-1474, Munich,) 430.67 635.67 P
+(1997.) 99 617.67 T
+([9]) 72 594.67 T
+(N. Draper and H. Smith, \322) 99 594.67 T
+(Applied Re) 213.6 594.67 T
+(gression Analysis, 2nd Ed.,) 263.85 594.67 T
+(\323 J. W) 383.46 594.67 T
+(ile) 410.82 594.67 T
+(y & Sons, 1981.) 421.65 594.67 T
+([10]) 72 571.67 T
+0.28 0.04 (S. Kay) 99 571.67 B
+0.28 0.04 (, \322Fundamentals of Statistical Signal Processing,) 128.71 571.67 B
+0.28 0.04 (\323 Apprentice Hall Signal Processing Series,) 345.24 571.67 B
+(A. Opening, Series Ed., 1993.) 99 553.67 T
+([11]) 72 530.67 T
+0.02 (Cybenk) 99 530.67 P
+0.02 (o, G., \322) 133.11 530.67 P
+0.02 (Approximation by Superpositions of a Sigmoidal Function.) 164.34 530.67 P
+0.02 (\323) 424.94 530.67 P
+1 F
+0.02 (Mathematics of Contr) 432.59 530.67 P
+0.02 (ol,) 528.69 530.67 P
+(Signals, and Systems) 99 512.67 T
+0 F
+(, 2, pp. 303-314, 1989.) 190.97 512.67 T
+([12]) 72 489.67 T
+0.26 (H. Bourlard and C. W) 99 489.67 P
+0.26 (ellek) 196.31 489.67 P
+0.26 (ens, \322Links Between Mark) 217.58 489.67 P
+0.26 (o) 336.17 489.67 P
+0.26 (v Models and Multilayer Perceptrons,) 341.51 489.67 P
+0.26 (\323) 508.28 489.67 P
+1 F
+0.26 (IEEE) 516.17 489.67 P
+(T) 99 471.67 T
+(r) 104.51 471.67 T
+(ansactions on P) 108.62 471.67 T
+(attern Analysis and Mac) 178.02 471.67 T
+(hine Intellig) 285.71 471.67 T
+(ence) 339.08 471.67 T
+(,) 359.12 471.67 T
+0 F
+( V) 361.87 471.67 T
+(ol. 12, No. 12, pp. 1167-1178, 1990.) 371.14 471.67 T
+([13]) 72 448.67 T
+-0.1 (M. Richard, R. Lippman, \322Neural Netw) 99 448.67 P
+-0.1 (ork Classi\336ers Estimate Bayesian) 273.42 448.67 P
+1 F
+-0.1 (a posteriori) 423.33 448.67 P
+0 F
+-0.1 ( Probabilities,) 474.87 448.67 P
+-0.1 (\323) 535.12 448.67 P
+1 F
+(Neur) 99 430.67 T
+(al Computation 3) 120.83 430.67 T
+0 F
+(, 461-483, 1991.) 197.85 430.67 T
+([14]) 72 407.67 T
+(D. Rumelhart and J. Mc Clelland, \322P) 99 407.67 T
+(arallel Distrib) 261.07 407.67 T
+(uted Processing,) 321.65 407.67 T
+(\323 MIT Press, 1986.) 392.99 407.67 T
+([15]) 72 384.67 T
+0.28 0.04 (L. Breiman, J. Friedman, R. Olsen, and C. Stone, \322Classif) 99 384.67 B
+0.28 0.04 (ication and Re) 357.41 384.67 B
+0.28 0.04 (gression T) 421.84 384.67 B
+0.28 0.04 (rees,) 468.22 384.67 B
+0.28 0.04 (\323 The W) 488.09 384.67 B
+0.28 0.04 (ax-) 525.88 384.67 B
+(w) 99 366.67 T
+(orks & Brooks/Cole Statistics/Probability Series, 1984.) 106.83 366.67 T
+([16]) 72 343.67 T
+0.28 0.03 (W) 99 343.67 B
+0.28 0.03 (. Buntine and R. Caruana, \322Introduction to IND V) 108.4 343.67 B
+0.28 0.03 (. 2.1 and Recursi) 330.81 343.67 B
+0.28 0.03 (v) 406.07 343.67 B
+0.28 0.03 (e P) 411.44 343.67 B
+0.28 0.03 (artitioning,) 425.38 343.67 B
+0.28 0.03 (\323 N) 473.54 343.67 B
+0.28 0.03 (ASA Ames) 489.09 343.67 B
+(Research Center) 99 325.67 T
+(, 1992.) 170.95 325.67 T
+([17]) 72 302.67 T
+(J. R. Quinlan, \322Induction of Decision T) 99 302.67 T
+(rees,) 272.46 302.67 T
+(\323) 292.15 302.67 T
+1 F
+(Mac) 299.78 302.67 T
+(hine Learning) 319.17 302.67 T
+0 F
+(, 1 \0501\051:81-106, 1986.) 381.19 302.67 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "16" 16
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(17) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(.) 72 681.67 T
+2 9 Q
+( Scor) 174.96 652 T
+(es) 194.55 652 T
+(1) 233.29 652 T
+(2) 280.29 652 T
+(3) 327.29 652 T
+(4) 374.29 652 T
+(5) 421.28 652 T
+0 10 Q
+(%) 184.34 630.33 T
+0 9 Q
+(9) 233.29 631 T
+(31) 278.04 631 T
+(42) 325.04 631 T
+(15) 372.04 631 T
+(3) 421.28 631 T
+2 12 Q
+(T) 135.07 609 T
+(able 1: Distrib) 141.97 609 T
+(ution of human grades o) 215.06 609 T
+(v) 339.62 609 T
+(er the nonnati) 345.5 609 T
+(v) 417.38 609 T
+(e database) 423.26 609 T
+164.97 665.5 164.97 623.5 2 L
+V
+1 H
+0 Z
+N
+212.04 666.5 212.04 622.5 2 L
+V
+N
+259.04 666.5 259.04 622.5 2 L
+V
+N
+306.04 666.5 306.04 622.5 2 L
+V
+N
+353.04 666.5 353.04 622.5 2 L
+V
+N
+400.04 666.5 400.04 622.5 2 L
+V
+N
+447.03 665.5 447.03 623.5 2 L
+V
+N
+164.47 666 447.53 666 2 L
+V
+N
+165.47 644.25 446.53 644.25 2 L
+V
+0.5 H
+N
+165.47 641.75 446.53 641.75 2 L
+V
+N
+164.47 623 447.53 623 2 L
+V
+1 H
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "17" 17
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(18) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 11 Q
+(.) 72 681.67 T
+2 9 Q
+(Machine scor) 239.39 646.5 T
+(es) 290.97 646.5 T
+(sentence-le) 352.82 652 T
+(v) 394.67 652 T
+(el) 399.08 652 T
+(corr) 358.03 641 T
+(elation) 374.36 641 T
+0 F
+(Posterior score) 201.73 620 T
+(0.579) 369.07 620 T
+(Normalized duration score) 201.73 601 T
+(0.469) 369.07 601 T
+(Syllabic timing score) 201.73 582 T
+(0.352) 369.07 582 T
+2 12 Q
+(T) 122.27 561 T
+(able 2: Sentence-le) 129.17 561 T
+(v) 224.3 561 T
+(el corr) 230.18 561 T
+(elations between human and machine scor) 263.62 561 T
+(es) 479.74 561 T
+195.73 665.5 195.73 575.5 2 L
+V
+1 H
+0 Z
+N
+342.12 666.5 342.12 574.5 2 L
+V
+N
+416.27 665.5 416.27 575.5 2 L
+V
+N
+195.23 666 416.77 666 2 L
+V
+N
+196.23 633.25 415.77 633.25 2 L
+V
+0.5 H
+N
+196.23 630.75 415.77 630.75 2 L
+V
+N
+195.23 613 416.77 613 2 L
+V
+1 H
+N
+195.23 594 416.77 594 2 L
+V
+N
+195.23 575 416.77 575 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "18" 18
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(19) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+(P) 223.93 646.5 T
+(airs of machine scor) 229.34 646.5 T
+(es) 306.42 646.5 T
+(sentence-le) 352.82 652 T
+(v) 394.67 652 T
+(el) 399.08 652 T
+(corr) 358.03 641 T
+(elation) 374.36 641 T
+0 F
+(Posterior - duration) 201.73 620 T
+(0.662) 369.07 620 T
+(Posterior - syllabic timing) 201.73 601 T
+(0.434) 369.07 601 T
+(Duration - syllabic timing) 201.73 582 T
+(0.466) 369.07 582 T
+2 12 Q
+(T) 131.95 561 T
+(able 3: Sentence-le) 138.85 561 T
+(v) 233.98 561 T
+(el corr) 239.86 561 T
+(elations between pairs of machine scor) 273.29 561 T
+(es) 470.06 561 T
+195.73 665.5 195.73 575.5 2 L
+V
+1 H
+0 Z
+N
+342.12 666.5 342.12 574.5 2 L
+V
+N
+416.27 665.5 416.27 575.5 2 L
+V
+N
+195.23 666 416.77 666 2 L
+V
+N
+196.23 633.25 415.77 633.25 2 L
+V
+0.5 H
+N
+196.23 630.75 415.77 630.75 2 L
+V
+N
+195.23 613 416.77 613 2 L
+V
+1 H
+N
+195.23 594 416.77 594 2 L
+V
+N
+195.23 575 416.77 575 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "19" 19
+%%Page: "20" 20
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 8 Q
+0 X
+0 0 0 1 0 0 0 K
+(20) 302 38.67 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+(Method) 180.73 652 T
+(Machine scor) 329.3 652 T
+(es) 380.88 652 T
+(Corr) 446.7 652 T
+(elation) 465.52 652 T
+0 F
+(\050Baseline\051) 111.82 631 T
+(posterior) 291.64 631 T
+(0.576) 458.98 631 T
+(Linear re) 111.82 612 T
+(gression) 144.41 612 T
+(posterior + duration) 291.64 612 T
+(0.587) 458.98 612 T
+(Linear re) 111.82 593 T
+(gression) 144.41 593 T
+(posterior + duration + timing) 291.64 593 T
+(0.593) 458.98 593 T
+(Neural netw) 111.82 574 T
+(ork) 155.96 574 T
+(posterior) 291.64 574 T
+(0.622) 458.98 574 T
+(Neural netw) 111.82 555 T
+(ork) 155.96 555 T
+(posterior + duration) 291.64 555 T
+(0.638) 458.98 555 T
+(Neural netw) 111.82 536 T
+(ork) 155.96 536 T
+(posterior + duration + timing) 291.64 536 T
+(0.642) 458.98 536 T
+(Distrib) 111.82 517 T
+(ution estimation \050scalar quantiz.\051) 136.64 517 T
+(posterior) 291.64 517 T
+(0.611) 458.98 517 T
+(Distrib) 111.82 498 T
+(ution estimation \050scalar quantiz.\051) 136.64 498 T
+(posterior + duration) 291.64 498 T
+(0.605) 458.98 498 T
+(Distrib) 111.82 479 T
+(ution estimation \050scalar quantiz.\051) 136.64 479 T
+(posterior + duration +timing) 291.64 479 T
+(0.568) 458.98 479 T
+(Distrib) 111.82 460 T
+(ution estimation \050v) 136.64 460 T
+(ector quantiz.\051) 204.51 460 T
+(posterior \050VQ\051) 291.64 460 T
+(0.615) 458.98 460 T
+(Distrib) 111.82 441 T
+(ution estimation \050v) 136.64 441 T
+(ector quantiz.\051) 204.51 441 T
+(posterior + duration \050VQ\051) 291.64 441 T
+(0.617) 458.98 441 T
+(Distrib) 111.82 422 T
+(ution estimation \050v) 136.64 422 T
+(ector quantiz.\051) 204.51 422 T
+(posterior + duration + timing \050VQ\051) 291.64 422 T
+(0.618) 458.98 422 T
+(Re) 111.82 403 T
+(gression tree) 121.68 403 T
+(posterior) 291.64 403 T
+(0.609) 458.98 403 T
+(Re) 111.82 384 T
+(gression tree) 121.68 384 T
+(posterior + duration) 291.64 384 T
+(0.618) 458.98 384 T
+(Re) 111.82 365 T
+(gression tree) 121.68 365 T
+(posterior + duration + timing) 291.64 365 T
+(0.622) 458.98 365 T
+2 12 Q
+(T) 79.93 344 T
+(able 4: Sentence-le) 86.83 344 T
+(v) 181.96 344 T
+(el corr) 187.84 344 T
+(elations between human and pr) 221.27 344 T
+(edicted machine grades using) 381.74 344 T
+(differ) 160.84 330 T
+(ent pr) 189.28 330 T
+(edictors and combinations of machine scor) 220.06 330 T
+(es.) 438.17 330 T
+105.82 665.5 105.82 358.5 2 L
+V
+1 H
+0 Z
+N
+285.64 666.5 285.64 357.5 2 L
+V
+N
+432.04 666.5 432.04 357.5 2 L
+V
+N
+506.18 665.5 506.18 358.5 2 L
+V
+N
+105.32 666 506.68 666 2 L
+V
+N
+106.32 644.25 505.68 644.25 2 L
+V
+0.5 H
+N
+106.32 641.75 505.68 641.75 2 L
+V
+N
+105.32 624 506.68 624 2 L
+V
+1 H
+N
+105.32 605 506.68 605 2 L
+V
+N
+105.32 586 506.68 586 2 L
+V
+N
+105.32 567 506.68 567 2 L
+V
+N
+105.32 548 506.68 548 2 L
+V
+N
+105.32 529 506.68 529 2 L
+V
+N
+105.32 510 506.68 510 2 L
+V
+N
+105.32 491 506.68 491 2 L
+V
+N
+105.32 472 506.68 472 2 L
+V
+N
+105.32 453 506.68 453 2 L
+V
+N
+105.32 434 506.68 434 2 L
+V
+N
+105.32 415 506.68 415 2 L
+V
+N
+105.32 396 506.68 396 2 L
+V
+N
+105.32 377 506.68 377 2 L
+V
+N
+105.32 358 506.68 358 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "20" 20
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 20
+%%DocumentFonts: Times-Roman
+%%+ Times-Italic
+%%+ Times-Bold
+%%+ Symbol
+%%EOF

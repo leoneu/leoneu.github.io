@@ -1,0 +1,4431 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 5.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            false def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 595.28 841.89 0 1 15 FMDOCUMENT
+0 0 /Times-Bold FMFONTDEFINE
+1 0 /Times-Italic FMFONTDEFINE
+2 0 /Times-Roman FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+102.05 632.13 498.9 768.19 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 12 Q
+0 X
+(A) 106.86 746.19 T
+(UT) 114.92 746.19 T
+(OMA) 131.37 746.19 T
+(TIC DETECTION OF PHONE-LEVEL MISPR) 159.56 746.19 T
+(ONUNCIA) 407.23 746.19 T
+(TION) 463.41 746.19 T
+(FOR LANGU) 218.49 729.19 T
+(A) 289.44 729.19 T
+(GE LEARNING) 297.44 729.19 T
+1 11 Q
+(Hor) 146.95 702.86 T
+(acio F) 164.5 702.86 T
+(r) 192.31 702.86 T
+(anco, Leonar) 196.42 702.86 T
+(do Neume) 254.68 702.86 T
+(yer) 298.65 702.86 T
+(, Mar\222a Ramos, and Harry Br) 311.47 702.86 T
+(att) 442.38 702.86 T
+2 F
+(SRI International) 262.43 681.86 T
+(Speech T) 200.66 668.86 T
+(echnology and Research Laboratory) 241.13 668.86 T
+(Menlo P) 234.1 655.86 T
+(ark, CA, 94025, USA) 271.52 655.86 T
+54.47 73.7 284.08 632.13 R
+7 X
+V
+0 F
+0 X
+(ABSTRA) 139.63 624.79 T
+(CT) 183.64 624.79 T
+2 9 Q
+0.06 (W) 54.47 607.13 P
+0.06 (e are interested in automatically detecting speci\336c phone se) 62.25 607.13 P
+0.06 (g-) 276.58 607.13 P
+0.4 (ments that ha) 54.47 596.13 P
+0.4 (v) 103.08 596.13 P
+0.4 (e been mispronounced by a nonnati) 107.44 596.13 P
+0.4 (v) 236.93 596.13 P
+0.4 (e student of) 241.29 596.13 P
+0.87 (a foreign language. The phone-le) 54.47 585.13 P
+0.87 (v) 176.96 585.13 P
+0.87 (el information allo) 181.32 585.13 P
+0.87 (ws a lan-) 249.84 585.13 P
+0.85 (guage instruction system to pro) 54.47 574.13 P
+0.85 (vide the student with feedback) 170.71 574.13 P
+1.88 (about speci\336c pronunciation mistak) 54.47 563.13 P
+1.88 (es. T) 188.27 563.13 P
+1.88 (w) 206.93 563.13 P
+1.88 (o approaches were) 213.34 563.13 P
+0.47 (e) 54.47 552.13 P
+0.47 (v) 58.24 552.13 P
+0.47 (aluated; in the \336rst approach, log-posterior probability-based) 62.52 552.13 P
+0.42 (scores [1] are computed for each phone se) 54.47 541.13 P
+0.42 (gment. These proba-) 209 541.13 P
+0.23 (bilities are based on acoustic models of nati) 54.47 530.13 P
+0.23 (v) 213.06 530.13 P
+0.23 (e speech. The sec-) 217.43 530.13 P
+2.54 (ond approach uses a phonetically labeled nonnati) 54.47 519.13 P
+2.54 (v) 246.44 519.13 P
+2.54 (e speech) 250.8 519.13 P
+0.41 (database to train tw) 54.47 508.13 P
+0.41 (o dif) 125.86 508.13 P
+0.41 (ferent acoustic models for each phone:) 142.8 508.13 P
+0.57 (one model is trained with the acceptable, or correct nati) 54.47 497.13 P
+0.57 (v) 259.31 497.13 P
+0.57 (e-lik) 263.67 497.13 P
+0.57 (e) 280.08 497.13 P
+0.24 (pronunciations, while the other model is trained with the incor-) 54.47 486.13 P
+1.72 (rect, strongly nonnati) 54.47 475.13 P
+1.72 (v) 134.42 475.13 P
+1.72 (e pronunciations. F) 138.79 475.13 P
+1.72 (or each phone se) 211.33 475.13 P
+1.72 (g-) 276.58 475.13 P
+3.62 (ment, a log-lik) 54.47 464.13 P
+3.62 (elihood ratio score is computed using the) 114.37 464.13 P
+2.3 (incorrect and correct pronunciation models.  Either type of) 54.47 453.13 P
+0.17 (score is compared with a phone dependent threshold to detect a) 54.47 442.13 P
+0.82 (mispronunciation. Performance of both approaches w) 54.47 431.13 P
+0.82 (as e) 251.46 431.13 P
+0.82 (v) 265.81 431.13 P
+0.82 (alu-) 270.08 431.13 P
+0.99 (ated in a phonetically transcribed database of 130,000 phones) 54.47 420.13 P
+0 (uttered in continuous speech sentences by 206 nonnati) 54.47 409.13 P
+0 (v) 249.98 409.13 P
+0 (e speak-) 254.34 409.13 P
+(ers.) 54.47 398.13 T
+0 11 Q
+(1. INTR) 119.94 375.79 T
+(ODUCTION) 158.11 375.79 T
+2 9 Q
+1.71 (Computer) 54.47 358.13 P
+1.71 (-based language instruction systems potentially can) 90.29 358.13 P
+1.34 (of) 54.47 347.13 P
+1.34 (fer some adv) 61.74 347.13 P
+1.34 (antages o) 110.68 347.13 P
+1.34 (v) 145.62 347.13 P
+1.34 (er traditional methods, especially in) 149.99 347.13 P
+1.3 (areas such as pronunciation training, which often require full) 54.47 336.13 P
+1.94 (attention of the teacher to a single student. If the computer) 54.47 325.13 P
+0.23 (could pro) 54.47 314.13 P
+0.23 (vide the type of feedback that a pronunciation teacher) 88.81 314.13 P
+0.09 (pro) 54.47 303.13 P
+0.09 (vides, it  w) 66.33 303.13 P
+0.09 (ould be a much cheaper alternati) 106.01 303.13 P
+0.09 (v) 223.46 303.13 P
+0.09 (e, accessible  at) 227.82 303.13 P
+(an) 54.47 292.13 T
+(y time and at an) 62.83 292.13 T
+(y place, and certainly tireless.) 120.19 292.13 T
+0.95 (Recent adv) 54.47 275.13 P
+0.95 (ances in research on automatic pronunciation scor-) 95.43 275.13 P
+0.51 (ing [1],[2] allo) 54.47 264.13 P
+0.51 (w us to obtain  pronunciation quality ratings for) 108.01 264.13 P
+0.12 (sentences or groups of sentences, with arbitrary te) 54.47 253.13 P
+0.12 (xt, with grad-) 235.1 253.13 P
+0.52 (ing consistenc) 54.47 242.13 P
+0.52 (y similar to that of an e) 106.1 242.13 P
+0.52 (xpert teacher) 192.55 242.13 P
+0.52 (. While pro-) 239.3 242.13 P
+4.91 (nunciation scoring is essential in systems designed for) 54.47 231.13 P
+0.29 (automatic e) 54.47 220.13 P
+0.29 (v) 96.28 220.13 P
+0.29 (aluation, a score or number represents only part of) 100.55 220.13 P
+0.14 (the desired feedback for language instruction. In the classroom,) 54.47 209.13 P
+-0.09 (a human teacher can point to speci\336c problems in producing the) 54.47 198.13 P
+0.4 (ne) 54.47 187.13 P
+0.4 (w sounds, and can gi) 62.74 187.13 P
+0.4 (v) 139.34 187.13 P
+0.4 (e speci\336c directions to lessen the most) 143.71 187.13 P
+0.02 (salient pronunciation problems. Our current ef) 54.47 176.13 P
+0.02 (forts focus on the) 221.29 176.13 P
+2.86 (introduction of detailed feedback on speci\336c pronunciation) 54.47 165.13 P
+(problems to help correct or impro) 54.47 154.13 T
+(v) 175.57 154.13 T
+(e pronunciation.) 179.93 154.13 T
+-0.18 (Nati) 54.47 137.13 P
+-0.18 (v) 69.74 137.13 P
+-0.18 (e and nonnati) 74.11 137.13 P
+-0.18 (v) 122.01 137.13 P
+-0.18 (e pronunciations dif) 126.37 137.13 P
+-0.18 (fer in man) 197.77 137.13 P
+-0.18 (y dimensions.) 234.26 137.13 P
+0.77 (F) 54.47 126.13 P
+0.77 (or e) 59.34 126.13 P
+0.77 (xample, at the phone-se) 73.72 126.13 P
+0.77 (gment le) 161.38 126.13 P
+0.77 (v) 193.17 126.13 P
+0.77 (el, there are dif) 197.53 126.13 P
+0.77 (ferences) 254.1 126.13 P
+0.51 (in phonetic features, which lie on a continuum of possible v) 54.47 115.13 P
+0.51 (al-) 274.58 115.13 P
+0.77 (ues between L1 and L2 [3]. There are also prosodic elements,) 54.47 104.13 P
+0.92 (such as stress, duration, timing, pauses, and intonation, which) 54.47 93.13 P
+2.11 (are crucial to nati) 54.47 82.13 P
+2.11 (v) 123.29 82.13 P
+2.11 (e-lik) 127.65 82.13 P
+2.11 (e pronunciation [4], although in this) 144.06 82.13 P
+312.98 74.26 539.75 632.68 R
+7 X
+V
+0 X
+(w) 312.98 626.68 T
+(ork we are focusing on se) 319.39 626.68 T
+(gmental  pronunciation aspects.) 411.47 626.68 T
+-0.17 (T) 312.98 609.68 P
+-0.17 (o pro) 317.76 609.68 P
+-0.17 (vide useful feedback at the phone-se) 336.2 609.68 P
+-0.17 (gment le) 466.4 609.68 P
+-0.17 (v) 497.25 609.68 P
+-0.17 (el we need) 501.61 609.68 P
+0.74 (to reliably detect whether a phone is nati) 312.98 598.68 P
+0.74 (v) 464.13 598.68 P
+0.74 (e-lik) 468.49 598.68 P
+0.74 (e or nonnati) 484.9 598.68 P
+0.74 (v) 529.14 598.68 P
+0.74 (e,) 533.5 598.68 P
+-0.14 (and, ideally) 312.98 587.68 P
+-0.14 (,  to e) 354.25 587.68 P
+-0.14 (v) 373.6 587.68 P
+-0.14 (aluate ho) 377.87 587.68 P
+-0.14 (w close it is to the nati) 410.25 587.68 P
+-0.14 (v) 490.18 587.68 P
+-0.14 (e phone pro-) 494.55 587.68 P
+0.51 (duction along its dif) 312.98 576.68 P
+0.51 (ferent phonetic features. Recently) 386.55 576.68 P
+0.51 (, the use) 508.97 576.68 P
+0.08 (of  posterior scores w) 312.98 565.68 P
+0.08 (as e) 390.7 565.68 P
+0.08 (xtended to e) 404.39 565.68 P
+0.08 (v) 448.32 565.68 P
+0.08 (aluate the pronunciation) 452.6 565.68 P
+1.94 (quality of speci\336c phone se) 312.98 554.68 P
+1.94 (gments [5] as well as to detect) 419.11 554.68 P
+0.7 (phone mispronunciations [6],[7].  An alternati) 312.98 543.68 P
+0.7 (v) 482 543.68 P
+0.7 (e approach [8]) 486.37 543.68 P
+-0.06 (used hidden Mark) 312.98 532.68 P
+-0.06 (o) 377.75 532.68 P
+-0.06 (v models \050HMMs\051 with tw) 382.11 532.68 P
+-0.06 (o alternati) 478.26 532.68 P
+-0.06 (v) 514.21 532.68 P
+-0.06 (e pro-) 518.58 532.68 P
+-0.01 (nunciations per phone\321one trained on nati) 312.98 521.68 P
+-0.01 (v) 468.43 521.68 P
+-0.01 (e speech, the other) 472.8 521.68 P
+6.03 (on strongly nonnati) 312.98 510.68 P
+6.03 (v) 394.82 510.68 P
+6.03 (e speech. Mispronunciations were) 399.18 510.68 P
+0.77 (detected from the phone backtrace when the nonnati) 312.98 499.68 P
+0.77 (v) 506.37 499.68 P
+0.77 (e phone) 510.73 499.68 P
+(alternati) 312.98 488.68 T
+(v) 342.25 488.68 T
+(e w) 346.61 488.68 T
+(as chosen.) 359.27 488.68 T
+0 (The recent a) 312.98 471.68 P
+0 (v) 357.28 471.68 P
+0 (ailability of a lar) 361.55 471.68 P
+0 (ge nonnati) 421.14 471.68 P
+0 (v) 458.66 471.68 P
+0 (e speech database [9]) 463.03 471.68 P
+1.81 (with detailed phone-le) 312.98 460.68 P
+1.81 (v) 396.85 460.68 P
+1.81 (el transcriptions allo) 401.22 460.68 P
+1.81 (wed us to accu-) 478.1 460.68 P
+0.74 (rately e) 312.98 449.68 P
+0.74 (xtend and e) 340.32 449.68 P
+0.74 (v) 383.06 449.68 P
+0.74 (aluate our phone mispronunciation detec-) 387.33 449.68 P
+0.97 (tion strate) 312.98 438.68 P
+0.97 (gies. W) 349.56 438.68 P
+0.97 (e in) 377.31 438.68 P
+0.97 (v) 391.17 438.68 P
+0.97 (estig) 395.53 438.68 P
+0.97 (ated tw) 412.49 438.68 P
+0.97 (o dif) 439.61 438.68 P
+0.97 (ferent methods for the) 457.11 438.68 P
+1.11 (detection of phone-le) 312.98 427.68 P
+1.11 (v) 391.46 427.68 P
+1.11 (el mispronunciations \050rather than scor-) 395.83 427.68 P
+0.62 (ing the pronunciation quality of  phone se) 312.98 416.68 P
+0.62 (gments\051. In the \336rst) 467.4 416.68 P
+0.22 (method, posterior scores [1] are computed for each phone se) 312.98 405.68 P
+0.22 (g-) 532.25 405.68 P
+2.32 (ment. These probabilities are based on acoustic models of) 312.98 394.68 P
+0.8 (nati) 312.98 383.68 P
+0.8 (v) 326.25 383.68 P
+0.8 (e speech. The second method uses the phonetically tran-) 330.62 383.68 P
+0.13 (scribed nonnati) 312.98 372.68 P
+0.13 (v) 368.12 372.68 P
+0.13 (e speech database to train tw) 372.49 372.68 P
+0.13 (o dif) 476.25 372.68 P
+0.13 (ferent acous-) 492.9 372.68 P
+2.43 (tic models for each phone: one model is trained with the) 312.98 361.68 P
+2.63 (acceptable, or correct nati) 312.98 350.68 P
+2.63 (v) 413.6 350.68 P
+2.63 (e-lik) 417.97 350.68 P
+2.63 (e pronunciations, while the) 434.37 350.68 P
+1.36 (other model is trained with the incorrect, strongly nonnati) 312.98 339.68 P
+1.36 (v) 531.39 339.68 P
+1.36 (e) 535.75 339.68 P
+0.13 (pronunciations. F) 312.98 328.68 P
+0.13 (or each phone se) 375.97 328.68 P
+0.13 (gment, a log-lik) 436.45 328.68 P
+0.13 (elihood ratio) 493.87 328.68 P
+1.1 (score is computed using the incorrect and correct pronuncia-) 312.98 317.68 P
+1.12 (tion models.  Either type of score is compared with a phone) 312.98 306.68 P
+0.61 (dependent threshold to detect a mispronunciation. Both meth-) 312.98 295.68 P
+-0.02 (ods were e) 312.98 284.68 P
+-0.02 (v) 351.2 284.68 P
+-0.02 (aluated o) 355.47 284.68 P
+-0.02 (v) 388.06 284.68 P
+-0.02 (er a  phonetically transcribed database of) 392.42 284.68 P
+1.75 (130,000 phones uttered by 206 nonnati) 312.98 273.68 P
+1.75 (v) 461.99 273.68 P
+1.75 (e speak) 466.36 273.68 P
+1.75 (ers of Latin) 494.76 273.68 P
+(American Spanish.) 312.98 262.68 T
+0 11 Q
+(2. D) 352.72 240.35 T
+(A) 371.28 240.35 T
+(T) 378.17 240.35 T
+(AB) 384.52 240.35 T
+(ASE DESCRIPTION) 399.47 240.35 T
+2 9 Q
+0.55 (The collection of phone-le) 312.98 222.68 P
+0.55 (v) 409.62 222.68 P
+0.55 (el pronunciation data is one of the) 413.99 222.68 P
+0.85 (most challenging tasks necessary to b) 312.98 211.68 P
+0.85 (uild and e) 452.3 211.68 P
+0.85 (v) 489.28 211.68 P
+0.85 (aluate a sys-) 493.55 211.68 P
+1.82 (tem that can gi) 312.98 200.68 P
+1.82 (v) 371.45 200.68 P
+1.82 (e detailed feedback on speci\336c phone-le) 375.82 200.68 P
+1.82 (v) 528.89 200.68 P
+1.82 (el) 533.25 200.68 P
+2.27 (pronunciation problems. F) 312.98 189.68 P
+2.27 (or this study we had collected a) 412.64 189.68 P
+2.8 (Latin-American Spanish speech database [9] that included) 312.98 178.68 P
+1.92 (recordings from nati) 312.98 167.68 P
+1.92 (v) 390.08 167.68 P
+1.92 (e and nonnati) 394.45 167.68 P
+1.92 (v) 446.56 167.68 P
+1.92 (e speak) 450.92 167.68 P
+1.92 (ers. A group of) 479.5 167.68 P
+1.58 (e) 312.98 156.68 P
+1.58 (xpert phoneticians transcribed part of the nonnati) 316.84 156.68 P
+1.58 (v) 503.07 156.68 P
+1.58 (e speech) 507.43 156.68 P
+-0.06 (data to be used for de) 312.98 145.68 P
+-0.06 (v) 389.66 145.68 P
+-0.06 (elopment of the mispronunciation detec-) 394.03 145.68 P
+-0.01 (tion algorithms.  This ef) 312.98 134.68 P
+-0.01 (fort in) 399.47 134.68 P
+-0.01 (v) 421.35 134.68 P
+-0.01 (olv) 425.67 134.68 P
+-0.01 (ed obtaining detailed phone-) 437.04 134.68 P
+-0.01 (le) 312.98 123.68 P
+-0.01 (v) 319.25 123.68 P
+-0.01 (el information for approximately 130,000 phones  uttered in) 323.62 123.68 P
+0.48 (continuous speech sentences.  These sentences were produced) 312.98 112.68 P
+0.4 (by 206 nonnati) 312.98 101.68 P
+0.4 (v) 367.56 101.68 P
+0.4 (e speak) 371.92 101.68 P
+0.4 (ers whose nati) 398.98 101.68 P
+0.4 (v) 451.04 101.68 P
+0.4 (e language w) 455.41 101.68 P
+0.4 (as Ameri-) 503.61 101.68 P
+1.42 (can English. Their le) 312.98 90.68 P
+1.42 (v) 392.01 90.68 P
+1.42 (els of pro\336cienc) 396.37 90.68 P
+1.42 (y were v) 457.07 90.68 P
+1.42 (aried, and an) 490.67 90.68 P
+0.37 (attempt w) 312.98 79.68 P
+0.37 (as made to balance the number of speak) 349.01 79.68 P
+0.37 (ers  by le) 495.25 79.68 P
+0.37 (v) 528.89 79.68 P
+0.37 (el) 533.25 79.68 P
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+0.48 (of pro\336cienc) 55.03 762.19 P
+0.48 (y as well as by gender) 101.11 762.19 P
+0.48 (. F) 182.72 762.19 P
+0.48 (or this study) 192.57 762.19 P
+0.48 (, the detailed) 237.44 762.19 P
+1.21 (phone-le) 55.03 751.19 P
+1.21 (v) 86.29 751.19 P
+1.21 (el transcriptions were collapsed into tw) 90.66 751.19 P
+1.21 (o cate) 237.82 751.19 P
+1.21 (gories:) 260.13 751.19 P
+0.97 (nati) 55.03 740.19 P
+0.97 (v) 68.3 740.19 P
+0.97 (e-lik) 72.67 740.19 P
+0.97 (e and nonnati) 89.07 740.19 P
+0.97 (v) 139.29 740.19 P
+0.97 (e pronunciations. In this w) 143.65 740.19 P
+0.97 (ay we con-) 243.2 740.19 P
+1.63 (v) 55.03 729.19 P
+1.63 (e) 59.39 729.19 P
+1.63 (yed the judgment of the nati) 63.25 729.19 P
+1.63 (v) 172.41 729.19 P
+1.63 (eness of  each phone occur-) 176.78 729.19 P
+(rence.) 55.03 718.19 T
+5.6 (F) 55.03 701.19 P
+5.6 (our nati) 59.9 701.19 P
+5.6 (v) 93.02 701.19 P
+5.6 (e Spanish-speaking phoneticians pro) 97.38 701.19 P
+5.6 (vided the) 245.79 701.19 P
+2.44 (detailed phonetic transcriptions for 2550 sentences totalling) 55.03 690.19 P
+1.12 (130,000 phones that were randomly di) 55.03 679.19 P
+1.12 (vided among transcrib-) 198.9 679.19 P
+0.19 (ers. An additional 160 sentences, the common pool,  were tran-) 55.03 668.19 P
+0.78 (scribed by all four phoneticians to assess the consistenc) 55.03 657.19 P
+0.78 (y with) 261.1 657.19 P
+1.28 (which the human could achie) 55.03 646.19 P
+1.28 (v) 165.4 646.19 P
+1.28 (e this task.  In [9] it w) 169.76 646.19 P
+1.28 (as con-) 257.61 646.19 P
+0.4 (cluded that not all the phone classes could be  transcribed con-) 55.03 635.19 P
+0.18 (sistently) 55.03 624.19 P
+0.18 (. The most reliable to transcribe were the approximants) 84.45 624.19 P
+1.19 (/) 55.03 613.19 P
+3 F
+1.19 (b) 57.53 613.19 P
+2 F
+1.19 (/, /) 62.47 613.19 P
+3 F
+1.19 (d) 73.16 613.19 P
+2 F
+1.19 (/, and /) 77.61 613.19 P
+3 F
+1.19 (g) 104.73 613.19 P
+2 F
+1.19 (/; surprisingly) 108.43 613.19 P
+1.19 (, some of the phones which were) 159.29 613.19 P
+0.15 (e) 55.03 602.19 P
+0.15 (xpected to be good predictors of nonnati) 58.89 602.19 P
+0.15 (v) 205.02 602.19 P
+0.15 (eness, such as v) 209.39 602.19 P
+0.15 (oice-) 266.64 602.19 P
+0.11 (less stops, most v) 55.03 591.19 P
+0.11 (o) 118.19 591.19 P
+0.11 (wels, and /l/ and /r/,  did not  ha) 122.47 591.19 P
+0.11 (v) 237.55 591.19 P
+0.11 (e good con-) 241.92 591.19 P
+(sistenc) 55.03 580.19 T
+(y  across all the transcribers.) 79.39 580.19 T
+0 11 Q
+(3. DETECTION OF MISPR) 63.57 557.86 T
+(ONUNCIA) 196.47 557.86 T
+(TION) 247.97 557.86 T
+2 9 Q
+0.22 (The mispronunciation detection is planned to be inte) 55.03 540.19 P
+0.22 (grated into) 245.67 540.19 P
+0 (our e) 55.03 529.19 P
+0 (xisting pronunciation scoring paradigm [2],[1], which uses) 73.14 529.19 P
+0.08 (an HMM speech recognizer to generate phonetic se) 55.03 518.19 P
+0.08 (gmentations) 240.63 518.19 P
+0.91 (of the student\325) 55.03 507.19 P
+0.91 (s speech. The recognizer models can be trained) 108.34 507.19 P
+0.7 (using a database of nati) 55.03 496.19 P
+0.7 (v) 142.07 496.19 P
+0.7 (e speak) 146.43 496.19 P
+0.7 (ers or a combination of nati) 173.78 496.19 P
+0.7 (v) 276.27 496.19 P
+0.7 (e) 280.64 496.19 P
+0.15 (and nonnati) 55.03 485.19 P
+0.15 (v) 97.2 485.19 P
+0.15 (e speak) 101.57 485.19 P
+0.15 (ers. From the alignments, dif) 128.37 485.19 P
+0.15 (ferent pronun-) 232.75 485.19 P
+2.32 (ciation scores can be generated for each phonetic se) 55.03 474.19 P
+2.32 (gment,) 259.88 474.19 P
+-0.01 (using dif) 55.03 463.19 P
+-0.01 (ferent types of models. The scores of the dif) 86.54 463.19 P
+-0.01 (ferent pho-) 244.91 463.19 P
+-0.16 (netic se) 55.03 452.19 P
+-0.16 (gments are combined and calibrated to obtain the closest) 81.97 452.19 P
+0.88 (match to the judgment of an e) 55.03 441.19 P
+0.88 (xpert human rater) 167.63 441.19 P
+0.88 (. W) 232.86 441.19 P
+0.88 (e typically) 246.01 441.19 P
+1.15 (assume that the interaction between the student and the com-) 55.03 430.19 P
+0.9 (puter has been designed to be error) 55.03 419.19 P
+0.9 (-free. In this case the pho-) 186.18 419.19 P
+2.47 (netic se) 55.03 408.19 P
+2.47 (gmentation can be obtained by computing a forced) 84.61 408.19 P
+0.86 (alignment using the kno) 55.03 397.19 P
+0.86 (wn prompted te) 144.13 397.19 P
+0.86 (xt  and the pronuncia-) 202.21 397.19 P
+(tion dictionary) 55.03 386.19 T
+(.) 107.19 386.19 T
+1.56 (The goal of the phone-le) 55.03 369.19 P
+1.56 (v) 149.52 369.19 P
+1.56 (el mispronunciation detection is to) 153.89 369.19 P
+-0.07 (add a judgment of nati) 55.03 358.19 P
+-0.07 (v) 135.52 358.19 P
+-0.07 (eness for each phonetic se) 139.89 358.19 P
+-0.07 (gment de\336ned) 233.45 358.19 P
+(in the forced alignment.) 55.03 347.19 T
+0 10 Q
+(3.1 De\336nition of the Mispr) 55.03 330.52 T
+(onunciation Labels) 167.35 330.52 T
+2 9 Q
+0.27 (T) 55.03 313.19 P
+0.27 (o e) 59.81 313.19 P
+0.27 (v) 70.6 313.19 P
+0.27 (aluate, as well as to train,  the models used in the mispro-) 74.87 313.19 P
+2.05 (nunciation detection algorithms, we need to de\336ne for each) 55.03 302.19 P
+1.02 (phone se) 55.03 291.19 P
+1.02 (gment whether or not it w) 87.66 291.19 P
+1.02 (as pronounced in a nati) 185.92 291.19 P
+1.02 (v) 273.27 291.19 P
+1.02 (e-) 277.64 291.19 P
+0.69 (lik) 55.03 280.19 P
+0.69 (e manner) 64.44 280.19 P
+0.69 (. T) 97.87 280.19 P
+0.69 (o this end, we de\336ne the canonical transcription) 107.84 280.19 P
+1.88 (as the sequence of  \322e) 55.03 269.19 P
+1.88 (xpected\323 phones; this phone string is) 142.5 269.19 P
+(obtained from the recognizer forced alignment.) 55.03 258.19 T
+0.61 (T) 55.03 241.19 P
+0.61 (o assess what w) 59.81 241.19 P
+0.61 (as actually uttered, we associated the canoni-) 118.78 241.19 P
+0.14 (cal transcription with the transcriber\325) 55.03 230.19 P
+0.14 (s phone string by applying) 188.57 230.19 P
+0.75 (a dynamic programing \050DP\051 alignment of the tw) 55.03 219.19 P
+0.75 (o strings. The) 233.89 219.19 P
+-0.08 (distance between phone labels  w) 55.03 208.19 P
+-0.08 (as based on the actual acoustic) 174.78 208.19 P
+0.77 (distance between phone classes. This type of distance allo) 55.03 197.19 P
+0.77 (wed) 269.64 197.19 P
+0.51 (us to disambiguate phone  insertions and deletions in the map-) 55.03 186.19 P
+1.1 (ping of the strings.  Then,  each phone in the canonical tran-) 55.03 175.19 P
+1.39 (scription w) 55.03 164.19 P
+1.39 (as assigned a label \322correct\323 or \322mispronounced\323,) 96.58 164.19 P
+0.16 (depending on whether or not the transcriptions from the phone-) 55.03 153.19 P
+1.01 (ticians  were the same as the canonical transcription.   Phone) 55.03 142.19 P
+-0.19 (se) 55.03 131.19 P
+-0.19 (gments labeled as \322correct\323 correspond to a nati) 62.39 131.19 P
+-0.19 (v) 233.55 131.19 P
+-0.19 (e-lik) 237.92 131.19 P
+-0.19 (e phone.) 254.33 131.19 P
+-0.21 (Phone se) 55.03 120.19 P
+-0.21 (gments labeled as \322mispronounced\323 may correspond to) 86.93 120.19 P
+0.06 (a nonnati) 55.03 109.19 P
+0.06 (v) 88.11 109.19 P
+0.06 (e v) 92.47 109.19 P
+0.06 (ersion of the same phone,  a dif) 103.15 109.19 P
+0.06 (ferent  phone,  or a) 216.34 109.19 P
+2.95 (deletion of the phone. By our de\336nition, phone insertions) 55.03 98.19 P
+1.71 (induce a \322mispronounced\323 label for the canonical phone  to) 55.03 87.19 P
+(which the) 312.98 762.74 T
+(y are mapped.) 348.09 762.74 T
+0.82 (Informal analysis has sho) 312.98 745.74 P
+0.82 (wn that the recognizer forced align-) 406.95 745.74 P
+0.21 (ments are rob) 312.98 734.74 P
+0.21 (ust to the v) 362.2 734.74 P
+0.21 (ariability of the  nonnati) 402.35 734.74 P
+0.21 (v) 489.94 734.74 P
+0.21 (e pronuncia-) 494.31 734.74 P
+0.63 (tions. On the other hand,  phone insertions and deletions may) 312.98 723.74 P
+1.32 (induce some minor alignment errors. This problem could be) 312.98 712.74 P
+2.16 (alle) 312.98 701.74 P
+2.16 (viated by adding more alternati) 325.75 701.74 P
+2.16 (v) 446.66 701.74 P
+2.16 (e pronunciations to the) 451.02 701.74 P
+0.85 (pronunciation dictionary in order to model the most common) 312.98 690.74 P
+(deletions and insertions.) 312.98 679.74 T
+0 10 Q
+(3.2 Human Detection of Mispr) 312.98 663.08 T
+(onunciations) 442.51 663.08 T
+2 9 Q
+-0.22 (T) 312.98 645.74 P
+-0.22 (o assess an o) 317.76 645.74 P
+-0.22 (v) 363.19 645.74 P
+-0.22 (erall measure of consistenc) 367.56 645.74 P
+-0.22 (y across transcribers,) 464.47 645.74 P
+1.54 (we aligned the transcription from each phonetician with the) 312.98 634.74 P
+0.94 (canonical transcription as described abo) 312.98 623.74 P
+0.94 (v) 460.57 623.74 P
+0.94 (e. From these align-) 464.94 623.74 P
+2.59 (ments we deri) 312.98 612.74 P
+2.59 (v) 368.42 612.74 P
+2.59 (ed the sequence of \322correct\323 and \322mispro-) 372.78 612.74 P
+2.17 (nounced\323 labels for the phones of each sentence. W) 312.98 601.74 P
+2.17 (e then) 515.83 601.74 P
+0.83 (compared the sequence of labels between e) 312.98 590.74 P
+0.83 (v) 473.17 590.74 P
+0.83 (ery pair of raters) 477.54 590.74 P
+1.67 (by counting the percent of the time that the) 312.98 579.74 P
+1.67 (y disagree. The) 481.18 579.74 P
+-0.17 (a) 312.98 568.74 P
+-0.17 (v) 316.79 568.74 P
+-0.17 (erage across all the pairs of raters is an estimate of the   mean) 321.16 568.74 P
+2.01 (disagreement between human raters. The resulting v) 312.98 557.74 P
+2.01 (alue of) 513 557.74 P
+2.11 (19.8% can be considered as a lo) 312.98 546.74 P
+2.11 (wer bound to the a) 440.64 546.74 P
+2.11 (v) 515.9 546.74 P
+2.11 (erage) 520.26 546.74 P
+4.22 (detection error that an automatic detection system may) 312.98 535.74 P
+(achie) 312.98 524.74 T
+(v) 331.74 524.74 T
+(e.) 336.11 524.74 T
+0 10 Q
+(3.3 Mispr) 312.98 508.08 T
+(onunciation Detection Methods) 353.91 508.08 T
+2 9 Q
+1.23 (T) 312.98 490.75 P
+1.23 (w) 317.76 490.75 P
+1.23 (o approaches were e) 324.17 490.75 P
+1.23 (v) 400.84 490.75 P
+1.23 (aluated and compared. Both assume) 405.11 490.75 P
+-0.14 (that a phonetic se) 312.98 479.75 P
+-0.14 (gmentation of the utterance has been obtained) 375.15 479.75 P
+1.35 (in a \336rst step by using the V) 312.98 468.75 P
+1.35 (iterbi algorithm and the kno) 423.1 468.75 P
+1.35 (wn) 528.75 468.75 P
+(transcription.) 312.98 457.75 T
+-0.16 (In the \336rst approach, pre) 312.98 440.75 P
+-0.16 (viously de) 400.35 440.75 P
+-0.16 (v) 437.22 440.75 P
+-0.16 (eloped log-posterior proba-) 441.59 440.75 P
+1 (bility-based scores [1] are computed for each phone se) 312.98 429.75 P
+1 (gment) 517.25 429.75 P
+0.07 (with canonic label) 312.98 418.75 P
+0.07 (. F) 391.22 418.75 P
+0.07 (or each frame the posterior probability) 400.67 418.75 P
+( of the phone) 346.32 407.75 T
+( gi) 404.81 407.75 T
+(v) 413.84 407.75 T
+(en the observ) 418.2 407.75 T
+(ation v) 465.97 407.75 T
+(ector) 490.58 407.75 T
+( is) 520.45 407.75 T
+(\0501\051) 529.26 381.7 T
+0.2 (The sum o) 312.98 349.13 P
+0.2 (v) 351.24 349.13 P
+0.2 (er) 355.6 349.13 P
+0.2 ( runs o) 370.55 349.13 P
+0.2 (v) 395.31 349.13 P
+0.2 (er a set of conte) 399.67 349.13 P
+0.2 (xt-independent models) 457.31 349.13 P
+2 (for all phone classes.) 312.98 338.13 P
+2 ( is the prior probability of the) 421.78 338.13 P
+0.77 (phone class) 312.98 327.13 P
+0.77 (. The posterior score) 367.51 327.13 P
+0.77 ( for the phone se) 469.33 327.13 P
+0.77 (g-) 532.25 327.13 P
+(ment is de\336ned as) 312.98 316.13 T
+2 10 Q
+(\0502\051) 528.09 284.8 T
+2 9 Q
+0.12 (where) 312.98 254.81 P
+0.12 ( is the frame duration of the phone and) 344.83 254.81 P
+0.12 ( is the start-) 497.14 254.81 P
+1.06 (ing frame inde) 312.98 243.81 P
+1.06 (x of the phone se) 367.46 243.81 P
+1.06 (gment. The class conditional) 433.07 243.81 P
+1.96 (phone distrib) 312.98 232.81 P
+1.96 (utions) 362 232.81 P
+1.96 ( used to compute the posterior) 421.23 232.81 P
+2.98 (probabilities are Gaussian mixture models that ha) 312.98 221.81 P
+2.98 (v) 509.17 221.81 P
+2.98 (e been) 513.53 221.81 P
+0.99 (trained with a lar) 312.98 210.81 P
+0.99 (ge database of) 377.01 210.81 P
+1 F
+0.99 (native) 433.7 210.81 P
+2 F
+0.99 ( speech. F) 455.7 210.81 P
+0.99 (or a mispro-) 493.78 210.81 P
+2.07 (nunciation to be detected, the phone posterior score) 312.98 199.81 P
+(must be belo) 312.98 188.81 T
+(w a threshold predetermined for each phone class.) 358.75 188.81 T
+0.99 (The second approach uses the phonetically labeled nonnati) 312.98 171.81 P
+0.99 (v) 531.39 171.81 P
+0.99 (e) 535.75 171.81 P
+1.58 (database to train tw) 312.98 160.81 P
+1.58 (o dif) 387.86 160.81 P
+1.58 (ferent Gaussian mixture models for) 405.96 160.81 P
+2.15 (each phone class: one model is trained with the \322correct\323,) 312.98 149.81 P
+0.14 (nati) 312.98 138.81 P
+0.14 (v) 326.25 138.81 P
+0.14 (e-lik) 330.62 138.81 P
+0.14 (e pronunciations of a phone, while the other model is) 347.02 138.81 P
+0.28 (trained with the \322mispronounced\323 or nonnati) 312.98 127.81 P
+0.28 (v) 475.36 127.81 P
+0.28 (e pronunciations) 479.73 127.81 P
+-0.09 (of the same phone. A four) 312.98 116.81 P
+-0.09 (-w) 406.33 116.81 P
+-0.09 (ay jackkni\336ng procedure w) 415.73 116.81 P
+-0.09 (as used) 513.6 116.81 P
+1.28 (to train and e) 312.98 105.81 P
+1.28 (v) 363.83 105.81 P
+1.28 (aluate this approach on the same phonetically) 368.11 105.81 P
+0.03 (transcribed nonnati) 312.98 94.81 P
+0.03 (v) 382.02 94.81 P
+0.03 (e database. There were no common speak-) 386.38 94.81 P
+2.2 (ers across the e) 312.98 83.81 P
+2.2 (v) 374.07 83.81 P
+2.2 (aluation and training sets. The number of) 378.35 83.81 P
+381.44 412.1 391.22 426.5 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 382.44 418.75 T
+1 7 Q
+(i) 387.28 415.85 T
+0 0 595.28 841.89 C
+312.98 400.2 346.32 415.5 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 313.98 407.75 T
+(q) 323.64 407.75 T
+1 7 Q
+(i) 328.48 404.85 T
+1 9 Q
+(y) 334.28 407.75 T
+1 7 Q
+(t) 338.61 404.85 T
+3 9 Q
+(\050) 320.01 407.75 T
+(\051) 341.33 407.75 T
+332.23 403.1 332.23 413.6 2 L
+0.41 H
+2 Z
+N
+0 0 595.28 841.89 C
+395.81 401.1 404.81 415.29 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 396.02 407.75 T
+1 7 Q
+(i) 400.87 404.85 T
+0 0 595.28 841.89 C
+510.82 401.1 520.45 415.5 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(y) 512.04 407.75 T
+1 7 Q
+(t) 516.38 404.85 T
+0 0 595.28 841.89 C
+312.98 74.26 539.75 768.74 C
+348.62 361.13 493.61 397.75 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 357.57 381.7 T
+(q) 367.23 381.7 T
+1 7 Q
+(i) 372.08 378.8 T
+1 9 Q
+(y) 377.87 381.7 T
+1 7 Q
+(t) 382.21 378.8 T
+3 9 Q
+(\050) 363.6 381.7 T
+(\051) 384.92 381.7 T
+1 F
+(p) 418.25 390 T
+(y) 427.13 390 T
+1 7 Q
+(t) 431.47 387.1 T
+1 9 Q
+(q) 437.17 390 T
+1 7 Q
+(i) 442.01 387.1 T
+3 9 Q
+(\050) 423.28 390 T
+(\051) 444.6 390 T
+1 F
+(P) 448.12 390 T
+(q) 457.79 390 T
+1 7 Q
+(i) 462.63 387.1 T
+3 9 Q
+(\050) 454.15 390 T
+(\051) 465.21 390 T
+1 F
+(p) 431.93 372.58 T
+(y) 440.81 372.58 T
+1 7 Q
+(t) 445.15 369.68 T
+1 9 Q
+(q) 450.85 372.58 T
+1 7 Q
+(j) 456.56 369.68 T
+3 9 Q
+(\050) 436.96 372.58 T
+(\051) 459.15 372.58 T
+1 F
+(P) 462.67 372.58 T
+(q) 472.34 372.58 T
+1 7 Q
+(j) 478.05 369.68 T
+3 9 Q
+(\050) 468.7 372.58 T
+(\051) 480.63 372.58 T
+1 7 Q
+(j) 415.86 368.38 T
+0 0 0 1 0 0 0 K
+2 F
+(1) 426.41 368.38 T
+(=) 420.13 368.38 T
+0 0 0 1 0 0 0 K
+1 F
+(M) 415.12 377.17 T
+3 18 Q
+(\345) 402.16 368.73 T
+2 9 Q
+(-) 402.16 381.7 T
+(-) 403.65 381.7 T
+(-) 405.15 381.7 T
+(-) 406.65 381.7 T
+(-) 408.15 381.7 T
+(-) 409.65 381.7 T
+(-) 411.15 381.7 T
+(-) 412.65 381.7 T
+(-) 414.14 381.7 T
+(-) 415.64 381.7 T
+(-) 417.14 381.7 T
+(-) 418.64 381.7 T
+(-) 420.14 381.7 T
+(-) 421.64 381.7 T
+(-) 423.14 381.7 T
+(-) 424.63 381.7 T
+(-) 426.13 381.7 T
+(-) 427.63 381.7 T
+(-) 429.13 381.7 T
+(-) 430.63 381.7 T
+(-) 432.13 381.7 T
+(-) 433.62 381.7 T
+(-) 435.12 381.7 T
+(-) 436.62 381.7 T
+(-) 438.12 381.7 T
+(-) 439.62 381.7 T
+(-) 441.12 381.7 T
+(-) 442.62 381.7 T
+(-) 444.11 381.7 T
+(-) 445.61 381.7 T
+(-) 447.11 381.7 T
+(-) 448.61 381.7 T
+(-) 450.11 381.7 T
+(-) 451.61 381.7 T
+(-) 453.11 381.7 T
+(-) 454.6 381.7 T
+(-) 456.1 381.7 T
+(-) 457.6 381.7 T
+(-) 459.1 381.7 T
+(-) 460.6 381.7 T
+(-) 462.1 381.7 T
+(-) 463.6 381.7 T
+(-) 465.09 381.7 T
+(-) 466.59 381.7 T
+(-) 468.09 381.7 T
+(-) 469.59 381.7 T
+(-) 471.09 381.7 T
+(-) 472.59 381.7 T
+(-) 474.08 381.7 T
+(-) 475.58 381.7 T
+(-) 477.08 381.7 T
+(-) 478.58 381.7 T
+(-) 480.08 381.7 T
+(-) 480.63 381.7 T
+(=) 392.41 381.7 T
+375.82 377.05 375.82 387.55 2 L
+0.41 H
+2 Z
+N
+435.34 385.35 435.34 395.85 2 L
+N
+449.02 367.93 449.02 378.43 2 L
+N
+312.98 74.26 539.75 768.74 C
+0 0 595.28 841.89 C
+365.05 344.88 370.55 356.88 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(j) 366.05 349.13 T
+0 0 595.28 841.89 C
+398.7 331.48 421.78 345.88 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(P) 399.7 338.13 T
+(q) 409.36 338.13 T
+1 7 Q
+(i) 414.2 335.23 T
+3 9 Q
+(\050) 405.72 338.13 T
+(\051) 416.79 338.13 T
+0 0 595.28 841.89 C
+358.51 320.48 367.51 334.68 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 358.72 327.13 T
+1 7 Q
+(i) 363.56 324.23 T
+0 0 595.28 841.89 C
+312.98 74.26 539.75 768.74 C
+446.8 320.48 469.33 334.88 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 447.8 327.13 T
+1 F
+(q) 456.91 327.13 T
+1 7 Q
+(i) 461.75 324.23 T
+3 9 Q
+(\050) 453.27 327.13 T
+(\051) 464.34 327.13 T
+312.98 74.26 539.75 768.74 C
+0 0 595.28 841.89 C
+312.98 74.26 539.75 768.74 C
+364.37 266.81 476.7 306.13 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 365.37 284.8 T
+1 F
+(q) 374.48 284.8 T
+1 7 Q
+(i) 379.32 281.9 T
+3 9 Q
+(\050) 370.84 284.8 T
+(\051) 381.9 284.8 T
+2 F
+(1) 399.26 290.01 T
+1 F
+(d) 399.14 278.98 T
+2 F
+(-) 399.14 285.01 T
+(-) 400.64 285.01 T
+(-) 400.89 285.01 T
+1 F
+(P) 444.36 284.8 T
+(q) 454.02 284.8 T
+1 7 Q
+(i) 458.86 281.9 T
+1 9 Q
+(y) 464.65 284.8 T
+1 7 Q
+(t) 468.99 281.9 T
+3 9 Q
+(\050) 450.39 284.8 T
+(\051) 471.7 284.8 T
+2 F
+(log) 431.95 284.8 T
+1 7 Q
+(t) 410.07 271.06 T
+(t) 420.74 271.06 T
+0 0 0 1 0 0 0 K
+2 5 Q
+(0) 423.08 269.16 T
+2 7 Q
+(=) 414.47 271.06 T
+0 0 0 1 0 0 0 K
+1 F
+(t) 404.59 299.88 T
+0 0 0 1 0 0 0 K
+2 5 Q
+(0) 406.93 297.98 T
+0 0 0 1 0 0 0 K
+1 7 Q
+(d) 416.87 299.88 T
+0 0 0 1 0 0 0 K
+2 F
+(1) 427.56 299.88 T
+(\320) 422.31 299.88 T
+(+) 411.18 299.88 T
+0 0 0 1 0 0 0 K
+3 18 Q
+(\345) 411.41 280.95 T
+2 9 Q
+(=) 389.39 284.8 T
+462.61 280.15 462.61 290.65 2 L
+0.41 H
+2 Z
+N
+312.98 74.26 539.75 768.74 C
+0 0 595.28 841.89 C
+337.33 250.56 344.83 262.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(d) 338.33 254.81 T
+0 0 595.28 841.89 C
+487.64 248.16 497.14 262.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(t) 488.64 254.81 T
+0 0 0 1 0 0 0 K
+2 7 Q
+(0) 491.64 251.91 T
+0 0 0 1 0 0 0 K
+0 0 595.28 841.89 C
+388.21 225.26 421.23 240.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(p) 389.89 232.81 T
+(y) 398.77 232.81 T
+1 7 Q
+(t) 403.11 229.91 T
+1 9 Q
+(q) 408.81 232.81 T
+1 7 Q
+(i) 413.65 229.91 T
+3 9 Q
+(\050) 394.92 232.81 T
+(\051) 416.24 232.81 T
+406.98 228.16 406.98 238.66 2 L
+0.41 H
+2 Z
+N
+0 0 595.28 841.89 C
+312.98 74.26 539.75 768.74 C
+517.22 193.16 539.75 207.56 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(r) 518.22 199.81 T
+1 F
+(q) 527.33 199.81 T
+1 7 Q
+(i) 532.17 196.91 T
+3 9 Q
+(\050) 523.69 199.81 T
+(\051) 534.75 199.81 T
+312.98 74.26 539.75 768.74 C
+0 0 595.28 841.89 C
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+-0 (Gaussians per model w) 55.03 762.19 P
+-0 (as proportional to the amount of training) 138.66 762.19 P
+(data for each model, ranging from 200 to 1.) 55.03 751.19 T
+0.92 (In the e) 55.03 734.19 P
+0.92 (v) 83.64 734.19 P
+0.92 (aluation phase, for each phone se) 87.92 734.19 P
+0.92 (gment) 211.87 734.19 P
+0.92 (, a length-) 246.54 734.19 P
+0.11 (normalized log-lik) 55.03 723.19 P
+0.11 (elihood ratio) 121.79 723.19 P
+0.11 ( score is computed for) 204.22 723.19 P
+-0.03 (the phone se) 55.03 712.19 P
+-0.03 (gment by using the \322mispronounced\323 and \322correct\323) 99.83 712.19 P
+(pronunciation models) 55.03 701.19 T
+( and) 150.04 701.19 T
+(, respecti) 182.06 701.19 T
+(v) 214.32 701.19 T
+(ely) 218.69 701.19 T
+(.) 229.1 701.19 T
+2 10 Q
+(\0503\051) 272.97 669.86 T
+2 9 Q
+0.54 (The normalization by) 55.03 639.87 P
+0.54 ( allo) 143.89 639.87 P
+0.54 (ws de\336nition of unique thresholds) 159.96 639.87 P
+0.15 (for the LLR for each phone class, independent of the lengths of) 55.03 628.87 P
+0.42 (the se) 55.03 617.87 P
+0.42 (gments. A mispronunciation is detected when the LLR is) 76.05 617.87 P
+(abo) 55.03 606.87 T
+(v) 67.89 606.87 T
+(e a predetermined threshold, speci\336c to each phone.) 72.25 606.87 T
+0.09 (F) 55.03 589.87 P
+0.09 (or both detection approaches, and for each phone class, dif) 59.9 589.87 P
+0.09 (fer-) 271.64 589.87 P
+0.88 (ent types of performance measures were computed for a wide) 55.03 578.87 P
+2.44 (range of thresholds, recei) 55.03 567.87 P
+2.44 (v) 153.09 567.87 P
+2.44 (er operating characteristic \050R) 157.46 567.87 P
+2.44 (OC\051) 269.13 567.87 P
+0.61 (curv) 55.03 556.87 P
+0.61 (es were obtained, and optimal thresholds were determined) 70.88 556.87 P
+(for the points of equal error rate \050EER\051.) 55.03 545.87 T
+0 11 Q
+(4.  EXPERIMENTS) 122.62 523.53 T
+2 9 Q
+0.83 (The acoustic models used to generate the phonetic alignments) 55.03 505.87 P
+2.6 (and produce the posterior scores were gender independent,) 55.03 494.87 P
+0.41 (Genonic Gaussian mixture models, as introduced in [10]. The) 55.03 483.87 P
+0.41 (y) 280.13 483.87 P
+1.59 (were trained using a gender) 55.03 472.87 P
+1.59 (-balanced database of 142 nati) 160.67 472.87 P
+1.59 (v) 276.27 472.87 P
+1.59 (e) 280.64 472.87 P
+1.5 (Latin American Spanish speak) 55.03 461.87 P
+1.5 (ers, totaling about 32,000 sen-) 169.66 461.87 P
+0.03 (tences. Gi) 55.03 450.87 P
+0.03 (v) 90.83 450.87 P
+0.03 (en the alignments, the detection of mispronunciation) 95.19 450.87 P
+1.13 (is reduced to a binary decision problem as the phone class is) 55.03 439.87 P
+1.59 (gi) 55.03 428.87 P
+1.59 (v) 61.8 428.87 P
+1.59 (en by the alignments. Consequently) 66.17 428.87 P
+1.59 (, the mispronunciation) 200.7 428.87 P
+-0.12 (detection performance can be studied for each phone class inde-) 55.03 417.87 P
+0.31 (pendently) 55.03 406.87 P
+0.31 (. Reasons to e) 89.94 406.87 P
+0.31 (v) 140.63 406.87 P
+0.31 (aluate the performance for each phone) 144.9 406.87 P
+2.12 (class are that \0501\051 the distrib) 55.03 395.87 P
+2.12 (utions of machine scores corre-) 163.18 395.87 P
+0.64 (sponding to dif) 55.03 384.87 P
+0.64 (ferent phone classes ha) 110.59 384.87 P
+0.64 (v) 195.57 384.87 P
+0.64 (e dif) 199.93 384.87 P
+0.64 (ferent statistics, so) 216.6 384.87 P
+0.74 (independent thresholds must be used for each phone class, \0502\051) 55.03 373.87 P
+0.71 (the percent of \322correct\323 and \322mispronounced\323 reference labels) 55.03 362.87 P
+0.55 (is dif) 55.03 351.87 P
+0.55 (ferent for each phone class, and \0503\051 the comple) 73.6 351.87 P
+0.55 (xity of the) 246.54 351.87 P
+(acoustic model may be dif) 55.03 340.87 T
+(ferent for each phone class.) 149.79 340.87 T
+0.61 (The performance of the mispronunciation detection algorithms) 55.03 323.87 P
+1.45 (w) 55.03 312.87 P
+1.45 (as e) 61.43 312.87 P
+1.45 (v) 76.4 312.87 P
+1.45 (aluated as a function of the threshold, for each phone) 80.67 312.87 P
+1.76 (class. F) 55.03 301.87 P
+1.76 (or each threshold we obtained the machine-produced) 83.65 301.87 P
+1.46 (labels \322correct\323 \050C\051 or \322mispronounced\323 \050M\051 for each phone) 55.03 290.87 P
+2.52 (utterance. Then, we compared the machine labels with the) 55.03 279.87 P
+-0 (labels obtained from the human phoneticians. T) 55.03 268.87 P
+-0 (w) 226 268.87 P
+-0 (o types of per-) 232.41 268.87 P
+1.85 (formance measures were computed for each threshold: error) 55.03 257.87 P
+(measures and correlation measures.) 55.03 246.87 T
+0.28 (The error measures were the total error) 55.03 229.87 P
+0.28 (, which is the percent of) 196.77 229.87 P
+0.79 (cases where the machine label and the human label dif) 55.03 218.87 P
+0.79 (fer; the) 258.1 218.87 P
+0.47 (probability of f) 55.03 207.87 P
+0.47 (alse detection, estimated as the percent of cases) 110.38 207.87 P
+0.42 (where a phone utterance is labeled by the machine as incorrect) 55.03 196.87 P
+0.07 (when it w) 55.03 185.87 P
+0.07 (as in f) 90.57 185.87 P
+0.07 (act correct; and the probability of missing a tar-) 112.61 185.87 P
+1.46 (get, that is, the probability that the machine labeled a phone) 55.03 174.87 P
+(utterance as correct when it w) 55.03 163.87 T
+(as in f) 162.65 163.87 T
+(act incorrect.) 184.55 163.87 T
+1.01 (T) 55.03 146.87 P
+1.01 (o compute the correlation measures we \336rst con) 59.81 146.87 P
+1.01 (v) 238.75 146.87 P
+1.01 (erted the C) 243.11 146.87 P
+0.46 (and M labels to numeric v) 55.03 135.87 P
+0.46 (alues 0 and 1, respecti) 151.34 135.87 P
+0.46 (v) 232.69 135.87 P
+0.46 (ely) 237.05 135.87 P
+0.46 (. Then the) 247.47 135.87 P
+0.16 (0-1 strings from machine and human judgments for each phone) 55.03 124.87 P
+1.84 (were correlated using the standard correlation coef) 55.03 113.87 P
+1.84 (\336cient, as) 248.29 113.87 P
+0.6 (well as the cross correlation measure \050or cosine distance\051 used) 55.03 102.87 P
+(in [7].) 55.03 91.87 T
+237.54 727.54 246.54 741.74 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(q) 237.75 734.19 T
+1 7 Q
+(i) 242.6 731.29 T
+0 0 595.28 841.89 C
+170 716.54 204.22 730.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(L) 171.07 723.19 T
+(L) 176.6 723.19 T
+(R) 182.14 723.19 T
+(q) 191.8 723.19 T
+1 7 Q
+(i) 196.64 720.29 T
+3 9 Q
+(\050) 188.17 723.19 T
+(\051) 199.23 723.19 T
+0 0 595.28 841.89 C
+135.52 694.54 150.04 708.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(l) 136.52 701.19 T
+1 7 Q
+(M) 141.93 698.29 T
+0 0 595.28 841.89 C
+167.54 694.54 182.06 708.94 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(l) 169.24 701.19 T
+1 7 Q
+(C) 174.53 698.29 T
+0 0 595.28 841.89 C
+55.03 73.7 284.63 768.19 C
+57.49 651.87 270.5 691.19 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(L) 58.57 669.86 T
+(L) 64.1 669.86 T
+(R) 69.64 669.86 T
+(q) 79.3 669.86 T
+1 7 Q
+(i) 84.14 666.96 T
+3 9 Q
+(\050) 75.66 669.86 T
+(\051) 86.72 669.86 T
+2 F
+(1) 104.09 675.06 T
+1 F
+(d) 103.96 664.04 T
+2 F
+(-) 103.96 670.07 T
+(-) 105.46 670.07 T
+(-) 105.71 670.07 T
+1 F
+(p) 153.49 669.86 T
+(y) 162.37 669.86 T
+1 7 Q
+(t) 166.71 666.96 T
+1 9 Q
+(q) 172.41 669.86 T
+1 7 Q
+(i) 177.25 666.96 T
+3 9 Q
+(l) 183.7 669.86 T
+1 7 Q
+(M) 189.11 666.96 T
+3 9 Q
+(,) 179.2 669.86 T
+(\050) 158.52 669.86 T
+(\051) 195.85 669.86 T
+2 F
+(log) 140.41 669.86 T
+1 F
+(p) 220.92 669.86 T
+(y) 229.8 669.86 T
+1 7 Q
+(t) 234.14 666.96 T
+1 9 Q
+(q) 239.84 669.86 T
+1 7 Q
+(i) 244.68 666.96 T
+3 9 Q
+(l) 251.13 669.86 T
+1 7 Q
+(C) 256.41 666.96 T
+3 9 Q
+(,) 246.63 669.86 T
+(\050) 225.95 669.86 T
+(\051) 261.87 669.86 T
+2 F
+(log) 207.85 669.86 T
+(\320) 201.1 669.86 T
+3 F
+([) 136.78 669.86 T
+(]) 265.51 669.86 T
+1 7 Q
+(t) 114.89 656.12 T
+(t) 125.57 656.12 T
+0 0 0 1 0 0 0 K
+2 5 Q
+(0) 127.9 654.22 T
+2 7 Q
+(=) 119.29 656.12 T
+0 0 0 1 0 0 0 K
+1 F
+(t) 109.42 684.94 T
+0 0 0 1 0 0 0 K
+2 5 Q
+(0) 111.76 683.04 T
+0 0 0 1 0 0 0 K
+1 7 Q
+(d) 121.7 684.94 T
+0 0 0 1 0 0 0 K
+2 F
+(1) 132.38 684.94 T
+(\320) 127.13 684.94 T
+(+) 116 684.94 T
+0 0 0 1 0 0 0 K
+3 18 Q
+(\345) 116.23 666.01 T
+2 9 Q
+(=) 94.22 669.86 T
+170.58 665.21 170.58 675.71 2 L
+0.41 H
+2 Z
+N
+238.01 665.21 238.01 675.71 2 L
+N
+55.03 73.7 284.63 768.19 C
+0 0 595.28 841.89 C
+136.39 635.62 143.89 647.62 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 9 Q
+0 X
+0 0 0 1 0 0 0 K
+(d) 137.39 639.87 T
+0 0 595.28 841.89 C
+2 9 Q
+0 X
+0 0 0 1 0 0 0 K
+0.79 (One important issue we found is that for man) 312.98 762.74 P
+0.79 (y phone classes) 482.17 762.74 P
+0.99 (the number of phone utterances that ha) 312.98 751.74 P
+0.99 (v) 458.69 751.74 P
+0.99 (e been labeled \322mis-) 463.06 751.74 P
+0.18 (pronounced\323 by the phoneticians w) 312.98 740.74 P
+0.18 (as much less than the num-) 441.1 740.74 P
+0.43 (ber labeled \322correct\323. The probability of error for those phone) 312.98 729.74 P
+-0.05 (classes w) 312.98 718.74 P
+-0.05 (as then v) 346.58 718.74 P
+-0.05 (ery biased by the priors. This bias, combined) 378.35 718.74 P
+0.51 (with the f) 312.98 707.74 P
+0.51 (act that the distrib) 348.4 707.74 P
+0.51 (utions of machine scores for \322cor-) 414.49 707.74 P
+0.55 (rect\323 and for \322mispronounced\323 phones had signi\336cant o) 312.98 696.74 P
+0.55 (v) 517.39 696.74 P
+0.55 (erlap) 521.76 696.74 P
+1.98 (for some phone classes, determined that in some cases the) 312.98 685.74 P
+1.4 (probability of error could be relati) 312.98 674.74 P
+1.4 (v) 442.46 674.74 P
+1.4 (ely lo) 446.83 674.74 P
+1.4 (w) 468.25 674.74 P
+1.4 (, when we w) 474.16 674.74 P
+1.4 (ould) 523.75 674.74 P
+0.33 (just be classifying e) 312.98 663.74 P
+0.33 (v) 384.98 663.74 P
+0.33 (ery phone utterance as correct, re) 389.35 663.74 P
+0.33 (g) 510.3 663.74 P
+0.33 (ardless) 514.76 663.74 P
+0.52 (of its machine score. F) 312.98 652.74 P
+0.52 (or that reason the minimum error point) 396.65 652.74 P
+0.43 (w) 312.98 641.74 P
+0.43 (as not a good indicator of ho) 319.39 641.74 P
+0.43 (w well we can actually detect a) 424.72 641.74 P
+0.88 (mispronunciation. In addition, in comparing detection perfor-) 312.98 630.74 P
+3.57 (mance across phone classes, the measure should not be) 312.98 619.74 P
+-0.07 (af) 312.98 608.74 P
+-0.07 (fected by the priors of the labels. Consequently) 319.75 608.74 P
+-0.07 (, we e) 488.62 608.74 P
+-0.07 (v) 509.48 608.74 P
+-0.07 (aluated) 513.76 608.74 P
+2.86 (the mispronunciation performance by computing the R) 312.98 597.74 P
+2.86 (OC) 527.25 597.74 P
+0.39 (curv) 312.98 586.74 P
+0.39 (e, and \336nding the points of EER, where the probability of) 328.84 586.74 P
+0.93 (f) 312.98 575.74 P
+0.93 (alse detection is equal to the probability of missing a tar) 315.89 575.74 P
+0.93 (get.) 526.5 575.74 P
+0.01 (This error measure is independent of the actual priors for the C) 312.98 564.74 P
+-0.04 (or M labels, b) 312.98 553.74 P
+-0.04 (ut results in a higher total error rate when the pri-) 362.68 553.74 P
+(ors are sk) 312.98 542.74 T
+(e) 347.38 542.74 T
+(wed.) 351.15 542.74 T
+2.99 (T) 312.98 525.74 P
+2.99 (o some de) 317.76 525.74 P
+2.99 (gree, a similar b) 360.1 525.74 P
+2.99 (ut complementary ef) 426.88 525.74 P
+2.99 (fect w) 507.11 525.74 P
+2.99 (as) 532.25 525.74 P
+2.16 (observ) 312.98 514.74 P
+2.16 (ed for the cross correlation measure; that is, for the) 336.84 514.74 P
+1.68 (phone classes with relati) 312.98 503.75 P
+1.68 (v) 406.03 503.75 P
+1.68 (ely high detection error rate, rela-) 410.39 503.75 P
+0.96 (ti) 312.98 492.75 P
+0.96 (v) 317.76 492.75 P
+0.96 (ely high cross correlation v) 322.12 492.75 P
+0.96 (alues could be obtained by just) 423.72 492.75 P
+(labeling e) 312.98 481.75 T
+(v) 348 481.75 T
+(ery phone utterance as mispronounced.) 352.36 481.75 T
+1 (In T) 312.98 464.75 P
+1 (able 1 we sho) 328.5 464.75 P
+1 (w the EER, the correlation coef) 380.51 464.75 P
+1 (\336cient, and) 498.76 464.75 P
+-0.02 (the cross correlation measure for each phone class and for both) 312.98 453.75 P
+1.37 (detection methods. W) 312.98 442.75 P
+1.37 (eighted a) 393.75 442.75 P
+1.37 (v) 427.68 442.75 P
+1.37 (erages o) 432.05 442.75 P
+1.37 (v) 463.02 442.75 P
+1.37 (erall all the phones) 467.39 442.75 P
+-0.17 (are also sho) 312.98 431.75 P
+-0.17 (wn. The phones whose nati) 354.9 431.75 P
+-0.17 (v) 452.24 431.75 P
+-0.17 (eness or mispronuncia-) 456.6 431.75 P
+0.1 (tion were detected most reliably were the approximants /) 312.98 420.75 P
+3 F
+0.1 (b) 518.26 420.75 P
+2 F
+0.1 (/, /) 523.2 420.75 P
+3 F
+0.1 (d) 532.8 420.75 P
+2 F
+0.1 (/) 537.25 420.75 P
+0.57 (, and /) 312.98 409.75 P
+3 F
+0.57 (g) 336.36 409.75 P
+2 F
+0.57 (/, the v) 340.06 409.75 P
+0.57 (oiced stops /b/ and /d/, the fricati) 365.77 409.75 P
+0.57 (v) 487.19 409.75 P
+0.57 (e /x/, and the) 491.55 409.75 P
+0 (semi) 312.98 398.75 P
+0 (v) 329.75 398.75 P
+0 (o) 334.07 398.75 P
+0 (wel /w/. These phone classes ha) 338.35 398.75 P
+0 (v) 453.15 398.75 P
+0 (e good agreement with) 457.51 398.75 P
+-0.14 (those found to be the most consistent across dif) 312.98 387.75 P
+-0.14 (ferent transcrib-) 482.16 387.75 P
+0.67 (ers [9]. The LLR method performed better than the posterior) 312.98 376.75 P
+0.67 (-) 536.75 376.75 P
+0.78 (based method for almost all phone classes. The lo) 312.98 365.75 P
+0.78 (wer perfor-) 498.24 365.75 P
+1.1 (mance for the nasals /m/ and /\226/ could be e) 312.98 354.75 P
+1.1 (xplained because) 476.92 354.75 P
+1.56 (the) 312.98 343.75 P
+1.56 (y had v) 323.84 343.75 P
+1.56 (ery fe) 353.31 343.75 P
+1.56 (w training e) 375.38 343.75 P
+1.56 (xamples for the mispronounced) 421.35 343.75 P
+1.77 (phones. The reduction in error rate w) 312.98 332.75 P
+1.77 (as not uniform across) 457.21 332.75 P
+0.01 (phone classes. The adv) 312.98 321.74 P
+0.01 (antage of the LLR method o) 395.75 321.74 P
+0.01 (v) 497.38 321.74 P
+0.01 (er the pos-) 501.75 321.74 P
+0.55 (terior method is more signi\336cant if we look only at the phone) 312.98 310.74 P
+1.12 (classes with the lo) 312.98 299.74 P
+1.12 (west detection error) 381.87 299.74 P
+1.12 (. On a) 455.1 299.74 P
+1.12 (v) 478.9 299.74 P
+1.12 (erage, the EER) 483.27 299.74 P
+1.6 (had a relati) 312.98 288.74 P
+1.6 (v) 355.95 288.74 P
+1.6 (e reduction of 33% for the se) 360.31 288.74 P
+1.6 (v) 474.18 288.74 P
+1.6 (en most reliably) 478.55 288.74 P
+0.05 (detected phone classes referred abo) 312.98 277.74 P
+0.05 (v) 440.47 277.74 P
+0.05 (e, when going from poste-) 444.84 277.74 P
+1.77 (rior) 312.98 266.74 P
+1.77 (-based to LLR-based detection. Acceptable le) 325.79 266.74 P
+1.77 (v) 498.86 266.74 P
+1.77 (els of the) 503.22 266.74 P
+(correlation coef) 312.98 255.74 T
+(\336cients were also found for that set of phones.) 369.48 255.74 T
+1.16 (The o) 312.98 238.74 P
+1.16 (v) 334.75 238.74 P
+1.16 (erall weighted a) 339.12 238.74 P
+1.16 (v) 398.75 238.74 P
+1.16 (erage of the phone mispronunciation) 403.11 238.74 P
+-0.1 (detection EER w) 312.98 227.74 P
+-0.1 (as 35.5% when log-posterior scores were used) 373.67 227.74 P
+1.44 (while 32.3% EER w) 312.98 216.74 P
+1.44 (as obtained when the LLR method w) 390.71 216.74 P
+1.44 (as) 532.25 216.74 P
+2.13 (used. If instead of the EER, we obtain the minimum total) 312.98 205.74 P
+0.52 (detection error for each phone class, and compute the a) 312.98 194.74 P
+0.52 (v) 515.9 194.74 P
+0.52 (erage) 520.27 194.74 P
+1.07 (error weighted by the number of e) 312.98 183.74 P
+1.07 (xamples in each class, the) 442.23 183.74 P
+1.44 (resulting minimum a) 312.98 172.74 P
+1.44 (v) 390.69 172.74 P
+1.44 (erage error is 21.3% for the posterior) 395.06 172.74 P
+1.44 (-) 536.75 172.74 P
+-0.16 (based method and 19.4% for the LLR-based method. This min-) 312.98 161.74 P
+1.77 (imum a) 312.98 150.74 P
+1.77 (v) 341.82 150.74 P
+1.77 (erage error can be compared with the transcribers\325) 346.18 150.74 P
+1.6 (percent of pairwise disagreement reported in section 3.2, as) 312.98 139.74 P
+0.51 (both tak) 312.98 128.74 P
+0.51 (e into account the actual priors of the e) 342.65 128.74 P
+0.51 (v) 486.47 128.74 P
+0.51 (aluation data.) 490.75 128.74 P
+1.51 (The closeness of the human-machine and the human-human) 312.98 117.74 P
+1.79 (a) 312.98 106.74 P
+1.79 (v) 316.79 106.74 P
+1.79 (erage errors suggests that the accurac) 321.16 106.74 P
+1.79 (y of the LLR-based) 464.15 106.74 P
+0.52 (detection method is bounded by the consistenc) 312.98 95.74 P
+0.52 (y of the human) 483.95 95.74 P
+(transcriptions) 312.98 84.74 T
+(.) 361.97 84.74 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+595.28 841.89 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 11 Q
+0 X
+0 0 0 1 0 0 0 K
+(5. DISCUSSION AND CONCLUSIONS) 75.71 331.86 T
+2 9 Q
+2.2 (W) 55.03 314.19 P
+2.2 (e studied tw) 62.8 314.19 P
+2.2 (o mispronunciation detection algorithms. One) 110.6 314.19 P
+1.98 (algorithm is based on posterior probability scores computed) 55.03 303.19 P
+1.32 (using models of the nati) 55.03 292.19 P
+1.32 (v) 146.57 292.19 P
+1.32 (e speech, and the other is based on) 150.94 292.19 P
+-0.03 (models trained on actual nonnati) 55.03 281.19 P
+-0.03 (v) 172.16 281.19 P
+-0.03 (e speech, including both \322cor-) 176.53 281.19 P
+(rect\323 and \322mispronounced\323 phone utterances.) 55.03 270.19 T
+1.13 (An important adv) 55.03 253.19 P
+1.13 (antage of the posterior) 120.56 253.19 P
+1.13 (-based method is that) 204.5 253.19 P
+1.75 (the nati) 55.03 242.19 P
+1.75 (v) 83.3 242.19 P
+1.75 (e models can be applied to detect mispronunciation) 87.66 242.19 P
+0.02 (errors for an) 55.03 231.19 P
+0.02 (y type of nonnati) 99.4 231.19 P
+0.02 (v) 160.48 231.19 P
+0.02 (e accent. The LLR-based method) 164.84 231.19 P
+0.5 (needs to be trained with speci\336c e) 55.03 220.19 P
+0.5 (xamples of the tar) 179.84 220.19 P
+0.5 (get nonna-) 245.9 220.19 P
+0.58 (ti) 55.03 209.19 P
+0.58 (v) 59.81 209.19 P
+0.58 (e user population. Experimental results  sho) 64.17 209.19 P
+0.58 (w that the LLR-) 225.15 209.19 P
+-0.01 (based  system has better o) 55.03 198.19 P
+-0.01 (v) 148.55 198.19 P
+-0.01 (erall performance than the posterior) 152.91 198.19 P
+-0.01 (-) 281.64 198.19 P
+0.58 (based method. The impro) 55.03 187.19 P
+0.58 (v) 148.62 187.19 P
+0.58 (ement is particularly signi\336cant  for) 152.99 187.19 P
+0.22 (the phone classes with the highest consistenc) 55.03 176.19 P
+0.22 (y across transcrib-) 218.21 176.19 P
+(ers.) 55.03 165.19 T
+1.32 (The results also suggest that the reported performance of the) 55.03 148.19 P
+1.54 (system might ha) 55.03 137.19 P
+1.54 (v) 116.93 137.19 P
+1.54 (e been limited by the accurac) 121.29 137.19 P
+1.54 (y and consis-) 234.06 137.19 P
+0.48 (tenc) 55.03 126.19 P
+0.48 (y of the transcriptions. This is suggested by \0501\051  the agree-) 69.89 126.19 P
+1.26 (ment between the most consistent  phone classes for humans) 55.03 115.19 P
+0.79 (and the best recognized phone classes by the machine, \0502\051 the) 55.03 104.19 P
+0.69 (similar le) 55.03 93.19 P
+0.69 (v) 89.24 93.19 P
+0.69 (el of a) 93.6 93.19 P
+0.69 (v) 117.28 93.19 P
+0.69 (erage error rate between pairs of humans on) 121.65 93.19 P
+0.39 (one hand and between machine and humans on the other hand,) 55.03 82.19 P
+0 F
+(Phone) 62.44 750.19 T
+(P) 113.71 758.19 T
+(osterior scor) 119.02 758.19 T
+(e) 167.09 758.19 T
+(LLR scor) 217.49 758.19 T
+(e) 254.08 758.19 T
+(EER) 101.36 742.19 T
+(Corr) 133.7 742.19 T
+(Cr) 164.06 742.19 T
+(oss) 174.39 742.19 T
+(EER) 197.13 742.19 T
+(Corr) 228.29 742.19 T
+(Cr) 258.27 742.19 T
+(oss) 268.6 742.19 T
+2 F
+(a) 72.45 728.19 T
+(35.0) 102.74 728.19 T
+(0.28) 135.32 728.19 T
+(0.35) 167.1 728.19 T
+(35.6) 198.5 728.19 T
+(0.29) 229.91 728.19 T
+(0.44) 261.31 728.19 T
+(b) 72.19 716.19 T
+(29.8) 102.74 716.19 T
+(0.41) 135.32 716.19 T
+(0.76) 167.1 716.19 T
+(15.5) 198.5 716.19 T
+(0.72) 229.91 716.19 T
+(0.88) 261.31 716.19 T
+3 F
+(b) 71.97 704.19 T
+2 F
+(29.8) 102.74 704.19 T
+(0.39) 135.32 704.19 T
+(0.80) 167.1 704.19 T
+(21.5) 198.5 704.19 T
+(0.57) 229.91 704.19 T
+(0.87) 261.31 704.19 T
+(c) 72.45 692.19 T
+(44.8) 102.74 692.19 T
+(0.34) 135.32 692.19 T
+(0.43) 167.1 692.19 T
+(39.6) 198.5 692.19 T
+(0.28) 229.91 692.19 T
+(0.48) 261.31 692.19 T
+(d) 72.19 680.19 T
+(34.1) 102.74 680.19 T
+(0.35) 135.32 680.19 T
+(0.75) 167.1 680.19 T
+(20.3) 198.5 680.19 T
+(0.61) 229.91 680.19 T
+(0.82) 261.31 680.19 T
+3 F
+(d) 72.22 668.19 T
+2 F
+(26.6) 102.74 668.19 T
+(0.48) 135.32 668.19 T
+(0.75) 167.1 668.19 T
+(19.0) 198.5 668.19 T
+(0.63) 229.91 668.19 T
+(0.84) 261.31 668.19 T
+(e) 72.45 656.19 T
+(37.9) 102.74 656.19 T
+(0.29) 135.32 656.19 T
+(0.40) 167.1 656.19 T
+(37.4) 198.5 656.19 T
+(0.29) 229.91 656.19 T
+(0.50) 261.31 656.19 T
+(f) 72.95 644.19 T
+(27.9) 102.74 644.19 T
+(0.20) 135.32 644.19 T
+(0.20) 167.1 644.19 T
+(27.9) 198.5 644.19 T
+(0.27) 229.91 644.19 T
+(0.29) 261.31 644.19 T
+(g) 72.19 632.19 T
+(41.8) 102.74 632.19 T
+(0.18) 135.32 632.19 T
+(0.46) 167.1 632.19 T
+(28.8) 198.5 632.19 T
+(0.40) 229.91 632.19 T
+(0.55) 261.31 632.19 T
+3 10 Q
+(g) 72.39 619.52 T
+2 9 Q
+(29.1) 102.74 620.19 T
+(0.42) 135.32 620.19 T
+(0.84) 167.1 620.19 T
+(20.1) 198.5 620.19 T
+(0.59) 229.91 620.19 T
+(0.88) 261.31 620.19 T
+(i) 73.19 607.19 T
+(28.2) 102.74 607.19 T
+(0.42) 135.32 607.19 T
+(0.52) 167.1 607.19 T
+(26.2) 198.5 607.19 T
+(0.45) 229.91 607.19 T
+(0.57) 261.31 607.19 T
+(k) 72.19 595.19 T
+(38.3) 102.74 595.19 T
+(0.26) 135.32 595.19 T
+(0.59) 167.1 595.19 T
+(32.4) 198.5 595.19 T
+(0.37) 229.91 595.19 T
+(0.70) 261.31 595.19 T
+(l) 73.19 583.19 T
+(29.3) 102.74 583.19 T
+(0.38) 135.32 583.19 T
+(0.56) 167.1 583.19 T
+(28.9) 198.5 583.19 T
+(0.43) 229.91 583.19 T
+(0.60) 261.31 583.19 T
+(m) 70.94 571.19 T
+(25.0) 102.74 571.19 T
+(0.26) 135.32 571.19 T
+(0.27) 167.1 571.19 T
+(28.2) 198.5 571.19 T
+(0.29) 229.91 571.19 T
+(0.31) 261.31 571.19 T
+(n) 72.19 559.19 T
+(41.8) 102.74 559.19 T
+(0.15) 135.32 559.19 T
+(0.41) 167.1 559.19 T
+(35.4) 198.5 559.19 T
+(0.23) 229.91 559.19 T
+( 0.43) 260.18 559.19 T
+(\226) 72.19 547.19 T
+(33.3) 102.74 547.19 T
+(0.54) 135.32 547.19 T
+(0.60) 167.1 547.19 T
+(45.1) 198.5 547.19 T
+(0.18) 229.91 547.19 T
+(0.41) 261.31 547.19 T
+(o) 72.19 535.19 T
+(38.2) 102.74 535.19 T
+(0.22) 135.32 535.19 T
+(0.31) 167.1 535.19 T
+(39.4) 198.5 535.19 T
+(0.20) 229.91 535.19 T
+(0.46) 261.31 535.19 T
+(p) 72.19 523.19 T
+(41.9) 102.74 523.19 T
+(0.17) 135.32 523.19 T
+(0.47) 167.1 523.19 T
+(32.9) 198.5 523.19 T
+(0.35) 229.91 523.19 T
+(0.64) 261.31 523.19 T
+(r) 72.95 511.19 T
+(38.2) 102.74 511.19 T
+(0.24) 135.32 511.19 T
+(0.55) 167.1 511.19 T
+(34.5) 198.5 511.19 T
+(0.33) 229.91 511.19 T
+(0.68) 261.31 511.19 T
+(rr) 71.45 499.19 T
+(35.3) 102.74 499.19 T
+(0.26) 135.32 499.19 T
+(0.76) 167.1 499.19 T
+(33.7) 198.5 499.19 T
+(0.31) 229.91 499.19 T
+(0.88) 261.31 499.19 T
+(s) 72.69 487.19 T
+(36.7) 102.74 487.19 T
+(0.19) 135.32 487.19 T
+(0.29) 167.1 487.19 T
+(27.8) 198.5 487.19 T
+(0.35) 229.91 487.19 T
+(0.47) 261.31 487.19 T
+(t) 73.19 475.19 T
+(37.8) 102.74 475.19 T
+(0.25) 135.32 475.19 T
+(0.45) 167.1 475.19 T
+(31.1) 198.5 475.19 T
+(0.41) 229.91 475.19 T
+(0.62) 261.31 475.19 T
+(u) 72.19 463.19 T
+(33.8) 102.74 463.19 T
+(0.36) 135.32 463.19 T
+(0.47) 167.1 463.19 T
+(35.3) 198.5 463.19 T
+(0.32) 229.91 463.19 T
+(0.47) 261.31 463.19 T
+(w) 71.2 451.19 T
+(23.5) 102.74 451.19 T
+(0.53) 135.32 451.19 T
+(0.72) 167.1 451.19 T
+(14.9) 198.5 451.19 T
+(0.74) 229.91 451.19 T
+(0.85) 261.31 451.19 T
+(x) 72.19 439.19 T
+(16.7) 102.74 439.19 T
+(0.61) 135.32 439.19 T
+(0.69) 167.1 439.19 T
+(15.1) 198.5 439.19 T
+(0.75) 229.91 439.19 T
+(0.79) 261.31 439.19 T
+(y) 72.19 427.19 T
+(32.5) 102.74 427.19 T
+(0.34) 135.32 427.19 T
+(0.41) 167.1 427.19 T
+(32.3) 198.5 427.19 T
+(0.33) 229.91 427.19 T
+(0.48) 261.31 427.19 T
+(z) 72.45 415.19 T
+(44.6) 102.74 415.19 T
+(0.13) 135.32 415.19 T
+(0.72) 167.1 415.19 T
+(30.7) 198.5 415.19 T
+(0.48) 229.91 415.19 T
+(0.80) 261.31 415.19 T
+(A) 65.9 403.19 T
+(vg.) 71.74 403.19 T
+(35.5) 102.74 403.19 T
+(0.27) 135.32 403.19 T
+(0.45) 167.1 403.19 T
+(32.3) 198.5 403.19 T
+(0.34) 229.91 403.19 T
+(0.54) 261.31 403.19 T
+0.22 0.25 (T) 54.77 387.19 B
+0.22 0.25 (able 1:   Equal error rate, human-machine correlation, and) 59.8 387.19 B
+0.22 0.03 (cross correlation at the phone le) 54.77 376.19 B
+0.22 0.03 (v) 171.51 376.19 B
+0.22 0.03 (el for the tw) 175.91 376.19 B
+0.22 0.03 (o detection meth-) 220.68 376.19 B
+0.12 (ods studied. W) 54.77 365.19 P
+0.12 (eighted a) 108.03 365.19 P
+0.12 (v) 140.71 365.19 P
+0.12 (erages of the v) 145.07 365.19 P
+0.12 (arious scoring measures) 197.92 365.19 P
+(are sho) 54.77 354.19 T
+(wn at the bottom.) 80.29 354.19 T
+54.77 767.94 54.77 399.44 2 L
+V
+0.5 H
+0 Z
+N
+92.87 767.94 92.87 399.44 2 L
+V
+N
+95.37 767.94 95.37 399.44 2 L
+V
+N
+127.11 752.44 127.11 398.94 2 L
+V
+N
+159.27 752.44 159.27 398.94 2 L
+V
+N
+189.43 767.94 189.43 399.44 2 L
+V
+N
+191.93 767.94 191.93 399.44 2 L
+V
+N
+222.08 752.44 222.08 398.94 2 L
+V
+N
+253.48 752.44 253.48 398.94 2 L
+V
+N
+284.89 767.94 284.89 399.44 2 L
+V
+N
+54.52 768.19 285.14 768.19 2 L
+V
+N
+95.62 752.19 285.14 752.19 2 L
+V
+N
+55.02 737.44 92.62 737.44 2 L
+V
+N
+55.02 734.94 92.62 734.94 2 L
+V
+N
+95.62 736.19 285.14 736.19 2 L
+V
+N
+54.52 724.19 285.14 724.19 2 L
+V
+N
+54.52 712.19 285.14 712.19 2 L
+V
+N
+54.52 700.19 285.14 700.19 2 L
+V
+N
+54.52 688.19 285.14 688.19 2 L
+V
+N
+54.52 676.19 285.14 676.19 2 L
+V
+N
+54.52 664.19 285.14 664.19 2 L
+V
+N
+54.52 652.19 285.14 652.19 2 L
+V
+N
+54.52 640.19 285.14 640.19 2 L
+V
+N
+54.52 628.19 285.14 628.19 2 L
+V
+N
+54.52 615.19 285.14 615.19 2 L
+V
+N
+54.52 603.19 285.14 603.19 2 L
+V
+N
+54.52 591.19 285.14 591.19 2 L
+V
+N
+54.52 579.19 285.14 579.19 2 L
+V
+N
+54.52 567.19 285.14 567.19 2 L
+V
+N
+54.52 555.19 285.14 555.19 2 L
+V
+N
+54.52 543.19 285.14 543.19 2 L
+V
+N
+54.52 531.19 285.14 531.19 2 L
+V
+N
+54.52 519.19 285.14 519.19 2 L
+V
+N
+54.52 507.19 285.14 507.19 2 L
+V
+N
+54.52 495.19 285.14 495.19 2 L
+V
+N
+54.52 483.19 285.14 483.19 2 L
+V
+N
+54.52 471.19 285.14 471.19 2 L
+V
+N
+54.52 459.19 285.14 459.19 2 L
+V
+N
+54.52 447.19 285.14 447.19 2 L
+V
+N
+54.52 435.19 285.14 435.19 2 L
+V
+N
+54.52 423.19 285.14 423.19 2 L
+V
+N
+54.52 411.19 285.14 411.19 2 L
+V
+N
+54.52 399.19 285.14 399.19 2 L
+V
+N
+0.23 (and \0503\051 the f) 312.98 762.74 P
+0.23 (act that the  le) 357.82 762.74 P
+0.23 (v) 409.01 762.74 P
+0.23 (el of impro) 413.37 762.74 P
+0.23 (v) 453.7 762.74 P
+0.23 (ement, when using the) 458.06 762.74 P
+0.31 (LLR method, is more signi\336cant on the most consistent phone) 312.98 751.74 P
+(classes.) 312.98 740.74 T
+1.15 (Results  sho) 312.98 723.74 P
+1.15 (wed  the  set of phones where mispronunciation) 358.56 723.74 P
+2.53 (can be detected reliably) 312.98 712.74 P
+2.53 (. The) 405.22 712.74 P
+2.53 (y mostly coincide with those) 426.11 712.74 P
+0.17 (phones that the phoneticians were able to transcribe more con-) 312.98 701.74 P
+0.55 (sistently) 312.98 690.74 P
+0.55 (. The o) 342.4 690.74 P
+0.55 (v) 368.61 690.74 P
+0.55 (erall error rate of the best system w) 372.98 690.74 P
+0.55 (as 19.4%,) 503.95 690.74 P
+0.52 (which w) 312.98 679.74 P
+0.52 (as similar to an estimate of pairwise human disagree-) 344.15 679.74 P
+(ment on the same task.) 312.98 668.74 T
+0 11 Q
+(6. A) 360.33 646.41 T
+(CKNO) 378.66 646.41 T
+(WLEDGMENTS) 411.11 646.41 T
+2 9 Q
+1.05 (Special thanks to Mitchel W) 312.98 628.74 P
+1.05 (eintraub and Fran\215oise Beauf) 418.96 628.74 P
+1.05 (ays) 527.75 628.74 P
+0.76 (for v) 312.98 617.74 P
+0.76 (aluable help with the model training softw) 330.76 617.74 P
+0.76 (are. W) 487.73 617.74 P
+0.76 (e grate-) 511.75 617.74 P
+0.98 (fully ackno) 312.98 606.74 P
+0.98 (wledge support from the U. S. Go) 354.47 606.74 P
+0.98 (v) 482.17 606.74 P
+0.98 (ernment under) 486.54 606.74 P
+3.4 (the T) 312.98 595.74 P
+3.4 (echnology Rein) 334.49 595.74 P
+3.4 (v) 394.28 595.74 P
+3.4 (estment Program \050TRP\051. The vie) 398.64 595.74 P
+3.4 (ws) 529.75 595.74 P
+-0.1 (e) 312.98 584.74 P
+-0.1 (xpressed in this material do not necessarily re\337ect those of the) 316.84 584.74 P
+(Go) 312.98 573.74 T
+(v) 323.84 573.74 T
+(ernment.) 328.21 573.74 T
+0 11 Q
+(REFERENCES) 389.39 551.41 T
+2 9 Q
+([1]) 312.98 534.74 T
+0.22 0.17 (H. Franco, L. Neume) 327.38 534.74 B
+0.22 0.17 (yer) 407.6 534.74 B
+0.22 0.17 (, and Y) 419.24 534.74 B
+0.22 0.17 (. Kim \0501997\051, Automatic) 445.95 534.74 B
+0.22 0.05 (Pronunciation Scoring for Language Instruction,) 327.38 523.74 B
+1 F
+0.22 0.05 (Pr) 510.56 523.74 B
+0.22 0.05 (oc. of) 519.26 523.74 B
+(ICASSP  97) 327.38 512.74 T
+2 F
+(, pp. 1471-1474, Munich.) 369.88 512.74 T
+([2]) 312.98 498.75 T
+0.22 0.44 (L. Neume) 327.38 498.75 B
+0.22 0.44 (yer) 366.99 498.75 B
+0.22 0.44 (, H. Franco, M. W) 379.45 498.75 B
+0.22 0.44 (eintraub, and P) 453.12 498.75 B
+0.22 0.44 (. Price) 513.44 498.75 B
+0.22 0.1 (\0501996\051, Automatic T) 327.38 487.75 B
+0.22 0.1 (e) 403.27 487.75 B
+0.22 0.1 (xt-Independent Pronunciation Scor-) 407.23 487.75 B
+0.22 0.08 (ing of F) 327.38 476.75 B
+0.22 0.08 (oreign Language Student Speech,) 356.82 476.75 B
+1 F
+0.22 0.08 (Pr) 483.44 476.75 B
+0.22 0.08 (oc. of ICSLP) 492.19 476.75 B
+(96) 327.38 465.75 T
+2 F
+(, pp. 1457-1460, Philadelphia, Pennsylv) 336.38 465.75 T
+(ania.) 480.15 465.75 T
+([3]) 312.98 451.75 T
+0.22 0.12 (J. Fle) 327.38 451.75 B
+0.22 0.12 (ge \0501980\051, Phonetic Approximation in Second Lan-) 347.67 451.75 B
+0.06 (guage Acquisition,) 327.38 440.75 P
+1 F
+0.06 (Langua) 397.74 440.75 P
+0.06 (g) 425.15 440.75 P
+0.06 (e Learning) 429.56 440.75 P
+2 F
+0.06 (, V) 468.87 440.75 P
+0.06 (ol. 30, No. 1, pp.) 478.77 440.75 P
+(117-134.) 327.38 429.75 T
+([4]) 312.98 415.75 T
+0.22 0.09 (M. Esk) 327.38 415.75 B
+0.22 0.09 (enazi \0501996\051, Detection of F) 354.06 415.75 B
+0.22 0.09 (oreign Speak) 459.09 415.75 B
+0.22 0.09 (ers\325 Pro-) 507.56 415.75 B
+0.07 (nunciation Errors for Second Language T) 327.38 404.75 P
+0.07 (raining - Prelimi-) 477.12 404.75 P
+(nary Results,) 327.38 393.75 T
+1 F
+(Pr) 376.63 393.75 T
+(oc. of  ICSLP 96) 385.22 393.75 T
+2 F
+(, pp. 1465-1468.) 444.97 393.75 T
+([5]) 312.98 379.75 T
+0.22 0.16 (Y) 327.38 379.75 B
+0.22 0.16 (. Kim, H. Franco, and L. Neume) 332.88 379.75 B
+0.22 0.16 (yer \0501997\051, Automatic) 455.67 379.75 B
+0.22 0.29 (Pronunciation Scoring of Specif) 327.38 368.75 B
+0.22 0.29 (ic Phone Se) 452.21 368.75 B
+0.22 0.29 (gments for) 498.19 368.75 B
+0.22 0.25 (Language Instruction,) 327.38 357.75 B
+1 F
+0.22 0.25 (Pr) 417.33 357.75 B
+0.22 0.25 (oc. of EUR) 426.43 357.75 B
+0.22 0.25 (OSPEECH 97) 468.78 357.75 B
+2 F
+0.22 0.25 (, pp.) 522.77 357.75 B
+(649-652, Rhodes.) 327.38 346.75 T
+([6]) 312.98 332.75 T
+0.03 (S. W) 327.38 332.75 P
+0.03 (itt and S. Y) 345.05 332.75 P
+0.03 (oung \0501997\051, Language Learning Based on) 385.14 332.75 P
+0.22 0.5 (Non-Nati) 327.38 321.74 B
+0.22 0.5 (v) 365.18 321.74 B
+0.22 0.5 (e Speech Recognition, in) 370.05 321.74 B
+1 F
+0.22 0.5 (Pr) 475.78 321.74 B
+0.22 0.5 (oc. of EUR) 485.38 321.74 B
+0.22 0.5 (O-) 530.25 321.74 B
+(SPEECH 97,) 327.38 310.74 T
+2 F
+( pp. 633-636, Rhodes.) 374.38 310.74 T
+([7]) 312.98 296.74 T
+0.22 0.16 (S. W) 327.38 296.74 B
+0.22 0.16 (itt and S. Y) 345.9 296.74 B
+0.22 0.16 (oung \0501998\051, Performance Measures for) 388.56 296.74 B
+0.22 0.04 (Phone-Le) 327.38 285.74 B
+0.22 0.04 (v) 362.43 285.74 B
+0.22 0.04 (el Pronunciation T) 366.83 285.74 B
+0.22 0.04 (eaching in Call,) 434.28 285.74 B
+1 F
+0.22 0.04 (Pr) 497.07 285.74 B
+0.22 0.04 (oc. of the) 505.73 285.74 B
+0.22 0.17 (W) 327.38 274.74 B
+0.22 0.17 (orkshop on Speec) 334.22 274.74 B
+0.22 0.17 (h T) 400.73 274.74 B
+0.22 0.17 (ec) 412.39 274.74 B
+0.22 0.17 (hnolo) 420.59 274.74 B
+0.22 0.17 (gy in Langua) 441.85 274.74 B
+0.22 0.17 (g) 491.75 274.74 B
+0.22 0.17 (e Learning) 496.33 274.74 B
+2 F
+0.22 0.17 (,) 537.5 274.74 B
+(pp. 99-102, Marholmen, Sweden.) 327.38 263.74 T
+([8]) 312.98 249.74 T
+0.22 0 (O. Ronen, L. Neume) 327.38 249.74 B
+0.22 0 (yer) 402.94 249.74 B
+0.22 0 (, and H. Franco \0501997\051, Automatic) 414.08 249.74 B
+0.22 0.12 (Detection of Mispronunciation for Language Instruction,) 327.38 238.74 B
+1 F
+(Pr) 327.38 227.74 T
+(oc. of EUR) 335.97 227.74 T
+(OSPEECH 97) 375.36 227.74 T
+2 F
+(, pp. 645-648, Rhodes.) 426.6 227.74 T
+([9]) 312.98 213.74 T
+0.22 0 (H. Bratt, L. Neume) 327.38 213.74 B
+0.22 0 (yer) 397.5 213.74 B
+0.22 0 (, E. Shriber) 408.65 213.74 B
+0.22 0 (g, and H. Franco \0501998\051,) 449.99 213.74 B
+-0.15 (Collection and Detailed T) 327.38 202.74 P
+-0.15 (ranscription of a Speech database) 419.87 202.74 P
+0.22 0.32 (for De) 327.38 191.74 B
+0.22 0.32 (v) 352.55 191.74 B
+0.22 0.32 (elopment of Language Learning T) 357.24 191.74 B
+0.22 0.32 (echnologies,) 490.96 191.74 B
+1 F
+(Pr) 327.38 180.74 T
+(oc. of   ICSLP 98) 335.97 180.74 T
+2 F
+(, pp. 1539-1542, Sydne) 397.97 180.74 T
+(y) 481.84 180.74 T
+(, Australia.) 485.75 180.74 T
+([10]) 312.98 166.74 T
+0.02 (V) 327.97 166.74 P
+0.02 (. Dig) 333.31 166.74 P
+0.02 (alakis and H. Murv) 351.29 166.74 P
+0.02 (eit) 420.7 166.74 P
+1 F
+0.02 (\050) 431.97 166.74 P
+2 F
+0.02 (1994\051, GENONES: Optimiz-) 434.97 166.74 P
+0.22 0.23 (ing the De) 327.38 155.74 B
+0.22 0.23 (gree of Mixture T) 367.5 155.74 B
+0.22 0.23 (ying in a Lar) 435.61 155.74 B
+0.22 0.23 (ge V) 485.36 155.74 B
+0.22 0.23 (ocab) 502.6 155.74 B
+0.22 0.23 (ulary) 520.33 155.74 B
+0.16 (Hidden Mark) 327.38 144.74 P
+0.16 (o) 375.69 144.74 P
+0.16 (v Model Based Speech Recognizer) 380.06 144.74 P
+0.16 (,) 506.33 144.74 P
+1 F
+0.16 (Pr) 510.99 144.74 P
+0.16 (oc. of) 519.59 144.74 P
+(ICASSP 94,) 327.38 133.74 T
+2 F
+(pp. I537-I540.) 372.13 133.74 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Trailer
+%%BoundingBox: 0 0 595.28 841.89
+%%PageOrder: Ascend
+%%Pages: 4
+%%DocumentFonts: Times-Bold
+%%+ Times-Italic
+%%+ Times-Roman
+%%+ Symbol
+%%EOF
